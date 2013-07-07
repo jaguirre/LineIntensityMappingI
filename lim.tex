@@ -1,0 +1,624 @@
+% Template for ApJ-type papers
+
+\documentclass[12pt,preprint]
+%{aastex}
+{emulateapj}
+
+\usepackage{rotating}
+\usepackage{amssymb,amsmath}
+%\usepackage{graphicx}[subfloat]
+\usepackage{multirow}
+\citestyle{aa}
+
+\bibliographystyle{apj_w_etal}
+
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\xad}{\vect{x}}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{jaguirre@nrao.edu}
+\newcommand{\lsim}{{_{<}\atop^{\sim}}}
+\newcommand{\gsim}{{_{>}\atop^{\sim}}}
+\newcommand{\etal}{{et al.\/}}
+\newcommand{\ie}{{\em ie.\/}}
+\newcommand{\cmq}{cm{$^{-3}$}}
+\newcommand{\per}{$^{\rm{-1}}$}
+\newcommand{\tc}{{$\theta^1$~Orionis~C}}
+%\newcommand{\msol}{M{$_{\odot}$}}
+\def\msol{\ifmmode {\>M_\odot}\else {$M_\odot$}\fi}
+\newcommand{\lsol}{L{$_{\odot}$}}
+\newcommand{\kms}{km~s{$^{-1}$}}
+\newcommand{\hii}{H~{\sc ii}}
+\newcommand{\Hii}{H~{\sc ii}}
+\newcommand{\Ha}{\mbox{H$\alpha$}}
+\newcommand{\sii}{S~{\sc ii}}
+\newcommand{\Feii}{Fe~{\sc ii}}
+\newcommand{\oi}{O~{\sc i}}
+\newcommand{\nii}{N~{\sc ii}}
+\newcommand{\oiii}{O~{\sc iii}}
+\newcommand{\mgii}{Mg~{\sc ii}}
+\newcommand{\tco}{{$^{13}$CO}}
+\newcommand{\CO}{{$^{12}$CO}}
+\newcommand{\Tco}{{$^{12}$CO}}
+\newcommand{\co}{C{$^{18}$O}}
+\newcommand{\Lsol}{L$_{\odot}$}
+\newcommand{\Msol}{M$_{\odot}$}
+%\newcommand{\C18o}{C$^{18}$O($1\rightarrow 0$)}
+%\newcommand{\Check}{{\bf ???}}
+\newcommand{\mum}{\ensuremath{\mu \mathrm{m}}}
+\newcommand{\flux}{flux density}
+\newcommand{\solar}{\ensuremath{\odot}}
+
+\newcommand{\epsi}{\varepsilon}
+\newcommand{\herschel}{{\em Herschel}}
+
+
+\newcommand{\TBD}{{\bf TBD}}
+
+\def\Figure#1#2#3#4{
+\begin{figure}[htb]
+\epsscale{#4}
+\plotone{#1}
+\caption{#2}
+\label{#3}
+\end{figure}
+}
+
+\def\Table#1#2#3#4#5{
+\begin{deluxetable}{#1}
+\tablewidth{0pt}
+\tablecaption{#2}
+\tablehead{#3}
+\startdata
+\label{#4}
+#5
+\enddata
+\end{deluxetable}
+}
+
+\newcommand{\cii}{[C{\sc ii}]}
+\def\hi{H{\sc i}}
+\newcommand{\smg}{SMG}
+\newcommand{\smgs}{SMGs}
+
+\newcommand{\penn}{1}
+\newcommand{\jpl}{2}
+	% End definitions
+
+
+\shorttitle{Measuring galaxy clustering with FIR line intensity mapping}
+\shortauthors{Ugzil, Aguirre \& Bradford}
+
+\begin{document}
+
+\title{Measuring galaxy clustering with FIR line intensity mapping}
+
+\author{B.~D.~Uzgil\altaffilmark{\penn}}
+
+\author{J.~E.~Aguirre\altaffilmark{\penn}}
+
+\author{C.~M.~Bradford\altaffilmark{\jpl}}
+
+\email{badeu@sas.upenn.edu}
+
+\altaffiltext{\penn}{University of Pennsylvania, Philadelphia, PA 19104}
+
+\altaffiltext{\jpl}{Jet Propulsion Laboratory}
+
+
+\begin{abstract}
+
+ 
+\end{abstract}
+
+%\keywords{}
+
+\section{Introduction}
+
+Three dimensional measurements of galaxy clustering provide rich information about the process of galaxy formation and evolution, linking the theoretical structure of dark matter halos to the masses, types, luminosities, star formation rates, and numbers of galaxies inhabiting them at any epoch.  The bulk of such surveys to date have been conducted using optically selected galaxies discovered in photometric surveys, followed up by spectroscopy which identifies lines associated with AGN activity or stellar photospheres (or in some cases with HII regions, e.g., Lyman-$\alpha$ emitters).  At redshifts $z>1$, however, the cosmic star formation rate becomes dominated by extremely dusty systems, and the appropriateness of using optically selected galaxies to study the clustering properties of these dusty star-forming galaxies (DSFGs) is suspect.  
+
+Nevertheless, optical follow-up of DSFGs has yielded some success in obtaining their redshift distribution \citep{chapman} and clustering \citep{blain}.  The recent watershed of \herschel-detected galaxies has led to intensive study of their properties.  
+
+Intensive optical follow-up, for example of \herschel\ galaxies in \citet{casey13} yielded a relatively small number of galaxies, strongly biased towards low redshift.  Clustering properties of DSFGs have been studied using two-dimensional clustering via a modification of ``$P(D)$'' approach, for example by\citep{bethermin,viero}.  These studies have already shed light on some aspects of the clustering of the most extreme star-forming galaxies $1 < z < 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model.
+
+From the far-IR to the millimeter, it remains for the future for ALMA or NOEMA to produce redshift surveys with $\sim10^3$ galaxies, or even further down the road for CCAT.  Thus we seek 
+
+% Change focus to measuring the [CII]/FIR relation via knowledge of SFR at z ~ 1
+
+%mention also how the fractions of the CFIRB that are resolved into individual galaxies are low for SPIRE, PACS, and Spitzer maps, so ppl have exploited already statistical methods, P(D) and P(k), with great success. These sources are also going to be the producers of the [CII] emission.
+
+%NOTE: Figure 5 in de Bernardis & Cooray 2012 shows a discrepancy between the Bethermin model and the CLF model, and the authors warn that the redshift parametrization of the L(M_halo) must be reconsidered in future analysis
+
+Atomic (Visbal et al 2011, Gong et al 2012, etc.) and molecular (Lidz et al 2011, etc.) transitions -- such as the 21 cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII] 158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization. Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. Furlanetto, Oh, and Briggs for a review) and in the experimental arena (e.g., PAPER (Parsons et al 2010), MWA), and so interest in measuring the [CII] power spectrum, for instance, has primarily erupted as a means to complement the 21 cm studies at high redshift via the cross-correlation.%\begin{itemize}
+
+A benefit of intensity mapping over individually resolving objects is that the power spectrum is sensitive to the low luminosity galaxies that are below the detection threshold of current and future instruments. Looking forward to EoR, intensity mapping might be the only means available to observe the large population of faint galaxies responsible for reionizing the IGM, given that a telescope such as JWST will only be able to resolve down to 50 percent of UV LF at z ~ 6 (Salvaterra et al 2011). To consider an example at lower redshifts that is \emph{not} intensity mapping but \emph{does} illustrate the potential of power spectra to constrain astrophysically interesting quantities, the SPIRE instrument, even, aboard Herschel misses roughly half of the sources that comprise the cosmic infrared background (CIB) at $z = X.X$ \citep{bethermin12}. In this case, authors exploited a statistical analysis via measuring the clustering term in the angular power spectrum to uncover information about the sources that, 
+though unresolved, nevertheless contribute to the intensity fluctuations in the SPIRE 250, 350, and 500 $\mu$m wavebands (Amblard et al 2011). From their analysis, which included a halo model approach to describing the clustering power, they were able to estimate such values relevant to galaxy evolution as characteristic mass for most efficient star formation in a host dark matter halo. With a larger survey area and an added framework to tie galaxy luminosity to the halo model, the clustering amplitude of the CIB power as measured by Herschel was used in conjunction with observed number counts above 0.1 mJy to fit various parameters (Viero et al 2012), including again the halo mass which is most efficient for hosting star formation. Despite the novelty of their approach to interpret the CIB power spectrum, Viero et al 2012 encountered significant difficulty in constraining the parameters of their model with existing data. Indeed, Penin et al (2011) explored the ability of the clustering information from CIB 
+angular power spectra to constrain halo model parameters, and found that, while constraints are somewhat improved, simultaneously fitting for clustering data and number counts do not break the degeneracies among the halo model parameters. The authors there and in Viero et al cite unknown redshift distributions of the sources comprising the CIB as the main source of uncertainty in their analyses.
+
+Intensity mapping, on the other hand, contains inherent redshift information encoded along the spectral dimension of the survey volume, and is thus poised to be a valuable complement to current studies of the clustering---and its evolution---of dusty star-forming galaxies at moderate redshift.
+
+Here we examine the value of measuring power spectra of fine structure IR emission lines, including [CII]158$\mu$m, [OI]63$\mu$m, [OIII]88$\mu$m, and [SiII]35$\mu$m, at low to moderate redshifts, specifically between $z = 0.5$ and $z = 3$. As a precursor to Reionization-era experiments, the appeal as a proof-of-principle is obvious, but we focus in this paper on the ability of FIR line intensity mapped power spectra to measure the clustering amplitude of star-forming galaxies. The organization of this paper is as follows. We have calculated the mean emissivity for a suite of IR emission lines based on the IR luminosity function (Bethermin et al 2011) and empirical line to IR luminosity correlations described by Spinoglio et al (2012), and present these results in the context of a power spectrum model in Section 2. In Section 3, we envision suitable platforms---namely the SAFARI instrument aboard future space mission SPICA for the short wavelength lines and a balloon-based experiment for [CII]---for 
+conducting the IR intensity mapping and discuss the feasibility of measuring the power spectra with error bar estimates. We also compare intensity mapping to the approach of individual line detections in order to assess its value 
+of probing an otherwise undetected population of galaxies. Finally, in Section 4, we present preliminary results on the ability of IR line intensity mapped power spectra to discriminate between halo models. 
+
+
+%At $z \gtrsim 5$, the UV luminosity function implies that the sources responsible for reionizing the Universe are likely to be very low luminosity ( $ < -16$ AB magnitude) galaxies (Bouwens et al 2011), and intensity mapping has been pointed out as an alternative means of probing these sources which are too faint to be individually detected. The IR luminosity function at moderate redshift depicts the opposite scenario, in which the majority of the IR luminosity is produced by high luminosity sources. 
+
+
+%Detections of [CII] and other fine structure lines in individual galaxies, such as those from ISO and current observations from Herschel-PACS, provide a view into the ISM of the sources, although confusion limits on PACS restrict observations at $z \gtrsim 1$ to only the brightest galaxies ($L > 10^{XX} L_{\odot}$). The intensity mapping method, in contrast, would not only be sensitive to the fainter population of galaxies, but would also provide a much faster means of observing a large area at a number of redshifts, without distinguishing between individual sources that comprise the intensity fluctuations in the measured power spectrum. We aim to demonstrate in this paper that \emph{the statistical nature of intensity mapping does not limit its ability to probe the ISM of sources} in the surveyed volume. To this end, we derive the average $L_{[CII]}$-$L_{FIR}$ relation for these low-z sources where star formation information is readily available from FUV and IR observations.
+
+%The organization of this paper is as follows. We have calculated [CII], [OI], [NII], and [OIII] power spectra based on the IR luminosity function (Bethermin et al 2011) and empirical line to IR correlations described by Spinoglio et al (2012) during  $0.5 < z <  2$, and present these results in Section 1. In Section 2, we envision suitable platforms for conducting the [CII] intensity mapping experiment and we discuss the feasibility of measuring the power spectra of the lower wavelength lines with SAFARI aboard future space mission SPICA. In Section 3, we perform a maximum likelihood analysis to determine which parameters (e.g. U, hydrogen density, and metallicity) affecting the ISM can precisely determine the line to continuum ratio. 
+
+%, as well as from the conditional luminosity function (CLF, de Bernardis \& Cooray 2012) model of the cosmic far infrared background at the same redshifts and, in Section 1, present predictions for the mean intensity of [CII] across this redshift interval. Using the ancillary star formation rate information, we show (in Section 2) the predicted evolution in the [CII]-FIR relation up to $z = 3$. In order to explore the ability of the power spectrum to probe this relation, we test different assumptions regarding the [CII] production in our theoretical IR sources. Cross-correlation of [CII] with other fine structure lines at the same and nearby redshifts is an interesting means of gaining further insight into the ISM of the detected galaxies and decontaminating the [CII] signal, respectively, which we examine in Section 3. Finally, in Section 4, we envision suitable platforms for conducting the low-redshift [CII] intensity mapping experiment.
+
+%n Section 1, demonstrate the feasibility of characterizing the clustering of dusty, star-formation-dominated galaxies (in comparison to optically selected sources) with this signal. Using the [CII]-FIR and FIR-SFR relations, we also present (Section 2) predictions for a [CII]-generated Madau plot. Such a plot has the unique ability to provide a complete picture of star formation history because the intensity mapping technique is necessarily sensitive to the relatively fainter population of normal galaxies -- in stark contrast to high signal-to-noise detections of spectral lines from traditional observations of single galaxies -- and LIRGs that comprise the majority of the star-forming population up to $z = 1$ (Le Foc'h et al 2004). Finally, in .
+
+ %The intensity mapping method, with its unique sensitivity to the low luminosity population, would provide a means of observing the Universe's SFR transition from a scenario where it is dominated by the normal, low $L_{IR}$ population and the luminous infrared galaxies (LIRGs) to one where roughly 70\% of the cosmic SFR already occurs in ULIRGs in at $z = 1$. This window of time provides a dramatic view into the evolution of the interstellar medium of these galaxies. 
+
+
+%While there are caveats to the reliability of [CII] as a tracer of FIR luminosity that will be addressed in this letter, the assumption that the galactic FIR luminosity is primarily reprocessed starlight and thus traces star-formation rate (Kennicutt 1998) is sound, given the tight correlation to its well-established optical counterpart, H{$\alpha$} luminosity (Kewley et al 2002, ??? 2012). Furthermore, measuring SFR with a FIR emission line offers the advantage of being unaffected by extinction during a redshift interval where over half of the star formation rate is powered by dusty galaxies with UV extinction  $E(B-V) > 0.25$ magnitudes, as Ly et al (2011) found for galaxies in the Subaru Deep Field., 
+
+
+%When this result is coupled with the fact that ultraluminous infrared galaxies (ULIRGS, $L_{IR} > 10^{12} L_{\odot}$) contribute roughly 70\% of the star formation rate at $z = 1$ (Le Floc'h et al (2004)
+
+%Have to show how sensitive the pspec is to luminosity
+
+%Ly et al (2011) found that, for the redshift interval $1 < z < 3$, over half (65\%)  formation rate is powered by dusty galaxies with UV extinction $E(B-V) > 0.25$. Indeed, when this result is viewed in the context that the fraction of galaxies contributing to the star formation rate is roughly 70\% ULIRGs
+
+
+\section{Setting up predictions for IR line power Spectra during $0.5 < z < 3$}
+
+Traditional methods for measuring the spatial autocorrelation of galaxies through galaxy surveys rely on the knowledge of the redshift distribution of sources in the survey. Furthermore, they estimate the true three dimensional clustering of galaxies via the angular projection. Intensity mapping, however, contains intrinsic redshift information and provides a direct measure of the clustering power spectrum in three-dimensional k-space, which makes it a highly complementary probe of structure in the cosmic web. 
+
+The complete auto power spectrum of a given FIR line, $X_i$, as a function of wavenumber $k$, $P_{i,i}(k,z)$, can be separated into power from the clustering of galaxies, $P_{i,i}^{clust}(k,z)$ and a Poisson term describing their discrete nature, $P_{i,i}^{shot}(k, z)$. We compute the full nonlinear matter power spectrum, $P_{nl}(k, z)$, using the publicly available code HALOFIT+, which has been the standard tool for predicting matter power spectra upon its success in fitting state-of-the-art dark matter simulations over a decade ago (Smith et al 2003) . (We note in passing, however, that since that time, authors (cf., e.g., Takahashi et al 2012) have pointed out improvements to the halo model fit on the small scales previously inaccessible due to constraints on simulation resolution.) The clustering component of the [CII] power spectrum is then written as
+
+%On large scales ($k \lesssim 0.1$ h Mpc$^{-1}$), where the application of linear theory is valid, the clustering power is simply related to the linear matter power spectrum via the halo bias. 
+%But, in order to also encompass the clustering on smaller scales that may be relevant in various observational concepts, we calculate the nonlinear matter power spectrum, $P_{nl}(k, z)$, using the publicly available code HALOFIT+, which allows us to write the clustering component as
+
+\begin{equation}
+ P_{i,i}^{clust}(k, z) = \bar{I}_{\mathrm{[i]}}^2(z) \bar{b}^2(z) P_{nl}(k, z).
+ \end{equation}
+
+Here we have implicitly assumed that the fluctuations in $X_i$ emission trace the matter power spectrum with some average bias, $\bar{b}(z)$. The mean line intensity, $\bar{I}_{i}(z)$, in units of Jy sr$^{-1}$, can be calculated as
+
+\begin{equation}
+\bar{I}_{i}(z) = \int{\mathrm{d}n_{i} \frac{L_{i}}{4\pi D_L^2}} y_i D_A^2 ,
+\end{equation}
+
+where the integration is taken with respect to $n_{i}$, the number of galactic $X_i$ emitters per cosmological comoving volume element. (The factor $y_i$ is the derivative of the comoving radial distance with respect to the observed frequency, i.e. $y = d\chi/d\nu = \lambda_{i,rest} (1+z)^2/H(z)$, and $D_A$ is the comoving angular distance.)
+
+Finally, the shot noise component of the total intensity mapped power spectrum---with the same units as the clustering term, namely, Jy sr$^{-1}$(Mpc h$^{-1})^{3}$---takes the form 
+
+\begin{equation}
+P_{i,i}^{shot}(k) = \int{\mathrm{d}n_{i} \left( \frac{L_{i}}{4\pi D_L^2} \right)^2 \left( y_i D_A^2 \right)^2}.
+\end{equation}
+
+
+
+%employ a halo model (e.g., Cooray \& Sheth, 2002) to write the full clustering component as broken down into contributions from the  the 1-halo and 2-halo terms,
+
+%\begin{equation}
+%\begin{split}
+%P_{clustering}^{\mathrm{[CII],[CII]}}(k)& = P_{1h} + P_{2h} , \mathrm{where}\\
+%P_{1h}& = ...\\
+%P_{2h}& = ... ,\\
+%\end{split}
+%\end{equation}
+
+%which describe the correlations between dark matter in an individual halo and between dark matter in distinct halos, respectively. 
+
+%Generally, given that the infinitesimal cosmological comoving volume element is written $\mathrm{d}V = \mathrm{d}\chi D_A^2 \mathrm{d}\Omega$, where $\mathrm{d}\chi$ is an infinitesimal length along the radial direction, $D_A^2$ is the infinitesimal angular diameter distance, and $\mathrm{d}\Omega$ is the infinitesimal solid angle:
+
+% \frac{\mathrm{d}\chi}{\mathrm{d}\nu
+%In the present section, where we utilize [CII] source counts (i.e., $dn_{[CII]}/dS$) from XXX to predict  $n_{[CII}$, the shot noise component of the total [CII] power spectrum takes the form
+
+%\begin{equation}
+%P_{shot}^{\mathrm{[CII],[CII]}}(k) = \int{dS \frac{dn_{[CII]}}{dS} \left( \frac{d\chi}{d\nu} D_A^2 \frac{L_{\mathrm{[CII]}}}{4\pi D_L^2} \right)^2}
+%P_{shot}^{\mathrm{[CII],[CII]}}(k) = \int{dM \frac{dn_{[CII]}}{dM} \left( \frac{d\chi}{d\nu} D_A^2 \frac{L_{\mathrm{[CII]}}}{4\pi D_L^2} \right)^2}.
+%\end{equation} 
+
+%The total [CII] intensity in some volume $V$ at a given redshift is calculated as the number density of [CII] emission from galaxies, $n_{[CII]}$ integrated over the cosmological co-moving volume, $dV = d\chi d_A^2 d\Omega$, where $d\chi$ is an infinitesimal length along the radial direction, $d_A$ is the infinitesimal angular diameter distance, and $d\Omega$ is the infinitesimal solid angle:
+
+%\begin{equation}\label{}
+%S^{\mathrm{[CII]}} = \int{\mathrm{d}V \frac{n_{[CII]} L_{\mathrm{[CII]}}}{4\pi D_L^2}} .
+%\end{equation}
+
+%Mean specific intensity per steradian is then
+
+%\begin{equation}
+%\bar{S}_{\nu, \mathrm{[CII]}} = \int{\frac{\mathrm{d}\chi}{\mathrm{d}\nu} D_A^2 n_{[CII]} \frac{L_{\mathrm{[CII]}}}{4\pi D_L^2} \frac{\mathrm{d}\Omega}{\mathrm{d}\Omega} \frac{\mathrm{d}\nu}{\mathrm{d}\nu}} .
+%\end{equation}
+
+\subsection{Calculating IR line volume emissivity}
+
+The number density and the luminosity of [CII] emitters that appear in equations (2) and (3) can be derived by a variety of methods. In earlier papers on intensity mapping of molecular and fine-structure emission lines at high redshift (z $\gtrsim$ 6), a common approach involved using the dark matter halo mass function in lieu of the [CII] emitter density (and invoking a one-to-one correlation between halos and galaxies, which is not unreasonable at high redshifts). The [CII] luminosity, in turn, could be scaled according to the star formation rate, which was related to halo mass via a proportionality constant comprised of factors that described the fraction of baryons available for star formation, as well as the dynamical timescale for star formation. While this theoretical model is feasible at high redshift to provide an estimate on the volume emissivity, we take advantage of the relative wealth of observations of [CII] luminosities in individual galaxies, IR galaxy number counts, and cosmic star formation 
+rate density at the low redshifts (relevant to this study). To this end, we first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from Bethermin et al (2011, hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$.  To convert the infrared luminosity to a line luminosity in [CII], we apply the relation for $L_{\mathrm{[CII]}}$ as a function of $L_{IR}$ provided by Spinoglio et al (2012). The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in Brauher et al (2008), and is reproduced below: 
+
+\begin{equation}
+%L_{\mathrm{[CII]}}(L_{\mathrm{IR}}) = (0.89 \pm 0.03) \mathrm{log_{10}}L_{\mathrm{IR}} - (2.44 \pm 0.07)}{L_{\mathrm{IR}}.
+\end{equation}
+
+Thus, it becomes possible to write the cosmic mean intensity and shot noise of [CII], in units of Jy sr$^{-1}$,  as a function of redshift based on the B11 luminosity function and Spinoglio et al (2012) $L_{\mathrm{[CII]}}-L_{\mathrm{IR}}$ relation as
+
+\begin{gather}
+\bar{I}_{\mathrm{[CII]}}(z) = \int \mathrm{d}L_{IR}  \Phi(L_{IR}, z) \frac{f_{\mathrm{[CII]}}}{4 \pi D_{L}^2} \frac{1}{\mathrm{ln}10} y D_A^2 \\
+P_{shot}(z) = \int \mathrm{d}L_{IR}  \Phi(L_{IR}, z) \frac{f_{\mathrm{[CII]}}}{4 \pi D_{L}^2} \frac{L_{IR}f_{\mathrm{[CII]}}}{4\pi D_{L}^2} \frac{1}{\mathrm{ln}10} \left(y D_A^2\right)^2
+\end{gather}
+
+where $f_{\mathrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], as computed from equation (4). 
+
+It should be noted that the mean [CII] luminosity $\bar{L}_{[CII]}$ does, in reality, include a contribution from diffuse gas in the intergalactic medium (IGM), yet Gong et al (2012) estimated that the specific intensity coming from the IGM ranges from $\sim 10^{-3}$ Jy sr$^{-1}$ to $\sim$ 1 Jy sr$^{-1}$ for different physical conditions in the ISM at $z = 1$---a negligible amount compared to the emission from the interstellar medium (ISM) of galaxies. 
+
+The resulting mean intensities for a suite of FIR lines is plotted in Figure 1 as functions of redshift and observed frequency. $\bar{I}_{\nu}$ vs $\lambda_{obs}$ can be interpreted as identifying the dominant source of fluctuations, according to our model, for a given frequency. Such an identification becomes useful in the practical discussion of identifying sources of signal contamination to the target line in question (section X.X).
+
+%Incorporating the IR luminosity function in the approach to estimating the [CII] density facilitates the separation of [CII]-emitting galaxies by luminosity class, i.e., ULIRG, LIRG, or normal galaxy, which is useful since there is not a one-to-one mapping of [CII] luminosity to infrared luminosity for individual galaxies. To understand, then, the relation between [CII] emission from a diverse ensemble of galaxies present in the power spectrum to the star formation rate at a given redshift, it is imperative to sort out the mix of galaxy types and corresponding luminosities that contribute to the total emission. We use the recent compilation of Gracia-Carpio et al. (2011) for the measured relation of $L_{[CII]}$ to $L_{FIR}$ in a range of systems. 
+
+%For most normal galaxies (here taken to mean $L_{FIR} < 10^{11} L_{\odot}$) at any redshift, the $L_{[CII]}/L_{FIR}$ ratio is approximately equal to $3 \times 10^{-3}$ (with a $1-\sigma$ scatter of only $\sim$ 0.3 dex). Since $L_{FIR}$ is well known to tightly correlate with SFR (Kennicutt??), for these systems the $L_{[CII]}$ traces the SFR with a known proportionality constant. 
+
+%In the local universe, dense, high ionization environments are typical of the central star-forming regions of ULIRGs ($L > 10^{12} L_{\odot}$) or LIRGS ($L>10^{11} L_{\odot}$). These environments exhibit underluminous [CII] emission because [CII] is strongly sensitive to the intensity of the UV field and saturates at high UV fluxes. For nearby sources with $L>10^{12} L_{\odot}$, $L_{[CII]}/L_{FIR}$ drops by a factor of $\sim$ 5-10, and $L_{[CII]}$ no longer scales with SFR, but such sources are rare at $z<0.01$ and account for only a small fraction of the total SFR density. Hence, at these redshifts, the bulk of the [CII] emission is from "normal"-type galaxies that obey the relatively tight correlation between $L_{[CII]}-L_{FIR}$. 
+
+%By contrast, at $z \sim 1$, the fraction of SFRD contributed by high luminosity sources substantially increases. At $z = 1-2$, however, the Stacey et al (2010) results show that the threshold for a significant deficiency in $L_{[CII]}$ rises to $L \sim 5 \times 10^{12} L_{\odot}$ (Figure ??), so that the majority of the emission again still adheres to a relatively tight correlation, and the fraction contributed by sources with weak [CII] appears to remain negligible at all redshifts. 
+
+%We can characterize the redshift evolution of $\kappa$ from the IR luminosity function. This behavior is plotted in Figure XXX. 
+
+\begin{figure}[h]
+% \centering
+% \subfloat(a){
+% \label{}
+% \includegraphics[width=0.4\textwidth]{b11_spinoglio_intensity_jysr_vs_z.pdf}}
+% \subfloat(b){
+% \label{fig:bethermin_fir_frac}
+% \includegraphics[width=0.4\textwidth]{intensity_vs_lambda_vs_Hz.pdf}}
+% \centering
+\caption{Intensity of fine structure line emission plotted versus redshift (\emph{top}) and observed wavelength (\emph{bottom}) as predicted from Spinoglio line luminosity fits as applied to the Bethermin (2011) luminosity function.}
+\end{figure}
+
+%\begin{equation}
+%\bar{L}_{\mathrm{[CII]}} = \int_{L_{IR}^{min}}^{L_{IR}^{max}} \! \mathrm{d}(\mathrm{log_{10}} \, L_{IR}) L_{IR} \Phi(L_{IR}, z) f_{[CII]}(L_{IR}).
+%\end{equation}
+
+%The fraction $f_{[CII]}(L_{IR})$ is obtained from the fit for [CII] luminosity---based on local ISO-LWS observations (Brauher et al 2008)---as a function of IR luminosity provided by Spinoglio et al (2011, their equation 33, reproduced below):
+
+%\begin{equation}
+%\begin{split}
+%f_{[CII]}(L_{IR})& =\frac{L_{[CII]}}{L_{IR}}\\
+%                           & =\frac{(0.89 \pm 0.03) \mathrm{log_{10}}L_{IR} - (2.44 \pm 0.07)}{L_{IR}}.
+%\end{split}
+%\end{equation}
+
+%Finally, in terms of the IR luminosity function, the shot noise becomes
+
+%\begin{multline}
+%P_{shot}^{\mathrm{[CII],[CII]}}(k) =  \int_{L_{IR}^{min}}^{L_{IR}^{max}} \! \mathrm{d}(\mathrm{log_{10}}L_{IR}) \, \Phi(L_{IR}, z)\\
+%\times  f_{[CII]}(L_{IR}) \left( \frac{L_{\mathrm{[CII]}}}{4\pi D_L^2} \right)^2 \left( \frac{\mathrm{d}\chi}{\mathrm{d}\nu} D_A^2 \right)^2
+%\end{multline}
+
+%It should be noted that the mean [CII] luminosity $\bar{L}^{[CII]}$ does, in reality, include a contribution from diffuse gas in the intergalactic medium (IGM), yet Gong et al (2012) estimated that the specific intensity coming from the IGM ranges from $\sim 10^{-3}$ Jy sr$^{-1}$ to $\sim$ 1 Jy sr$^{-1}$ at $z = 1$---a negligible amount compared to the emission from the interstellar medium (ISM) of galaxies. 
+
+\section{Observational Strategy}
+
+Include plot of fraction of emissivity vs $L_{IR,min}$ to further motivate intensity mapping observation of clustering.
+\begin{figure}[h]
+% \centering
+% \subfloat(a){
+% \label{}
+% \includegraphics[width=0.4\textwidth]{fraction_cii_emissivity_vs_LIRmin_vs_z.pdf}}
+% \subfloat(b){
+% \label{fig:bethermin_fir_frac}
+% \includegraphics[width=0.4\textwidth]{fraction_oi63_emissivity_vs_LIRmin_vs_z.pdf}}
+% \subfloat(b){
+% \label{fig:bethermin_fir_frac}
+% \includegraphics[width=0.4\textwidth]{fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf}}
+% \centering
+\caption{Fraction of emissivity recovered by integrating the luminosity function using various minimum $L_{IR}$ values. The upper limit for integration is fixed at 10$^{13}$ L$_{\odot}$.}
+\end{figure}
+
+\subsection{[CII] power spectrum}
+
+Atmospheric transmission permits uninterrupted spectral coverage for a balloon experiment in the wavelength range 240 to 420 $\mu$m, or $z = 0.5-1.5$ for [CII]158. For concreteness in our discussion of the detectability of the [CII] power spectrum, we sketch the envisioned balloon-borne experiment with various aperture diameters, $D_{ap} = 1.0$ and 3.0 m, and survey  areas, $A_{survey} = 0.1, 1.0$, and 10.0 deg$^2$. Relevant parameters for the experimental platforms envisioned here are summarized in Table 1. 
+
+Predictions---as computed from the method of combining the cosmological matter power spectrum and the IR LF model outlined in Section 2.1---for the  [CII] power spectrum at four redshifts $z = 0.63, 0.88, 1.16$, and $1.48$ in the above redshift range are displayed in Figure 4 for the fiducial case a 3 meter aperture, 1.0 deg$^2$ survey area, and total observing time, $t_{obs}^{survey} = 200$ hours. (Note that we use  $\Delta_{[CII]}^2 = k^3 P_{[CII], [CII]}(k)/(2\pi^2)$ when plotting the power spectrum, where the integral of $\Delta_{[CII]}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$, in line with theoretical predictions. We calculate error bar estimates and the mean signal to noise ratio (SNR) for each power spectrum by assuming a spectrally flat noise power spectrum, so that the noise power in each pixel, $P_{N}$, is calculated from
+
+\begin{equation}
+P_N = \sigma_N^2 \frac{V_{pix}}{t_{obs}^{pix}},
+\end{equation}
+
+where $\sigma_N^2$ is the instrument sensitivity (NEI, in units of Jy sr$^{-1}$ Hz$^{-1/2}$, $V_{pix}$ is the volume of a pixel, and $t_{obs}^{pix}$ is the time spent observing on a single pixel. The variance of a measured $k$, $\sigma^2(k)$, is then written as
+
+\begin{equation}
+\sigma^2(k) = \frac{\left({P_{[CII],[CII]}(k) + P_N(k)}\right)^{2}}{N_{mode}},
+\end{equation}
+
+where $N_{mode}$ is the number of wavemodes that are sampled for a given $k$ bin of some finite width $\Delta$log(k). (We have chosen $\Delta$log(k) = 0.3 for this analysis.)
+
+The k-averaged SNR, in turn, is calculated from the expression 
+
+\begin{equation}
+SNR = \sqrt{\sum_{bins} \left(\frac{P_{[CII],[CII]}(k)}{\sigma(k)}\right)^2}
+\end{equation}
+
+Note that It is possible to rewrite $P_N$ in terms of the parameters from Table 1, giving 
+
+\begin{equation}
+\begin{split}
+P_N& = \sigma_N^2 A_{pix} \Delta r_{los}^{pix} / {\frac{t_{obs}^{survey}}{n_{beams}/N_{instr}^{spatial}}} \\
+%& = \sigma_N^2 A_{pix}\Delta r_{los}^{pix} /  \frac{t_{obs}^{survey} N_{instr}^{spatial}}{A_{survey}/A_{pix}}\\
+%& = \sigma_N^2 \frac{\Delta r_{los}^{pix} A_{survey}}{t_{obs}^{survey} N_{instr}^{spatial}}
+\end{split}
+\end{equation}
+
+In this form, it becomes apparent that---with fixed number of spatial pixels, spectral resolution, and total observing time---the only factor driving up the amplitude of noise power is the survey area; the effect of increasing aperture only allows access to higher wavenumbers. This behavior is shown clearly in Figure 5, where the SNR is plotted as a function of $k$ for different survey geometries and both mirror diameters. Also seen in Figure 5, the greater number of wavemodes sampled (entering as $N_{modes}^{-1/2}$ in the expression for $\sigma$) with the larger survey area does not necessarily compensate for the the increase in $P_{N}$. For example, the factor of ten increase in $P_N$ going from $A_{survey}$ = 1 to 10 deg$^2$ is only overcome by the additional modes in the larger survey area for $k < 1$, leading to a higher S/N for these modes. At $k > 1$, the S/N in each mode for the 1 and 10 deg$^2$ fields becomes comparable. 
+
+
+%\begin {table*}[h]
+%\begin{center}
+%\caption {Experimental Parameters for Envisioned Balloon Experiment at $z$ = 0.88} \label{tab:title} 
+% \begin{tabular}{ l c c c c c c }
+% \hline \hline
+%  $t_{obs}^{survey}$ (hr)&\multicolumn{6}{c}{200}\\
+%  $I_{[CII]}$ (Jy sr$^{-1}$)&\multicolumn{6}{c}{6.27 $\times$ 10^3}\\
+%  NEI (Jy sr$^{-1}$ sec$^{1/2}$)&\multicolumn{6}{c}{2.17 $\times$ 10$^7$}\\
+%  $B_{\nu}$ (GHz)&\multicolumn{6}{c}{945-1,086}\\
+%   $\delta_{\nu}$ (GHz)&\multicolumn{6}{c}{2.25}\\
+%   \hline
+%  $A_{survey}$ (deg$^2$)&\multicolumn{2}{c}{0.1}&\multicolumn{2}{c}{1.0}&\multicolumn{2}{c}{10.0}\\
+%  $V_{survey}$ (Mpc^3 h$^{-3}$)&\multicolumn{2}{c}{2.87 $\times$ 10^4}&\multicolumn{2}{c}{2.87 $\times$ 10^6}&\multicolumn{2}{c}{2.87 $\times$ 10^8}\\
+%  \hline
+%  $D_{ap}$ (m) & 1 & 3 & 1 & 3 & 1 & 3 \\
+%  Beam FWHM (arcmin) & 0.42 & 1.25 & 0.42 & 1.25 & 0.42 & 1.25 \\
+%  $V_{voxel}$ (Mpc^3 h$^{-3}$) &  19.76 & 2.20 & 19.76 & 2.20 & 19.76 & 2.20 \\
+%  $t_{obs}^{voxel}$ (hr) & 2.0 $\times$ 10^2 & 2.3 $\times$ 10^1 & 2.1 & 2.3 $\times 10^{-1}$& 2.1 $\times 10^{-2}$ & 2.3 $\times 10^{-3}$\\
+%  $P_N^{voxel}$ (10$^{10}$ Jy$^2$ sr$^{-2}$ Mpc$^3$ h$^{-3}$)  & 1.17 & 1.17 & 117 & 117 & 11, 700 & 11, 700\\
+%  \hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+
+
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{l c c c}
+%\hline
+ %& \multicolumn{2}{c}{COSMOS}& Bethermin+Spinoglio \\
+%\hline \hline
+% & 1.96 deg$^2$ & 0.4 deg$^2$ & \\
+%\hline
+%SFRD (M$_{\bigodot}$/yr Mpc$^{-3}$) & 0.48 & 0.42 & 0.18 \\
+%$\rho_{{IR}}$ (L$_{\textrm {IR}}$ Mpc$^{-3}$) & 2.8 $\times 10^9$ & $2.4 \times 10^9$ & 6.3 $\times 10^8$ \\
+%$\rho_{{[CII]}}$ (L$_{\textrm{[CII]}}$ Mpc$^{-3}$) & 4.2 $\times 10^6$ & 3.6 $\times 10^6$ & 7.8 $\times 10^5$ \\
+%$\bar{S}_{[CII]}$ (Jy sr$^{-1}$) & 12,000 & 11,000 & 2,600\\
+%$P_{shot}$ (Jy sr$^{-1}$) & 1.4 $\times 10^9$ & 1.3 $\times 10^9$ & 2.9 $\times 10^{10}$\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+
+\begin{figure}[h]
+\centering
+\begin{tabular}{cc}
+%\includegraphics[width=0.4\textwidth]{pcii_z63_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf} &
+%\includegraphics[width=0.4\textwidth]{pcii_z88_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap3m_1sqdeg_uhp_obs} \\
+%\includegraphics[width=0.4\textwidth]{pcii_z116_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf} &
+%\includegraphics[width=0.4\textwidth]{pcii_z148_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf}
+\end{tabular}
+\caption{\label{} Predicted [CII] power spectra with error estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 3 meter aperture and a survey area of 1 square degree. Blue, green, magenta, and cyan curves denotes power spectra computed with upper limits of $L_{IR} = 10^{13}, 10^{12}, 10^{11}$, and 10$^{10}$ L$_{\odot}$, respectively.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tabular}{cc}
+%\includegraphics[width=0.4\textwidth]{kparkperphist_kbin6_ap3m_p1sqdeg_z88} &
+%\includegraphics[width=0.4\textwidth]{kparkperphist_kbin9_ap3m_p1sqdeg_z88} \\
+%\includegraphics[width=0.4\textwidth]{kparkperphist_kbin6_ap3m_1sqdeg_z88} &
+%\includegraphics[width=0.4\textwidth]{kparkperphist_kbin9_ap3m_1sqdeg_z88}
+\end{tabular}
+\caption{\label{} Sample histogram of $k_{par}$-$k_{perp}$ for ICarIS [CII] power spectrum at $z = 0.88$, $D_{ap} = 3.0$m and $A_{survey} = 1.0$ deg$^2$.}
+\end{figure}
+
+%\begin{figure*}[h]
+%\centering
+%\begin{tabular}{cc}
+
+%\includegraphics[width=0.5\textwidth]{pcii_z63_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap1m_1sqdeg_uhp_obs.pdf} &
+%\includegraphics[width=0.5\textwidth]{pcii_z88_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap1m_1sqdeg_uhp_obs.pdf} &
+%\includegraphics[width=0.5\textwidth]{pcii_z116_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap1m_1sqdeg_uhp_obs.pdf} &
+%\includegraphics[width=0.5\textwidth]{pcii_z148_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap1m_1sqdeg_uhp_obs.pdf} &
+% \end{tabular}
+% \caption{Predicted [CII] power spectra  from $z$ = 0.63 to $z$ = 1.48 for telescope with 1 meter aperture and a survey area of 1 square degree.}
+%\end{figure}
+
+%We calculate the mean signal to noise ratio (SNR) for each power spectra
+
+%Detectability of the power spectra is assessed by comparing the signal-to-noise ratio (S/N) as a function of wavenumber (Figure 3). 
+
+\begin{figure}[t]
+\centering
+\begin{tabular}{cc}
+%\includegraphics[width=0.4\textwidth]{snr_vs_kbin_apertures_asurveys_all_z88.pdf} &
+%\includegraphics[width=0.4\textwidth]{nmode_vs_kbin_apertures_asurveys_all_z88.pdf} \\
+\end{tabular}
+\caption{\label{} Signal to noise on the dimensionless [CII] power spectrum $\Delta_{\textrm{[CII]}}^2$ and number of modes as a function of $k$. The blue lines represent S/N for the 1 meter aperture, red denotes a 3 meter aperture, and purple shows where the two overlap. Survey areas of 0.1, 1, 10 square degree fields are shown as the solid, dashed, and dotted lines, respectively. The special case of a line scan survey with dimensions 1 degree by 1 beam for a 3 meter aperture is plotted as the dash-dotted line.}
+\end{figure}
+
+
+\begin{figure}[b]
+\centering
+\begin{tabular}{cc}
+%\includegraphics[width=0.5\textwidth]{pSiII_z3_bethermin_spinoglio_SPICA_p5sqdeg_R450_dz_0p4_tobs450hr.pdf} &
+%\includegraphics[width=0.5\textwidth]{pSiII_z3_bethermin_spinoglio_SPICA_1sqdeg_R450_dz_0p4_uhp_obs_tobs1d3hr_lirmax} 
+ \end{tabular}
+ \caption{Predicted [SiII]35 power spectra at $z$ = 3 for SPICA-SAFARI and survey area $A_{survey}$ = 0.5 deg$^2$ and 1.0 deg$^2$ with  $t_{obs}^{survey} = 450$ hr and 1,000 hr, resp.}
+\end{figure}
+
+\subsection{[OI]63, [SiII]35, and other IR line power spectra}
+
+text
+
+
+\begin {table}[h] 
+\begin{center}
+\caption {Experimental Parameters for SPICA-SAFARI Survey of [OI]63 at $z$ = 1.5} \label{tab:title}
+\begin{tabular}{ l c c c c c c  }
+\hline \hline
+$k_{fund}$ (h Mpc$^{-1}$) & \multicolumn{2}{c}{0.03} & \multicolumn{2}{c}{0.05} & \multicolumn{2}{c}{0.07} \\
+\hline
+NEI (10$^6$ Jy sr$^{-1}$ sec$^{1/2}$) & \multicolumn{2}{c}{6.2} & \multicolumn{2}{c}{6.2} & \multicolumn{2}{c}{6.2} \\
+$A_{survey}$ (deg$^2$) & \multicolumn{2}{c}{44} & \multicolumn{2}{c}{16} & \multicolumn{2}{c}{8.1} \\
+ $r_{perp}$ (Mpc h$^{-1}$) & \multicolumn{2}{c}{360} & \multicolumn{2}{c}{220} & \multicolumn{2}{c}{160} \\  
+$B_{\nu}$ (GHz) & \multicolumn{2}{c}{360} & \multicolumn{2}{c}{220} & \multicolumn{2}{c}{160} \\
+$\Delta \nu$ (GHz) & \multicolumn{2}{c}{4.25} & \multicolumn{2}{c}{4.25} & \multicolumn{2}{c}{4.25} \\
+$n_{beams}$ (10$^6$ beams) & \multicolumn{2}{c}{3.3} & \multicolumn{2}{c}{1.1} & \multicolumn{2}{c}{0.61} \\
+\hline
+$t_{obs}^{survey}$ (hr) & 450 & 1,000 & 450 & 1,000 & 450 & 1,000 \\
+\hline
+$t_{obs}^{pix}$ (sec) & 40 & 88 & 110 & 240 & 220 & 480 \\
+$P_N$ (10$^{10}$ Jy$^2$ sr$^{-2}$ Mpc$^3$ h$^{-3}$) & 12 & 5.3 & 4.2 & 1.9 & 2.2 & 0.97 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}
+%\includegraphics[width=0.5\textwidth]{poi63_z1p5_SPICA_bethermin_spinoglio_p5sqdeg_R450_dz0p4_tobs450hr_lirmax.pdf}
+\caption{Predicted [OI]63 power spectra at $z$ = 1.5 for SPICA-SAFARI and survey area $A_{survey}$ = 0.5 deg$^2$ with  $t_{obs}^{survey} = 450$ hr.}
+\end{figure}
+
+\begin{figure}
+%\includegraphics[width=0.5\textwidth]{snr_vs_k_vs_kfund_oi63_SPICA_uhp_z148}
+\caption{}
+\end{figure}
+
+\begin{figure}
+%\includegraphics[width=0.5\textwidth]{nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf}
+\caption{}
+\end{figure}
+
+
+\begin{figure*}
+\centering
+% \subfloat(a){
+% \label{fig:bethermin_sfrd_frac}
+% %\includegraphics[width=0.4\textwidth]{bethermin_sfrd_frac.pdf}}
+% 
+% \subfloat(b){
+% \label{fig:bethermin_fir_frac}
+% %\includegraphics[width=0.4\textwidth]{bethermin_fir_frac.pdf}}
+% 
+% \subfloat(c){
+% \label{fig:bethermin_cii_frac_rconst}
+% %\includegraphics[width=0.4\textwidth]{bethermin_cii_fraction_rconst.pdf}}
+% 
+% \subfloat(d){
+% \label{fig:bethermin_lciilfir_ratio_rconst}
+%\includegraphics[width=0.4\textwidth]{bethermin_lciilfir_ratio_rconst.pdf}}
+\centering
+\caption{\label{fig:multi_panel} Redshift evolution of the star formation rate (a), FIR luminosity (b), [CII] luminosity (c), and $[CII]-L_{FIR}$ relation (d) based on the Bethermin et al (2011) IR luminosity function. In panels (a)-(c), the red, green, and blue colors denote contributions to the luminosity function by ULIRGs, LIRGs, and normal galaxies, respectively, and black lines denote a total. The bottom two panels incorporate two prescriptions for finding $L_{[CII]}$: (1) $L_{[CII]}$ as a function of $L_{IR}$ from Spinoglio et al (2012) (\emph{solid lines}) and (2)  $L_{CII} = 0.003 \times L_{FIR}$ (\emph{dashed lines}). In panel (d), the red, green, and blue line represent the mean $[CII]-L_{FIR}$ for their respective classes. Note there is no externally imposed redshift evolution on the [CII] luminosity in all cases.}
+\end{figure*}
+% In other words, the red curve depicts $I_{[CII], ULIRG}/L_{FIR, ULIRG},  and similarly for LIRGs (green) and normal (blue) galaxies. The black line represents the average ratio of [CII] to FIR without discriminating the galaxy luminosity class.
+%It is thus a worthwhile endeavor to measure the star formation of this population with intensity mapping, particularly since IR instruments aboard Herschel have only probed the most luminous of these systems. 
+
+
+%The correlation between $L_{[CII]}$ and SFR is expected to be nonlinear, due to the non-linearity of the [CII]-FIR ratio as a function of $L_{[FIR}$:
+
+ %Assuming a linear relation between [CII] luminosity and star formation rate allows us to later determine the [CII]-FIR ratio. 
+
+%To begin with, the nonlinearity between $L_{[CII]}$ and $L_{IR}$ at very low $L_{IR}$ is not consequential in determining cosmic SFR because such low luminosity galaxies do not exhibit appreciable star formation. The second complication, namely, the [CII] deficit that sets in for high luminosity systems, is more daunting, but not intractable. As a first step, we examine the contribution to the star formation rate from galaxies in three broad luminosity classes.
+
+
+
+
+%With our prescription, the SFR(z) predicted by Bethermin and that inferred by the  [CII] power spectrum should theoretically be the same; any disagreement between the two results will be primarily due to the nonlinearity of [CII] luminosity to star formation rate not captured in Equation 1. To characterize this nonlinearity, we explore the the contribution of  galaxies of varying luminosity class to the power spectrum. 
+
+%First, we produce a power spectra composed of galaxies with $L_{IR} < 10^{10} L_{\odot}$ out to $z = 3.5$, and compare to the SFR history calculated with Bethermin et al's evolving luminosity function, with the same cutoff luminosity of $10^{10} L_{\odot}$. These two results ought to match very well, because at low IR luminosities, the [CII] luminosity is linear with $L_{IR}$.
+%Next, we produce power spectra comprised of galaxies in the next tier of luminosity, namely LIRG
+
+
+
+
+%There is not a one-to-one mapping of [CII] luminosity to star formation rate for individual galaxies. To understand, then, the relation between [CII] emission from a diverse ensemble of galaxies present in the power spectrum to the star formation rate at a given redshift, it is imperative to sort out the mix of galaxy types and corresponding luminosities that contribute to the total emission. We use the recent compilation of Gracia-Carpio et al. (2011) for the measured relation of $L_{[CII]}$ to $L_{FIR}$ in a range of systems. 
+%Perez-Gonzalez 2005: galaxies with %L_{TIR} < 10^{11} L_{\odot}$ dominate SFRD below z \approx 0.5.$ ULIRGS role increases rapidly greater than z = 1.3.
+
+
+\section{Intensity Mapped Line Ratios and the Cross Power Spectrum}
+
+Visbal and Loeb (2010) showed how the cross spectra can be used to differentiate between a target line and a contaminating line (or "bad line", in their words). The cross power spectrum of two distinct lines can generally be written
+
+\begin{align}
+P_{i,j}(k)& = \bar{S_i} \bar{S_j} \bar{b_i} \bar{b_j} P_{lin}(k) + P_{shot}^{i,j}(k) %\\
+\end{align}
+
+\begin{figure}[h]
+\centering
+%\includegraphics[width=0.4\textwidth]{pciinii122_z1_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap3m_1sqdeg_uhp_obs}
+\caption{Predicted cross power spectrum $P_{[CII]-[NII]}$ at $z = 1$ for $D_{ap}$= 3.0 and $A_{survey}$ = 1.0 deg$^2$. }
+\end{figure}
+
+\begin{itemize}
+\item{} Discuss Spinoglio and Cloudy predictions for [CII]/[NII] as a function of galaxy IR luminosity
+\end{itemize}
+
+% \begin{center}[h]
+% 	\begin{tabular}{ l  c  c }
+% 	\hline
+% 	 & ICarIS & SPICA-SAFARI \\
+% 	\hline \hline
+% 	Target Line & [CII]158$\mu$m & [OI]63$\mu$m \\
+% 	\hline
+% 	Redshift & 1.5 & 1.5 \\
+% 	\hline
+% 	Aperture (m) & 3.0 & 3.0 \\
+% 	\hline
+% 	$A_{survey}$ (deg$^2$) & 1 & 1\\ 
+% 	\hline
+% 	$R$ & 450 & 2000 \\
+% 	\hline
+% 	$\lambda_{center}$ ($\mu$m) & 393 & 160 \\
+% 	\hline
+% 	$\theta_{FWHM}$ ('') & 33 & 13 \\
+% 	\hline
+% 	Line Sensitivity (W m$^{-2}$ sec$^{1/2}$) & 7.1 $\times 10^{-18}$ & 2.0 $\times 10^{-19}$ \\
+% 	\hline
+% 	NEI (Jy sr$^{-1}$ sec$^{1/2}$ ) & 1.0 $\times$ 10^7 & 1.3 $\times$ 10^7 \\
+% 	\hline
+% 	$V_{voxel}$ (Mpc$^3$ h$^{-3}$) & 5.8 & 0.53 \\
+% 	\hline
+% 	Bandwidth (GHz) & 108 & 350* \\
+% 	\hline 
+% 	$\Delta\nu$ (GHz) & 1.7 & 0.94\\
+% 	\hline
+% 	$t_{obs}^{survey}$ (hr) & 200 & 1000 \\
+% 	\hline
+% 	$t_{obs}^{voxel}$ (hr) & 0.4 & 1.1 \\
+% 	\hline
+% 	$N_{beam}$ (deg$^{-2}$) & 11,926 & 71,951 \\
+% 	\hline
+% 	signal (Jy sr$^{-1}$) & 2,593 & 1,373 \\
+% 	\hline
+% 	$P_{noise}$ (Jy$^2$ sr$^{-2}$ Mpc$^{-3}$ h$^{3}$) & 4.0 $\times 10^{11}$ & 9.6 $\times 10^{10}$ \\ %3.5 $\times 10^9$ \\
+% 	\hline
+% 	$N_{modes}^{obs}$ & 3.7 $\times$ 10^5 & 1.3 $\times$ 10^7 \\
+% 	\hline
+% 	SNR(k = 0.16 h Mpc$^{-1}$) & 5.4 & 3.1 \\ %14 \\
+% 	\hline
+% 	SNR(k =  2.6 h Mpc$^{-1}$) & 24 &130 \\
+% 	\hline
+% 	\end{tabular}
+% \end{center}
+	
+
+
+
+
+
+\bibliography{master_references}
+
+\end{document}
+
+
+
+
+
+
+
