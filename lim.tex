@@ -105,21 +105,31 @@
 
 \altaffiltext{\jpl}{Jet Propulsion Laboratory}
 
-
 \begin{abstract}
 
+Three dimensional (3D) measurements of galaxy clustering provide rich information about the process of galaxy formation and evolution, linking the theoretical structure of dark matter halos to the masses, types, luminosities, star formation rates, and numbers of galaxies inhabiting them at any epoch.  The largest such surveys to date have been conducted using optically selected galaxies discovered in photometric surveys, followed up by spectroscopy.  At redshifts $z>1$, however, the cosmic star formation rate becomes dominated by extremely dusty systems, and the appropriateness of using optically selected galaxies to study the clustering properties of these dusty star-forming galaxies (DSFGs) is suspect.  Far-infrared lines are excellent unextincted tracers of the physics of the ISM and of star formation, but it is technically daunting to produce redshift surveys using these lines which will attain the necessary density to make precision measurements of the 3D clustering function.  In this paper, we explore a new technique to measure galaxy clustering without individual detections of galaxies.  We develop robust predictions of line specific intensity for a suite of astrophysically interesting lines and make predictions about the detectability of the clustering signal via the 3D power spectrum of a data cube, where the galaxies need not be either spatially or spectrally resolved.  We show that line intensity mapping is an efficient method for imaging spectrometers like SPICA/SAFARI to obtain galaxy clustering measurements down to $k<0.1~h$Mpc$^{-1}$ and out as far as $z\sim3$.
  
 \end{abstract}
 
-%\keywords{}
+\keywords{far-infrared spectroscopy; galaxy redshift surveys}
+
+18:11 Pacific 7/20/2013
+
+% - Section 2, in which we discuss the model used for predicting the line power spectra, remains relatively unscathed. Need to keep discussion of lines general, and refrain from using [CII] as a specific example here. Also, will add an intro to the cross power spectrum and the theoretical explanation of the problem of interloper lines at the end of this section.
+% 
+% - Section 3, the "observational strategy section". Figure 2 will be moved to later in the section. Figures 4, 5, 8 -- the mode counting and SNR vs k plots -- will moved to the beginning. Figure 4 will be changed so that the left-hand point is (0,0) and the k_par and k_perp axes are equal in length. That way, we can identify "k-parallel" or "k-perpindicular" dominated modes as above and below a line drawn at 45 degrees from the origion. We can also plot the region affected by foreground contamination in the k_par-k_perp plane. Figures 6 will be redone to show that with 450 hours, one can measure the [SiII] power spectrum from individually detected sources, but with 45 hours, it is no longer possible to do so, while there is still high S/N on the intensity mapping measurement. We will include a new table that shows the Figure of Merit for the other lines, answering the question "At what z and with which lines is intensity mapping more efficient?"
+% 
+% - Need to mention that selecting a line is effectively selecting a galaxy type (e.g. high ionization lines for AGN) and so measuring different clustering with the different lines has astrophysical implications. (Are there any references to support why this might be expected to happen, beyond the old "red vs blue" galaxies observation? Thinking off the top of my head, I can imagine it might be possible to detect a different clustering signal for galaxies that are primarily found in merging systems. Not sure how big of an affect this would be in the power spectrum...)
+% 
+% -Figure 10 needs to make a new point. That is, we must show that the choice of Bethermin model here is robust enough to make valid predictions, based on what is already measured from the cosmic star formation history (Hopkins+Beacom). Also need to show that for lines that have a deficit with respect to LIR and and have a steep LF at the bright end, intensity mapping is useful. (But we have to be careful because [SiII] does not have this deficit with LIR and we have shown intensity mapping to be useful for this line.)
 
 \section{Introduction}
 
 Three dimensional measurements of galaxy clustering provide rich information about the process of galaxy formation and evolution, linking the theoretical structure of dark matter halos to the masses, types, luminosities, star formation rates, and numbers of galaxies inhabiting them at any epoch.  The bulk of such surveys to date have been conducted using optically selected galaxies discovered in photometric surveys, followed up by spectroscopy which identifies lines associated with AGN activity or stellar photospheres (or in some cases with HII regions, e.g., Lyman-$\alpha$ emitters).  At redshifts $z>1$, however, the cosmic star formation rate becomes dominated by extremely dusty systems, and the appropriateness of using optically selected galaxies to study the clustering properties of these dusty star-forming galaxies (DSFGs) is suspect.  
 
-Nevertheless, optical follow-up of DSFGs has yielded some success in obtaining their redshift distribution \citep{chapman} and clustering \citep{blain}.  The recent watershed of \herschel-detected galaxies has led to intensive study of their properties.  
+Nevertheless, optical follow-up of DSFGs has yielded some success in obtaining their redshift distribution \citep{chapman05} and clustering \citep{blain}.  The recent watershed of \herschel-detected galaxies has led to intensive study of their properties.  
 
-Intensive optical follow-up, for example of \herschel\ galaxies in \citet{casey13} yielded a relatively small number of galaxies, strongly biased towards low redshift.  Clustering properties of DSFGs have been studied using two-dimensional clustering via a modification of ``$P(D)$'' approach, for example by\citep{bethermin,viero}.  These studies have already shed light on some aspects of the clustering of the most extreme star-forming galaxies $1 < z < 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model.
+Intensive optical follow-up, for example of \herschel\ galaxies in \citet{casey12} yielded a relatively small number of galaxies, strongly biased towards low redshift.  Clustering properties of DSFGs have been studied using two-dimensional clustering via a modification of ``$P(D)$'' approach, for example by\citep{bethermin,viero}.  These studies have already shed light on some aspects of the clustering of the most extreme star-forming galaxies $1 < z < 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model.
 
 From the far-IR to the millimeter, it remains for the future for ALMA or NOEMA to produce redshift surveys with $\sim10^3$ galaxies, or even further down the road for CCAT.  Thus we seek 
 
