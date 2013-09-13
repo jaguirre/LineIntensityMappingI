@@ -406,15 +406,9 @@ In this form, it becomes apparent that---with fixed number of spatial pixels, sp
 %\end{table}
 
 
-\begin{figure*}[h]
-\centering
-\begin{tabular}{cc}
-\includegraphics[width=0.4\textwidth]{pcii_z63_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf} &
-\includegraphics[width=0.4\textwidth]{pcii_z88_halofit_bethermin_spinoglio_witherror_constlogk_ICarISkmodes_ap3m_1sqdeg_uhp_obs.pdf} \\
-\includegraphics[width=0.4\textwidth]{pcii_z116_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf} &
-\includegraphics[width=0.4\textwidth]{pcii_z148_halofit_bethermin_spinoglio_ap3m_1sqdeg_uhp_obs.pdf}
-\end{tabular}
-\caption{\label{} Predicted [CII] power spectra with error estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 3 meter aperture and a survey area of 1 square degree. Blue, green, magenta, and cyan curves denotes power spectra computed with upper limits of $L_{IR} = 10^{13}, 10^{12}, 10^{11}$, and 10$^{10}$ L$_{\odot}$, respectively.}
+\begin{figure}[h]
+\includegraphics[width = 0.5\textwidth]{multiplot_pcii_uhp_kall_zall}
+\caption{\label{} Predicted [CII] power spectra with error estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 3 meter aperture and a survey area of 1 square degree.}
 \end{figure}
 
 \begin{figure}[h]
@@ -611,13 +605,28 @@ Furthermore, shallow and large area surveys of the FIR emission lines provide a 
 %Perez-Gonzalez 2005: galaxies with %L_{TIR} < 10^{11} L_{\odot}$ dominate SFRD below z \approx 0.5.$ ULIRGS role increases rapidly greater than z = 1.3.
 
 
-\section{Intensity Mapped Line Ratios and the Cross Power Spectrum}
+\section{The Cross Power Spectrum}
+
+Up to this point, in writing the power spectrum of a line as we did in Eq. XXX, we have ignored the existence of foreground and background contamination from lines observed at the same wavelength, but emitted at different redshifts. In reality, the power spectrum of a line can contain additional signal originating from such contaminating lines, which may exist at earlier (``foregrounds") or later (``backgrounds") redshifts. Thus the total observed power spectrum (excluding noise, which is simply an additional term in the form of Eq XXX)  should be written explicitly as
+
+\begin{equation}
+P_{tot, obs}(k, z) = \bar{S_i}^2(z) \bar{b_i}^2(z_{i}) P_{nl}(k, z_{i}) + \bar{S_jj}^2(z) \bar{b_j}^2(z) P_{nl}(k, z_{j}) + ... 
+\end{equation}
+
+ this section, we attend to this problem, and show how the cross power spectrum is a useful tool for identifying contamination.
+
+
+Looking back at Figure 1, we can identify the contaminating lines for each target line.
 
 Visbal and Loeb (2010) showed how the cross spectra can be used to differentiate between a target line and a contaminating line (or "bad line", in their words). The cross power spectrum of two distinct lines can generally be written
 
 \begin{align}
 P_{i,j}(k)& = \bar{S_i} \bar{S_j} \bar{b_i} \bar{b_j} P_{lin}(k) + P_{shot}^{i,j}(k) %\\
 \end{align}
+
+where, for our purposes, we take $b_i = b_j$ since there is no evidence for different biases among the FIR line emitting population. 
+
+ Figure XXX depicts the total power expected at a given observed wavelength, broken down into components from the target line and bad lines. Fractionally, the contaminating power at z = 1.5 from 
 
 \begin{figure}[h]
 \centering
