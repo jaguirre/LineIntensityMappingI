@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 AUG 2013 13:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 FEB 2014 14:19
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **lim.tex
 (./lim.tex
@@ -253,12 +254,26 @@ LaTeX Info: Redefining \] on input line 2666.
 \bigstrutjot=\dimen124
 )
 
+./lim.tex:47: LaTeX Error: Command \Check already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \newcommand{\Check}{{\bf ???}}
+                                   
+? 
+
 LaTeX Warning: Unused global option(s):
     [12pt,preprint].
 
 (./lim.aux
 
 LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `tab:title' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -375,18 +390,6 @@ xtsuperscript {1}C.\nobreakspace {}M.\nobreakspace {}Bradford\textsuperscript {
 2}.
 
 
-Package natbib Warning: Citation `chapman05' on page 1 undefined on input line 
-130.
-
-
-Package natbib Warning: Citation `blain' on page 1 undefined on input line 130.
-
-
-
-Package natbib Warning: Citation `casey12' on page 1 undefined on input line 13
-2.
-
-
 Package natbib Warning: Citation `bethermin' on page 1 undefined on input line 
 132.
 
@@ -394,166 +397,361 @@ Package natbib Warning: Citation `bethermin' on page 1 undefined on input line
 Package natbib Warning: Citation `viero' on page 1 undefined on input line 132.
 
 
-
-Package natbib Warning: Citation `bethermin12' on page 1 undefined on input lin
-e 144.
-
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Overfull \hbox (5.25465pt too wide) in paragraph at lines 258--258
-[] 
+Overfull \hbox (24.31284pt too wide) detected at line 174
+\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = [][]
+ d\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ^^H(\OML/cmm/m/it/10 L[]; z\OT1/cmr/m/n/1
+0 )[][][] [][]
  []
 
-! Misplaced alignment tab character &.
-l.267 P_{i,j}(k,z)&
+[2]
+./lim.tex:183: Misplaced alignment tab character &.
+l.183 P_{i,j}(k,z)&
                     = \bar{S}_i(z) \bar{S}_j(z) \bar{b}_i(z) \bar{b}_j(z) P_...
 
 ? 
-! Undefined control sequence.
-l.284  \subfloat
+./lim.tex:200: Undefined control sequence.
+l.200  \subfloat
                 (a){
 ? 
-<b11_spinoglio_intensity_jysr_vs_z.pdf, id=26, 505.89pt x 361.35pt>
+<b11_spinoglio_intensity_jysr_vs_z.pdf, id=27, 505.89pt x 361.35pt>
 File: b11_spinoglio_intensity_jysr_vs_z.pdf Graphic file (type pdf)
 
 <use b11_spinoglio_intensity_jysr_vs_z.pdf>
 Package pdftex.def Info: b11_spinoglio_intensity_jysr_vs_z.pdf used on input li
-ne 286.
+ne 202.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-! Undefined control sequence.
-l.287  \subfloat
+./lim.tex:203: Undefined control sequence.
+l.203  \subfloat
                 (b){
 ? 
-<intensity_vs_lambda_vs_Hz.pdf, id=27, 505.89pt x 361.35pt>
+<intensity_vs_lambda_vs_Hz.pdf, id=28, 505.89pt x 361.35pt>
 File: intensity_vs_lambda_vs_Hz.pdf Graphic file (type pdf)
 
 <use intensity_vs_lambda_vs_Hz.pdf>
-Package pdftex.def Info: intensity_vs_lambda_vs_Hz.pdf used on input line 289.
+Package pdftex.def Info: intensity_vs_lambda_vs_Hz.pdf used on input line 205.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 
  []
 
 [3 <./b11_spinoglio_intensity_jysr_vs_z.pdf> <./intensity_vs_lambda_vs_Hz.pdf>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--416
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--416
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 
  []
 
+./lim.tex:283: Missing $ inserted.
+<inserted text> 
+                $
+l.283 ...$)&\multicolumn{6}{c}{6.27 $\times$ 10^3}
+                                                  \\
+? 
+./lim.tex:283: Extra }, or forgotten $.
+\@preamble ...ignorespaces \@sharp \unskip \hfil }
+                                                  \hskip \tabrightsep \relax 
+l.283 ...$)&\multicolumn{6}{c}{6.27 $\times$ 10^3}
+                                                  \\
+? 
+./lim.tex:283: Missing $ inserted.
+<inserted text> 
+                $
+l.283 ...$)&\multicolumn{6}{c}{6.27 $\times$ 10^3}
+                                                  \\
+? 
+./lim.tex:283: Missing } inserted.
+<inserted text> 
+                }
+l.283 ...$)&\multicolumn{6}{c}{6.27 $\times$ 10^3}
+                                                  \\
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...$)&\multicolumn{2}{c}{2.87 $\times$ 10^4}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Extra }, or forgotten $.
+\@preamble ...ignorespaces \@sharp \unskip \hfil }
+                                                  \hskip \tabrightsep \relax 
+l.289 ...$)&\multicolumn{2}{c}{2.87 $\times$ 10^4}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...$)&\multicolumn{2}{c}{2.87 $\times$ 10^4}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing } inserted.
+<inserted text> 
+                }
+l.289 ...$)&\multicolumn{2}{c}{2.87 $\times$ 10^4}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...4}&\multicolumn{2}{c}{2.87 $\times$ 10^6}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Extra }, or forgotten $.
+\@preamble ...ignorespaces \@sharp \unskip \hfil }
+                                                  \hskip \tabrightsep \relax 
+l.289 ...4}&\multicolumn{2}{c}{2.87 $\times$ 10^6}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...4}&\multicolumn{2}{c}{2.87 $\times$ 10^6}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing } inserted.
+<inserted text> 
+                }
+l.289 ...4}&\multicolumn{2}{c}{2.87 $\times$ 10^6}
+                                                  &\multicolumn{2}{c}{2.87 $...
+
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...6}&\multicolumn{2}{c}{2.87 $\times$ 10^8}
+                                                  \\
+? 
+./lim.tex:289: Extra }, or forgotten $.
+\@preamble ...ignorespaces \@sharp \unskip \hfil }
+                                                  \hskip \tabrightsep \relax 
+l.289 ...6}&\multicolumn{2}{c}{2.87 $\times$ 10^8}
+                                                  \\
+? 
+./lim.tex:289: Missing $ inserted.
+<inserted text> 
+                $
+l.289 ...6}&\multicolumn{2}{c}{2.87 $\times$ 10^8}
+                                                  \\
+? 
+./lim.tex:289: Missing } inserted.
+<inserted text> 
+                }
+l.289 ...6}&\multicolumn{2}{c}{2.87 $\times$ 10^8}
+                                                  \\
+? 
+./lim.tex:294: Missing $ inserted.
+<inserted text> 
+                $
+l.294   $t_{obs}^{voxel}$ (hr) & 2.0 $\times$ 10^
+                                                 2 & 2.3 $\times$ 10^1 & 2.1...
+
+? 
+./lim.tex:294: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \endtemplate 
+l.294 ...{obs}^{voxel}$ (hr) & 2.0 $\times$ 10^2 &
+                                                   2.3 $\times$ 10^1 & 2.1 &...
+
+? 
+./lim.tex:294: Missing $ inserted.
+<inserted text> 
+                $
+l.294 ...{obs}^{voxel}$ (hr) & 2.0 $\times$ 10^2 &
+                                                   2.3 $\times$ 10^1 & 2.1 &...
+
+? 
+./lim.tex:294: Missing } inserted.
+<inserted text> 
+                }
+l.294 ...{obs}^{voxel}$ (hr) & 2.0 $\times$ 10^2 &
+                                                   2.3 $\times$ 10^1 & 2.1 &...
+
+? 
+./lim.tex:294: Missing $ inserted.
+<inserted text> 
+                $
+l.294 ...r) & 2.0 $\times$ 10^2 & 2.3 $\times$ 10^
+                                                  1 & 2.1 & 2.3 $\times 10^{...
+
+? 
+./lim.tex:294: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \endtemplate 
+l.294 ...& 2.0 $\times$ 10^2 & 2.3 $\times$ 10^1 &
+                                                   2.1 & 2.3 $\times 10^{-1}...
+
+? 
+./lim.tex:294: Missing $ inserted.
+<inserted text> 
+                $
+l.294 ...& 2.0 $\times$ 10^2 & 2.3 $\times$ 10^1 &
+                                                   2.1 & 2.3 $\times 10^{-1}...
+
+? 
+./lim.tex:294: Missing } inserted.
+<inserted text> 
+                }
+l.294 ...& 2.0 $\times$ 10^2 & 2.3 $\times$ 10^1 &
+                                                   2.1 & 2.3 $\times 10^{-1}...
+
+? 
+
+Overfull \hbox (158.88947pt too wide) in paragraph at lines 280--298
+ []$ 
+ []
+
+
+./lim.tex:323: LaTeX Error: File `pcii_STARFIRE_z63_z88_z116_z148_halofit_bethe
+rmin_spinoglio_ap3m_1sqdeg_uhp_obs' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ..._bethermin_spinoglio_ap3m_1sqdeg_uhp_obs}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+
+ []
+
+
+./lim.tex:325: LaTeX Error: \begin{figure*} on input line 322 ended by \end{fig
+ure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.325 \end{figure}
+                  
+? 
 <kbin4hist_1sqdeg_z88.pdf, id=48, 614.295pt x 794.97pt>
 File: kbin4hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin4hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin4hist_1sqdeg_z88.pdf used on input line 422.
+Package pdftex.def Info: kbin4hist_1sqdeg_z88.pdf used on input line 330.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
 <kbin5hist_1sqdeg_z88.pdf, id=49, 614.295pt x 794.97pt>
 File: kbin5hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin5hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin5hist_1sqdeg_z88.pdf used on input line 423.
+Package pdftex.def Info: kbin5hist_1sqdeg_z88.pdf used on input line 331.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:332: Missing { inserted.
 <inserted text> 
                 {
-l.424 \includegraphics
+l.332 \includegraphics
                       [width=0.25\textwidth]{kbin6hist_1sqdeg_z88}} &
 ? 
 <kbin6hist_1sqdeg_z88.pdf, id=50, 614.295pt x 794.97pt>
 File: kbin6hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin6hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin6hist_1sqdeg_z88.pdf used on input line 424.
+Package pdftex.def Info: kbin6hist_1sqdeg_z88.pdf used on input line 332.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:332: Missing { inserted.
 <inserted text> 
                 {
-l.424 ...=0.25\textwidth]{kbin6hist_1sqdeg_z88}} &
+l.332 ...=0.25\textwidth]{kbin6hist_1sqdeg_z88}} &
                                                   
 ? 
 <kbin7hist_1sqdeg_z88.pdf, id=51, 614.295pt x 794.97pt>
 File: kbin7hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin7hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin7hist_1sqdeg_z88.pdf used on input line 425.
+Package pdftex.def Info: kbin7hist_1sqdeg_z88.pdf used on input line 333.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:334: Missing { inserted.
 <inserted text> 
                 {
-l.426 \includegraphics
+l.334 \includegraphics
                       [width=0.25\textwidth]{kbin8hist_1sqdeg_z88}} &
 ? 
 <kbin8hist_1sqdeg_z88.pdf, id=52, 614.295pt x 794.97pt>
 File: kbin8hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin8hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin8hist_1sqdeg_z88.pdf used on input line 426.
+Package pdftex.def Info: kbin8hist_1sqdeg_z88.pdf used on input line 334.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:334: Missing { inserted.
 <inserted text> 
                 {
-l.426 ...=0.25\textwidth]{kbin8hist_1sqdeg_z88}} &
+l.334 ...=0.25\textwidth]{kbin8hist_1sqdeg_z88}} &
                                                   
 ? 
 <kbin9hist_1sqdeg_z88.pdf, id=53, 614.295pt x 794.97pt>
 File: kbin9hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin9hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin9hist_1sqdeg_z88.pdf used on input line 427.
+Package pdftex.def Info: kbin9hist_1sqdeg_z88.pdf used on input line 335.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:336: Missing { inserted.
 <inserted text> 
                 {
-l.428 \includegraphics
+l.336 \includegraphics
                       [width=0.25\textwidth]{kbin10hist_1sqdeg_z88}} \\
 ? 
 <kbin10hist_1sqdeg_z88.pdf, id=54, 614.295pt x 794.97pt>
 File: kbin10hist_1sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin10hist_1sqdeg_z88.pdf>
-Package pdftex.def Info: kbin10hist_1sqdeg_z88.pdf used on input line 428.
+Package pdftex.def Info: kbin10hist_1sqdeg_z88.pdf used on input line 336.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:337: Missing { inserted.
 <inserted text> 
                 {
-l.429 
+l.337 
       
 ? 
 
-Overfull \hbox (31.29219pt too wide) in paragraph at lines 421--431
+Overfull \hbox (31.29219pt too wide) in paragraph at lines 329--339
  []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--431
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--431
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 
  []
 
 
-LaTeX Warning: Float too large for page by 23.7198pt on input line 432.
+LaTeX Warning: Float too large for page by 23.7198pt on input line 340.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -562,252 +760,360 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: kbin3hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin3hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin3hist_10sqdeg_z88.pdf used on input line 437.
+Package pdftex.def Info: kbin3hist_10sqdeg_z88.pdf used on input line 345.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
 <kbin4hist_10sqdeg_z88.pdf, id=56, 614.295pt x 794.97pt>
 File: kbin4hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin4hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin4hist_10sqdeg_z88.pdf used on input line 438.
+Package pdftex.def Info: kbin4hist_10sqdeg_z88.pdf used on input line 346.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
 <kbin5hist_10sqdeg_z88.pdf, id=57, 614.295pt x 794.97pt>
 File: kbin5hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin5hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin5hist_10sqdeg_z88.pdf used on input line 439.
+Package pdftex.def Info: kbin5hist_10sqdeg_z88.pdf used on input line 347.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:347: Missing { inserted.
 <inserted text> 
                 {
-l.439 ...0.25\textwidth]{kbin5hist_10sqdeg_z88}} &
+l.347 ...0.25\textwidth]{kbin5hist_10sqdeg_z88}} &
                                                   
 ? 
 <kbin6hist_10sqdeg_z88.pdf, id=58, 614.295pt x 794.97pt>
 File: kbin6hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin6hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin6hist_10sqdeg_z88.pdf used on input line 440.
+Package pdftex.def Info: kbin6hist_10sqdeg_z88.pdf used on input line 348.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:349: Missing { inserted.
 <inserted text> 
                 {
-l.441 \includegraphics
+l.349 \includegraphics
                       [width=0.25\textwidth]{kbin7hist_10sqdeg_z88}} &
 ? 
 <kbin7hist_10sqdeg_z88.pdf, id=59, 614.295pt x 794.97pt>
 File: kbin7hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin7hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin7hist_10sqdeg_z88.pdf used on input line 441.
+Package pdftex.def Info: kbin7hist_10sqdeg_z88.pdf used on input line 349.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:349: Missing { inserted.
 <inserted text> 
                 {
-l.441 ...0.25\textwidth]{kbin7hist_10sqdeg_z88}} &
+l.349 ...0.25\textwidth]{kbin7hist_10sqdeg_z88}} &
                                                   
 ? 
 <kbin8hist_10sqdeg_z88.pdf, id=60, 614.295pt x 794.97pt>
 File: kbin8hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin8hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin8hist_10sqdeg_z88.pdf used on input line 442.
+Package pdftex.def Info: kbin8hist_10sqdeg_z88.pdf used on input line 350.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:351: Missing { inserted.
 <inserted text> 
                 {
-l.443 \includegraphics
+l.351 \includegraphics
                       [width=0.25\textwidth]{kbin9hist_10sqdeg_z88}} &
 ? 
 <kbin9hist_10sqdeg_z88.pdf, id=61, 614.295pt x 794.97pt>
 File: kbin9hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin9hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin9hist_10sqdeg_z88.pdf used on input line 443.
+Package pdftex.def Info: kbin9hist_10sqdeg_z88.pdf used on input line 351.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:351: Missing { inserted.
 <inserted text> 
                 {
-l.443 ...0.25\textwidth]{kbin9hist_10sqdeg_z88}} &
+l.351 ...0.25\textwidth]{kbin9hist_10sqdeg_z88}} &
                                                   
 ? 
 <kbin10hist_10sqdeg_z88.pdf, id=62, 614.295pt x 794.97pt>
 File: kbin10hist_10sqdeg_z88.pdf Graphic file (type pdf)
 
 <use kbin10hist_10sqdeg_z88.pdf>
-Package pdftex.def Info: kbin10hist_10sqdeg_z88.pdf used on input line 444.
+Package pdftex.def Info: kbin10hist_10sqdeg_z88.pdf used on input line 352.
 (pdftex.def)             Requested size: 128.27936pt x 166.00246pt.
 
-! Missing { inserted.
+./lim.tex:353: Missing { inserted.
 <inserted text> 
                 {
-l.445 
+l.353 
       
 ? 
 
-Overfull \hbox (31.29219pt too wide) in paragraph at lines 436--447
+Overfull \hbox (31.29219pt too wide) in paragraph at lines 344--355
  []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 
  []
 
 
-LaTeX Warning: Float too large for page by 31.0887pt on input line 448.
+LaTeX Warning: Float too large for page by 31.0887pt on input line 356.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--472
+<snr_tot_clust_shot_vs_kbin_apertures_asurveys_z88.pdf, id=63, 505.89pt x 361.3
+5pt>
+File: snr_tot_clust_shot_vs_kbin_apertures_asurveys_z88.pdf Graphic file (type 
+pdf)
+ <use snr_tot_clust_shot_vs_kbin_apertures_asurveys_z88.pdf>
+Package pdftex.def Info: snr_tot_clust_shot_vs_kbin_apertures_asurveys_z88.pdf 
+used on input line 377.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+<nmode_vs_kbin_apertures_asurveys_all_z88.pdf, id=64, 505.89pt x 361.35pt>
+File: nmode_vs_kbin_apertures_asurveys_all_z88.pdf Graphic file (type pdf)
+
+<use nmode_vs_kbin_apertures_asurveys_all_z88.pdf>
+Package pdftex.def Info: nmode_vs_kbin_apertures_asurveys_all_z88.pdf used on i
+nput line 378.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--472
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 
  []
 
+[4]
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+LaTeX Warning: A float is stuck (cannot be placed) on input line 398.
+
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 398.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
 
  []
 
 
-Overfull \hbox (35.49792pt too wide) in paragraph at lines 485--502
+Overfull \hbox (35.49792pt too wide) in paragraph at lines 406--423
  []$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--516
-$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--516
-
- []
-
-! Missing # inserted in alignment preamble.
+./lim.tex:442: Missing # inserted in alignment preamble.
 <to be read again> 
                    \cr 
-l.521 \begin{tabular}{}
+l.442 \begin{tabular}{}
                        
 ? 
 
-<snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pdf, id=63, 505.89pt x 3
+<snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pdf, id=74, 505.89pt x 3
 61.35pt>
 File: snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pdf Graphic file (t
 ype pdf)
  <use snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pdf>
 Package pdftex.def Info: snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.
-pdf used on input line 522.
+pdf used on input line 443.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-<snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z148.pdf, id=64, 505.89pt x
+<snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z148.pdf, id=75, 505.89pt x
  361.35pt>
 File: snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z148.pdf Graphic file 
 (type pdf)
  <use snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z148.pdf>
 Package pdftex.def Info: snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z14
-8.pdf used on input line 523.
+8.pdf used on input line 444.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-<snr_tot_clust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z148.pdf, id=65, 505.89pt x
+<snr_tot_clust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z148.pdf, id=76, 505.89pt x
  361.35pt>
 File: snr_tot_clust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z148.pdf Graphic file 
 (type pdf)
  <use snr_tot_clust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z148.pdf>
 Package pdftex.def Info: snr_tot_clust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z14
-8.pdf used on input line 524.
+8.pdf used on input line 445.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (14.12556pt too wide) in paragraph at lines 521--526
+Overfull \hbox (14.12556pt too wide) in paragraph at lines 442--447
  []$[]$ 
  []
 
-! Missing $ inserted.
+./lim.tex:447: Missing $ inserted.
 <inserted text> 
                 $
-l.526 ...the SAFARI detection limit (5$\sigma$). }
+l.447 ...the SAFARI detection limit (5$\sigma$). }
                                                   
 ? 
-! Missing $ inserted.
+./lim.tex:447: Missing $ inserted.
 <inserted text> 
                 $
-l.526 ...the SAFARI detection limit (5$\sigma$). }
+l.447 ...the SAFARI detection limit (5$\sigma$). }
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--563
+<snr_tot_clust_shot_vs_k_vs_kfund_SPICA_uhp_z148.pdf, id=77, 505.89pt x 361.35p
+t>
+File: snr_tot_clust_shot_vs_k_vs_kfund_SPICA_uhp_z148.pdf Graphic file (type pd
+f)
+ <use snr_tot_clust_shot_vs_k_vs_kfund_SPICA_uhp_z148.pdf>
+Package pdftex.def Info: snr_tot_clust_shot_vs_k_vs_kfund_SPICA_uhp_z148.pdf us
+ed on input line 452.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+<nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf, id=78, 505.89pt x 361.35pt>
+File: nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf Graphic file (type pdf)
+
+<use nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf>
+Package pdftex.def Info: nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf used on input l
+ine 453.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+Overfull \hbox (185.22115pt too wide) in paragraph at lines 451--455
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--563
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 
  []
 
+<fraction_cii_emissivity_vs_LIRmin_vs_z.pdf, id=79, 505.89pt x 361.35pt>
+File: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--601
+<use fraction_cii_emissivity_vs_LIRmin_vs_z.pdf>
+Package pdftex.def Info: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf used on inp
+ut line 467.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+<fraction_oi63_emissivity_vs_LIRmin_vs_z.pdf, id=80, 505.89pt x 361.35pt>
+File: fraction_oi63_emissivity_vs_LIRmin_vs_z.pdf Graphic file (type pdf)
+
+<use fraction_oi63_emissivity_vs_LIRmin_vs_z.pdf>
+Package pdftex.def Info: fraction_oi63_emissivity_vs_LIRmin_vs_z.pdf used on in
+put line 468.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+<fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf, id=81, 505.89pt x 361.35pt>
+File: fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf Graphic file (type pdf)
+
+<use fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf>
+Package pdftex.def Info: fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf used on 
+input line 469.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
 $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--601
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
+
+ []
+
+
+Overfull \hbox (39.43686pt too wide) detected at line 527
+\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; z\OT1/cmr/m/n/10 ) = [
+][](\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )[][](\OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10
+ )\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; z[]\OT1/cmr/m/n/10 )
+ + [][](\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )[][](\OML/cmm/m/it/10 z\OT1/cmr/m/n/
+10 )\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; z[]\OT1/cmr/m/n/10
+ ) + \OML/cmm/m/it/10 :::
+ []
+
+[6]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 527.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 527.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 605.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 551.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 605.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 551.
 
-Underfull \hbox (badness 2384) in paragraph at lines 605--606
+Underfull \hbox (badness 2384) in paragraph at lines 551--552
  []\OT1/cmr/m/n/10 Discuss Spinoglio and Cloudy pre-dic-tions for
  []
 
@@ -815,27 +1121,32 @@ No file lim.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[4] [5 <./kbin4hist_1sqdeg_z88.pdf> <./kbin5hist_1sqdeg_z88.pdf> <./kbin6hist_1
+[7] [8 <./kbin4hist_1sqdeg_z88.pdf> <./kbin5hist_1sqdeg_z88.pdf> <./kbin6hist_1
 sqdeg_z88.pdf> <./kbin7hist_1sqdeg_z88.pdf> <./kbin8hist_1sqdeg_z88.pdf> <./kbi
-n9hist_1sqdeg_z88.pdf> <./kbin10hist_1sqdeg_z88.pdf>] [6 <./kbin3hist_10sqdeg_z
+n9hist_1sqdeg_z88.pdf> <./kbin10hist_1sqdeg_z88.pdf>] [9 <./kbin3hist_10sqdeg_z
 88.pdf> <./kbin4hist_10sqdeg_z88.pdf> <./kbin5hist_10sqdeg_z88.pdf> <./kbin6his
 t_10sqdeg_z88.pdf> <./kbin7hist_10sqdeg_z88.pdf> <./kbin8hist_10sqdeg_z88.pdf> 
-<./kbin9hist_10sqdeg_z88.pdf> <./kbin10hist_10sqdeg_z88.pdf>] [7] [8 <./snr_tot
-_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pdf> <./snr_tot_clust_shot_vs_k_
-vs_OIII88_SPICA_uhp_lirmin_z148.pdf> <./snr_tot_clust_shot_vs_k_vs_SiII35_SPICA
-_uhp_lirmin_z148.pdf>] [9] (./lim.aux)
+<./kbin9hist_10sqdeg_z88.pdf> <./kbin10hist_10sqdeg_z88.pdf>] [10 <./snr_tot_cl
+ust_shot_vs_kbin_apertures_asurveys_z88.pdf> <./nmode_vs_kbin_apertures_asurvey
+s_all_z88.pdf>] [11 <./snr_tot_clust_shot_vs_k_vs_OI63_SPICA_uhp_lirmin_z148.pd
+f> <./snr_tot_clust_shot_vs_k_vs_OIII88_SPICA_uhp_lirmin_z148.pdf> <./snr_tot_c
+lust_shot_vs_k_vs_SiII35_SPICA_uhp_lirmin_z148.pdf>] [12 <./snr_tot_clust_shot_
+vs_k_vs_kfund_SPICA_uhp_z148.pdf> <./nmode_vs_k_vs_kfund_SPICA_uhp_z148.pdf> <.
+/fraction_cii_emissivity_vs_LIRmin_vs_z.pdf> <./fraction_oi63_emissivity_vs_LIR
+min_vs_z.pdf> <./fraction_SiII35_emissivity_vs_LIRmin_vs_z.pdf>] [13]
+(./lim.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4725 strings out of 493315
- 62689 string characters out of 6137904
- 195702 words of memory out of 5000000
- 8074 multiletter control sequences out of 15000+600000
+ 4770 strings out of 493315
+ 64494 string characters out of 6137904
+ 158394 words of memory out of 5000000
+ 8099 multiletter control sequences out of 15000+600000
  12874 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,17n,28p,1917b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,28p,2147b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -857,10 +1168,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (9 pages, 518076 bytes).
+Output written on lim.pdf (13 pages, 628867 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 316 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
