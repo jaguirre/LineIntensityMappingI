@@ -129,7 +129,7 @@ Intensity mapping is a \emph{statistical} analysis of the spatial fluctuations i
 
 Here we examine the application of the intensity mapping technique to moderate redshifts, targeting the fine structure line emission from ionized carbon in the interstellar medium of star-forming galaxies during $0.5 < z < 1.5$. The [CII]158$\mu$m line is a well-suited probe of the galaxy population during this time frame, as the mean dust attenuation in galaxies peaks at $z \sim 1.5$, when roughly 80\% of the cosmic star formation rate density is obscured and captured only in the infrared emission of re-processed starlight by dust grains (Burgarella et al 2013). Moreover, this line is typically the brightest FIR emitted from the ISM of galaxies, with luminosities up 0.1\% of the IR luminosity. 
 
-Due to the spatio-spectral nature of intensity mapping, this technique as applied to [CII] line intensity fluctuations can be a highly complementary probe to recent studies of the 2-dimensional clustering properties of dusty, star-forming galaxies (DSFGs). These studies, using a modification of the ``$P(D)$" approach, for example by \citep{bethermin,viero}, have already shed light on some aspects of the clustering of the most extreme star-forming system from $z = 1- 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model. From the far-IR to the millimeter, it remains for the future for ALMA or NOEMA to produce redshift surveys with $\sim10^3$ galaxies, or even further down the road for CCAT. Thus we present a novel method of characterizing the 3D clustering of DSFGs with [CII] intensity mapping, which, importantly, does not rely on detecting individual galaxies in order to measure the power spectrum with high significance. 
+Due to the spatio-spectral nature of intensity mapping, this technique as applied to [CII] line intensity fluctuations can be a highly complementary probe to recent studies of the 2-dimensional clustering properties of dusty, star-forming galaxies (DSFGs) (see Casey et al 2014 for a review). These studies, using a modification of the ``$P(D)$" approach, for example by \citep{bethermin,viero}, have already shed light on some aspects of the clustering of the most extreme star-forming system from $z = 1- 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model. From the far-IR to the millimeter, it remains for the future for ALMA or NOEMA to produce redshift surveys with $\sim10^3$ galaxies, or even further down the road for CCAT. Thus we present a novel method of characterizing the 3D clustering of DSFGs with [CII] intensity mapping, which, importantly, does not rely on detecting individual galaxies in order to measure the power spectrum with high significance. 
 
 The organization of this paper is as follows. We have calculated the mean intensity for a suite of fine structure IR emission lines, including the [CII] line, based on the IR luminosity function and empirical line-to-IR luminosity correlations, and present these results in the context of a power spectrum model in Section 2. In Section, 3, we envision a suitable platform---namely a balloon-borne experiment operating at frequencies between 240$\mu$m to 420$\mu$m---for conducting the [CII] intensity mapping experiment and discuss the feasibility of measuring the [CII] power spectra in terms of the signal-to-noise ratio (SNR). To better assess the value of intensity mapping studies in the case of [CII] at moderate redshifts, and of intensity mapping experiments in general, we compare in Section 4 the performance of measuring the power spectrum with the intensity mapping approach against traditional galaxy surveys that rely on individual detections of sources. 
 
@@ -301,10 +301,19 @@ In this form, it becomes apparent that---with fixed number of spatial pixels, sp
 \begin{figure}[t]
 \centering
 \begin{tabular}{cc}
+\includegraphics[width=0.4\textwidth]{pcii_STARFIRE_z88_ap3m_p1sqdeg_1sqdeg_10sqdeg_uhp_obs} \\
+\includegraphics[width=0.4\textwidth]{SNR_vs_k_STARFIRE_z88_ap3m_p1sqdeg_1sqdeg_10sqdeg_uhp_obs} \\
+\end{tabular}
+\caption{\label{} Top Panel: Predicted [CII] power spectrum at $z = 0.88$ for telescope with 3-m aperture and survey areas (from left to right) of 0.1, 1.0, and 10.0 deg$^2$. Bottom Panel: SNR on total, clustering, and shot noise power as a function of $k$.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\begin{tabular}{cc}
 \includegraphics[width=0.4\textwidth]{snr_vs_k_ap3m_ap1m_asurveys_uhp_obs_z88_6dec2013} \\
 \includegraphics[width=0.4\textwidth]{nmode_vs_k_ap3m_ap1m_asurveys_uhp_obs_z88_6dec2013} \\
 \end{tabular}
-\caption{\label{} Signal to noise on the dimensionless [CII] power spectrum $\Delta_{\textrm{[CII], [CII]}}^2$ and number of modes as a function of $k$. The blue lines represent S/N for the 1 meter aperture, red denotes a 3 meter aperture, and purple shows where the two overlap. Survey areas of 0.1, 1, 10 square degree fields are shown as the solid, dashed, and dotted lines, respectively. The special case of a line scan survey with dimensions 1 degree by 1 beam for a 3 meter aperture is plotted as the dash-dotted line.}
+\caption{\label{} Signal to noise on the dimensionless [CII] power spectrum $\Delta_{\textrm{[CII], [CII]}}^2$ and number of modes as a function of $k$. The blue lines represent S/N for the 1 meter aperture, red denotes a 3 meter aperture, and purple shows where the two overlap. Survey areas of 0.1, 1, 10 square degree fields are shown as the solid, dashed, and dotted lines, respectively.}
 \end{figure}
 
 \section{Observational Strategy}
