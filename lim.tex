@@ -347,7 +347,11 @@ f_{err} = \left(\frac{\sigma_N}{\sqrt{t_{pix}}}\right)/\bar{S}_i(z)
 \end{equation}
  
 Recall that the units of $\frac{\sigma_{N}}{\sqrt{t_{pix}}}$ and $S_{i}$ are Jy sr$^{-1}$, which does not depend on aperture. %One converts between $\sigma_N$ and $S_{\gamma}$ by dividing (or multiplying) by the frequency resolution d$\nu$ and beam solid angle d$\Omega$.
- 
+ \begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{lirmin_vs_tsurvey_lstar1d12_starfire_Vpix_0p1Vpix_10Vpix}
+\caption{\label{} $L_{IR,min}$ as a function of the survey observing time, for various $V_{pix}$. The value of our adopted $L_{*}$ is plotted for comparison.}
+\end{figure}
 Written in this way, the detection threshold $L_{i,min}$ already provides some insight as to the optimal regimes for intensity mapping and galaxy surveys. Firstly, for $L_{i,min} \ll L_*$, we expect the galaxy surveys to be an effective means of studying the galaxy population, since the number of detections will be high and the shot noise term will be low. On the other hand, if $L_{i, min} \gg L_*$, then the galaxy survey will not be able to detect a significant fraction of galaxies that comprise the faint-end of the luminosity function, and intensity mapping becomes the ideal survey method, since it is sensitive to the total emission at a given redshift.
 
 Now, suppose the voxels are increased in size by some factor $\alpha > 1$ due to a decrease in aperture diameter by $\sqrt{\alpha}$, but the survey area and survey observing time are left unchanged, leading to the following transformations on $t_{pix}$, the large scale clustering modes $N_{modes}^{clust}$, $P_{N}$, $f_{err}$, and, ultimately, $L_{i,min}
