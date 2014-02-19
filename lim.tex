@@ -161,7 +161,9 @@ P_{i,i}^{shot}(z) = \int{\mathrm{d}n_{i} \left( \frac{L_{i}}{4\pi D_L^2} \right)
 
 \subsection{Calculating IR line volume emissivity}
 
-The number density of line emitters and the line luminosity that appear in equations (2) and (3) can be derived by a variety of methods. In earlier papers on intensity mapping of molecular and fine-structure emission lines at high redshift (z $\gtrsim$ 6), one approach involved using the dark matter halo mass function in lieu of the line emitter density (and invoking a one-to-one correlation between halos and galaxies, which is not unreasonable at high redshifts). The line luminosity, in turn, could be scaled according to the star formation rate, which was related to halo mass via a proportionality constant comprised of factors that described the fraction of baryons available for star formation, as well as the dynamical timescale for star formation and a duty cycle for emission. While this theoretical model is feasible at high redshift to provide an estimate on the mean intensity $\bar{S}_i$, we take advantage of the relative wealth of observations of [CII] luminosities in individual galaxies, IR galaxy number counts, and cosmic star formation rate density at the lower redshifts relevant to this study. To this end, we first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from Bethermin et al (2011, hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$.  To convert the infrared luminosity to a line luminosity, we apply the relation for $L_{i}$ as a function of $L_{IR}$ provided by Spinoglio et al (2012). The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in Brauher et al (2008), and is reproduced below for [CII]: 
+The number density of line emitters and the line luminosity that appear in equations (2) and (3) can be derived by a variety of methods. In earlier papers on intensity mapping of molecular and fine-structure emission lines at high redshift (z $\gtrsim$ 6), one approach involved using the dark matter halo mass function in lieu of the line emitter density (and invoking a one-to-one correlation between halos and galaxies, which is not unreasonable at high redshifts). The line luminosity, in turn, could be scaled according to the star formation rate, which was related to halo mass via a proportionality constant comprised of factors that described the fraction of baryons available for star formation, as well as the dynamical timescale for star formation and a duty cycle for emission. While this theoretical model is feasible at high redshift to provide an estimate on the mean intensity $\bar{S}_i$, we take advantage of the relative wealth of observations of [CII] luminosities in individual galaxies, IR galaxy number counts, and cosmic star formation rate density at the lower redshifts relevant to this study. To this end, we first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from Bethermin et al (2011, hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$.  One major drawback of our empirical approach is that it does not allow us to model the bias in a self-contained manner, e.g., such as in the halo model formalism that other predictions, which connect $L_{IR}$ to halo mass, employ. 
+
+To convert the infrared luminosity to a line luminosity, we apply the relation for $L_{i}$ as a function of $L_{IR}$ provided by Spinoglio et al (2012). The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in Brauher et al (2008), and is reproduced below for [CII]: 
 \begin{equation}
 L_{\mathrm{[CII]158}}(L_{\mathrm{IR}}) = (0.89 \pm 0.03) \mathrm{log_{10}}L_{\mathrm{IR}} - (2.44 \pm 0.07)
 \end{equation}
@@ -233,7 +235,7 @@ The resulting mean intensities for a variety of FIR lines are plotted in Figure 
 
 \section{The [CII] Power Spectrum up to $z=1.5$}
 
-We present in this section predictions for the power spectrum with error bar estimates for a feasible experimental platform, namely, a balloon-borne experiment with uninterrupted spectral coverage in the wavelength range 240 to 420 $\mu$m. Fiducial experimental parameters for the telescope mirror, survey area, and total observing time are taken as 3.0 m, 1 deg$^2$, and 200 hours, respectively, though we explore the effect of varying the parameters on SNR (cf. Table 1). 
+We present in this section predictions for the power spectrum with error bar estimates for a feasible experimental platform, namely, a balloon-borne experiment with uninterrupted spectral coverage in the wavelength range 240 to 420 $\mu$m. Fiducial experimental parameters for the telescope mirror, survey area, and total observing time are taken as 2.5 m, 1 deg$^2$, and 200 hours, respectively, though we explore the effect of varying the parameters on SNR (cf. Table 1). 
 
 Predictions for the fiducial case---as computed from the method of combining the cosmological matter power spectrum and the IR LF model outlined in Section 2.1---for the  [CII] power spectrum at four redshifts $z = 0.63, 0.88, 1.16$, and $1.48$ are shown in Figure 3. (Note that we use  $\Delta_{[CII]}^2 = k^3 P_{[CII], [CII]}(k)/(2\pi^2)$ when plotting the power spectrum, where the integral of $\Delta_{[CII]}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$, in line with theoretical predictions from (Cooray and Sheth ???). [\emph{ASIDE}: seems high compared to Fig 6 in Pullen et al 2013.] The crossing of the one-halo and two-halo terms in the power spectrum can be detected with signal to noise at all redshifts.  In calculating the power spectrum sensitivity, the two lowest line-of-sight modes are not included, since these will likely be compromised by the necessity of continuum foreground subtraction. The exact effect of continuum subtraction will need to be modeled via simulation. 
 
@@ -302,13 +304,15 @@ In this form, it becomes apparent that---with fixed number of spatial pixels, sp
 \begin{figure}[!h]
 \centering
 \includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_obs}
-\caption{\label{} Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 2.5 meter aperture and a survey area of 1 square degree.}
+\caption{Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 2.5 meter aperture and a survey area of 1 square degree.}
+\label{fig:pcii_zall}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.4\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg}
-\caption{\label{} Signal to noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}$ and number of modes as a function of $k$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial pixel volume, $V_{pix}$, are shown as the dotted, solid, and dashed lines, respectively.}
+\caption{Signal to noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}$ and number of modes as a function of $k$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial pixel volume, $V_{pix}$, are shown as the dotted, solid, and dashed lines, respectively.}
+\label{fig:snr_nmode_k}
 \end{figure}
 
 \section{Observational Strategy}
@@ -322,12 +326,16 @@ The expressions for SNR on a $k$ bin of interest for galaxy and intensity mappin
 \textrm{SNR}_{IM} =  \frac{\sqrt{N_{modes}}}{1 + P_N/\left(\bar{S}_{i}^2P_{gal}\right)}
 \end{eqnarray}
 
-To facilitate our comparisons in what follows, we employ toy models for the IR LF (Figure XX) written in the Schechter formalism---parametrized by the usual $\alpha$, $L_*$, and $\phi_*$---and normalize the total luminosity density to the empirical model from Section 2 (cf. Appendix for details). We stress that these Schechter models are not intended to represent a real interpretation of the distribution of galaxies, but are merely helpful for illustrating the effect of the LF \emph{shape} on the relative usefulness of intensity mapping and traditional galaxy surveys.
+To facilitate our comparisons in what follows, we employ toy models for the IR LF (Figure ~\ref{fig:schechterfuncs}) written in the Schechter formalism---parametrized by the usual $\alpha$, $L_*$, and $\phi_*$---and normalize the total luminosity density to the empirical model from Section 2 (cf. Appendix for details). We stress that these Schechter models are not intended to represent a real interpretation of the distribution of galaxies, but are merely helpful for illustrating the effect of the LF \emph{shape} on the relative usefulness of intensity mapping and traditional galaxy surveys.
+
 \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth]{phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13}
-\caption{\label{} Toy model IR luminosity functions with faint-end slope (from top to bottom) $\alpha=-1.0, -1.5, -2.0, -2.5, -3.0$. The B11 and Muprhy & Bradford models are plotted as blue and red curves, respectively, for comparison.}
+\caption{Toy model IR luminosity functions with faint-end slope (from top to bottom) $\alpha=-1.0, -1.5, -2.0, -2.5, -3.0$. The B11 and Muprhy & Bradford models are plotted as blue and red curves, respectively, for comparison.}
+\label{fig:schechterfuncs}
+
 \end{figure}
+
 The line sensitivity, $S_{\gamma}$ (units of W m$^2$ s$^{1/2}$), is the figure of merit for detecting an unresolved line in a point source, and we define individual detections at the $5\sigma$ level as having a flux above the instrumental noise in a pixel, i.e., above $5 \times S_{\gamma} t_{pix}^{-1/2}$. A convenient expression, which explicitly ties the minimum detectable luminosity to a broader framework of experimental variables, for the detection threshold can be written as
 \begin{equation}
 L_{i, min} = 5 \times f_{err}\rho_i V_{pix}, 
@@ -341,13 +349,16 @@ f_{err} = \left(\frac{\sigma_N}{\sqrt{t_{pix}}}\right)/\bar{S}_i(z)
 \frac{L_{i,min}}{4\pi D_L^2} \Leftrightarrow 5 \times S_{\gamma} t_{pix}^{-1/2}
 \end{equation}
  
-Recall that the units of $\frac{\sigma_{N}}{\sqrt{t_{pix}}}$ and $S_{i}$ are Jy sr$^{-1}$, which does not depend on aperture. %One converts between $\sigma_N$ and $S_{\gamma}$ by dividing (or multiplying) by the frequency resolution d$\nu$ and beam solid angle d$\Omega$.
+Recall that the units of $\frac{\sigma_{N}}{\sqrt{t_{pix}}}$ and $S_{i}$ are Jy sr$^{-1}$, which does not depend on aperture. For this analysis, we assume the galaxy surveys have reliable spectroscopic redshifts and thus neglect the problem of confusion noise when estimating $L_{i,min}$. %One converts between $\sigma_N$ and $S_{\gamma}$ by dividing (or multiplying) by the frequency resolution d$\nu$ and beam solid angle d$\Omega$.
+ 
  \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth]{lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix}
-\caption{\label{} $L_{IR,min}$ as a function of the survey observing time, for the various $V_{pix}$, at $z = 1.5$. The value of our adopted $L_{*}$ is plotted for comparison.}
+\caption{$L_{IR,min}$ as a function of the survey observing time, for the various $V_{pix}$, at $z = 1.5$. The value of our adopted $L_{*}$ is plotted for comparison.}
+ \label{fig:lirmin_z1p5}
 \end{figure}
-Written in this way, the detection threshold $L_{i,min}$ already provides some insight as to the optimal regimes for intensity mapping and galaxy surveys. Firstly, for $L_{i,min} \ll L_*$, we expect the galaxy surveys to be an effective means of studying the galaxy population, since the number of detections will be high and the shot noise term will be low. On the other hand, if $L_{i, min} \gg L_*$, then the galaxy survey will not be able to detect a significant fraction of galaxies that comprise the faint-end of the luminosity function, and intensity mapping becomes the ideal survey method, since it is sensitive to the total emission at a given redshift.
+
+Written in this way, the expression for the detection threshold $L_{i,min}$ already provides some insight as to the optimal regimes for intensity mapping and galaxy surveys. Firstly, for $L_{i,min} \ll L_*$, we expect the galaxy surveys to be an effective means of studying the galaxy population, since the number of detections will be high and the shot noise term will be low. Conversely, if $L_{i, min} \gg L_*$, then the galaxy survey will not be able to detect a significant fraction of galaxies that comprise the faint-end of the luminosity function, and intensity mapping becomes the ideal survey method, since it is sensitive to the total emission at a given redshift.
 
 Now, suppose the voxels are changed in size by some factor $\epsilon$ due to a change in aperture diameter by $\sqrt{\epsilon}$, but the survey area and survey observing time are left the same, leading to the following transformations on $t_{pix}$, the large scale clustering modes $N_{modes}^{clust}$, $P_{N}$, $f_{err}$, and, ultimately, $L_{i,min}
 
@@ -359,52 +370,52 @@ f_{err} \rightarrow f_{err}^{\prime} &= \frac{f_{err}}{\sqrt{\epsilon}} \\
 L_{i,min} \rightarrow L_{i,min}^{\prime} &= \sqrt{\epsilon} L_{i,min}
 \end{eqnarray}
 
-As a momentary detour on internal consistency, we note that an increase in aperture diameter by $\sqrt{\epsilon}$ also results in an increase in the righthand side of Equation 15 by the same factor $\sqrt{\epsilon}$ that appears in Equation 20 after applying the analogous transformations for the line sensitivity:
+We take a moment to point out that an increase in aperture diameter by $\sqrt{\epsilon}$ also results in an increase in the righthand side of Equation 15 by the same factor $\sqrt{\epsilon}$ that appears in Equation 20 after applying the analogous transformations for the line sensitivity:
 
 \begin{eqnarray}
 S_{\gamma} \rightarrow S_{\gamma}^{\prime} = \epsilon S_{\gamma}\\
 t_{pix} \rightarrow t_{pix}^{\prime} = \epsilon t_{pix} \\
 \end{eqnarray}
 
-Thus, the increase of $L_{i,min}$ with $V_{pix}$ suggests that traditional galaxy surveys with large voxels, such that $L_*\phi_* \Gamma(2+\alpha, L/L_*) V_{pix} \gg 1$, will find themselves in the disabling condition of having many sources that are below the detection threshold in a single voxel. On the other hand, because the intensity mapping method does not aim to detect individual galaxies, it will still be able to measure clustering in the large voxel limit with high SNR. Figure 6 is meant to demonstrate the small (top panel) and large (bottom panel) pixel limits in the case of [CII] at $z = 1.5$. In this figure, survey area has been fixed at $A_{survey} = 5.3$ deg$^2$, and pixels have been conformally contracted (expanded) to 0.1$\times V_{pix}^{R=450}$ ($10\times V_{pix}^{R=450}$). According to Figure XX, the galaxy surveys do very well with the small pixels, as expected, since large telescopes with fine spectral resolution indeed follow the typical design of these experiments, but require large amounts of observing time (in excess of $10^4$ hr) to reach $\textrm{SNR}_{tot}^{clust} \sim 10$ in the large pixel limit. Notice that the SNR for the intensity mapping curve (in magenta) retains the same values as in Figure XX for a given total observing time---reaching $\textrm{SNR}_{tot}^{clust}$ \sim 10$ in roughly 1,000 hours---which is precisely the behavior we have seen when considering the relative performance of the telescopes with differing apertures in Section 3. (Briefly, the number of clustering modes and $P_N$ are unchanged by an increase in beam size for a fixed survey area, so SNR is preserved.)
+Thus, the increase of $L_{i,min}$ with $V_{pix}$ suggests that traditional galaxy surveys with large voxels, such that $L_*\phi_* \Gamma(2+\alpha, L/L_*) V_{pix} \gg 1$, will find themselves in the disabling condition of having many sources that are below the detection threshold in a single voxel. On the other hand, because the intensity mapping method does not aim to detect individual galaxies, it will still be able to measure clustering in the large voxel limit with high SNR.  We juxtapose in Figure \ref{fig:snr_vs_time_z1p5} the SNR for the fiducial intensity mapping experiment and galaxy surveys in both the large and small pixel limit in the context of our example for the [CII] power spectrum at $z = 1.5$. As seen in the previous section, a change in aperture does not affect the SNR$_{IM}$ for $k < 0.1$ h/Mpc, but, as expected, dramatically enhances or degrades the capability of galaxy surveys in measuring the power spectrum.  From Figure \ref{fig:snr_vs_time_z1p5} it is clear that the fiducial intensity mapping experiment outperforms galaxy surveys at $z=1.5$ for all varieties of the tested luminosity functions, and, that this disparity is enhanced in the large pixel limit. In the small pixel limit however, where we expect the galaxy surveys to be capable of measuring the power spectrum with high significance, we see that it becomes important to consider the shape of the luminosity function when drawing conclusions about whether to intensity map or perform a traditional galaxy survey. In fact, it seems that only for the flattest luminosity functions does the small pixel limit improve SNR$_{tot, GS}$ such that it becomes higher than SNR$_{tot,GS}$.
 
-Another scenario in which an experiment finds itself in the large pixel limit is for observations at long wavelengths. Figure 6 shows the envisioned balloon-borne experiment performing a 5.3 deg$^{2}$ survey map of [CII] between $z = 5.4$ and $z = 6.6$, with central frequency now redshifted to 270 GHz (corresponding to $z = 6$) and spectral resolution maintained at $R=450$. At these frequencies, we use an NEI that is achievable by instruments for use with the future telescope CCAT, namely, $1.1 \times 10^6$ Jy sr$^{-1}$ s$^{1/2}$, which corresponds to line sensitivities for our fiducial aperture of $2.5$m and the CCAT aperture of $1.8\times10^{-18}$ and $1.5\times10^{-20}$ W m$^{-2}$ s$^{1/2}$, respectively. As expected, in the large voxel limit, the relative performance of [CII] intensity mapping survey and the traditional galaxy surveys in measuring the galaxy clustering becomes even more disparate than at $z=1.5$, in favor of intensity mapping. 
+In Figure ~\ref{fig:ngal_frac_vs_time_z1p5}, the SNR for the galaxy surveys is broken down in terms of the number of 5$\sigma$ detections (top panel) and the observed luminosity density, $\rho_{[CII]}$, relative to the total [CII] luminosity density, $\rho_{[CII]}$ (bottom panel). In the small pixel limit, the galaxy survey reaches SNR $\sim10$ at $t_{obs}^{survey} = 700$ hours, at which time it detects $\sim1,000$ galaxies. In sum, these galaxies account for roughly half of $\rho_{[CII]}$ at $ z = 1.5$. Recall that $\frac{\rho_{[CII], obs}}{\rho_{[CII]}} = 1$  for intensity mapping at all observing times. 
+
+Another scenario in which an experiment finds itself in the large pixel limit is for observations at long wavelengths. Figure ~\ref{fig:snr_vs_time_z6} shows the envisioned balloon-borne experiment performing a 5.3 deg$^{2}$ survey map of [CII] between $z = 5.4$ and $z = 6.6$, with central frequency now redshifted to 270 GHz (corresponding to $z = 6.0$) and spectral resolution $R=450$. At these frequencies, we use an estimated NEI that is achievable by instruments for use with the future telescope CCAT, namely, $1.1 \times 10^6$ Jy sr$^{-1}$ s$^{1/2}$, which corresponds to line sensitivities for our fiducial aperture of $2.5$m and the CCAT 25.0 m aperture of $1.8\times10^{-18}$ and $1.5\times10^{-20}$ W m$^{-2}$ s$^{1/2}$, respectively. As expected, in the long wavelength limit, the relative performance of the [CII] intensity mapping survey and the traditional galaxy surveys in measuring the galaxy clustering becomes more disparate than at $z=1.5$, in favor of intensity mapping. Again, in the left panel of Figure , which compares intensity mapping and galaxy surveys in the flattest of the three Schechter models considered here, the small pixel limit (here, where $V_{pix}$ is 0.01 times the fiducial value and represents to a CCAT pixel) provides a regime where the galaxy surveys could potentially measure $P_{[CII],[CII]}$ with higher SNR than intensity mapping in a smaller amount of time than it would take intensity mapping experiments to reach the same SNR. But if we look at the fraction of [CII] luminosity density captured by the observed sample (Figure ~\ref{fig:ngal_frac_vs_time_z6}) is $\sim20\%$ and rises above $\sim50\%$ after 3,000 hours of observing time. The intensity mapping experiment in the case of the flattest Schechter function model reaches comparable SNR in 8,000 hours. Thus, it does not seem beneficial to intensity map if the luminosity function is indeed very flat at high redshift. For steeper LFs, however, the intensity mapping experiment becomes the ideal observing technique. 
 
 \begin{figure}[h]
  \centering
- \subfloat{
- \label{}
- \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}}
+ \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
 \caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted as magenta and black curves, respectively. Thin and thick dotted lines correspond to galaxy survey experiments with pixel volumes 0.1 and 10.0 times the fiducial value. The horizontal dashed \emph{red line} is the maximum SNR, set by the number of modes in the survey volume. Note that the mean [CII] intensity is increasing for decreasing faint-end slopes, which is a consequence of fixing the total IR light for a given Schechter model to the B11 value, and then applying the $L_{[CII]}-L_{IR}$ relation to predict [CII] luminosity.}
+ \label{fig:snr_vs_time_z1p5}
 \end{figure}
-
 
 \begin{figure}[h]
 \centering
-\label{}
 \includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_alpham3p0}
 \caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=1.5$ in a galaxy redshift survey as a function of the survey observing time for telescopes with voxel sizes 0.1 (thin dotted), 1.0 (solid), and 10.0 (thick dotted) $V_{pix}$. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=1.5$ according to the toy Schechter model of a given slope $\alpha$.}
+\label{fig:ngal_frac_vs_time_z1p5}
 \end{figure}
-
 
  \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth]{lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix}
 \caption{\label{} $L_{IR,min}$ as a function of the survey observing time, for various $V_{pix}$, at $z=6$. The value of our adopted $L_{*}$ is plotted for comparison.}
+\label{fig:lirmin_z6}
 \end{figure}
 
 \begin{figure}[h]
  \centering
- \label{}
  \includegraphics[width=0.4\textwidth]{SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
-\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted as magenta and black curves, respectively. Thin dotted lines correspond to a galaxy survey experiment with pixel volumes 0.01 times the fiducial value, or telescope aperture $D_{ap} = 25.0$m. The horizontal dashed \emph{red line} is the maximum SNR, set by the number of modes in the survey volume.}
+\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted as magenta and black curves, respectively. Thin dotted lines correspond to a galaxy survey experiment with pixel volumes 0.01 times the fiducial value, or telescope aperture $D_{ap} = 25.0$ m. The horizontal dashed \emph{red line} is the maximum SNR, set by the number of modes in the survey volume.}
+ \label{fig:snr_vs_time_z6}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\label{}
 \includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_alpham3p0}
 \caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=6$ as a function of the survey observing time. The solid line corresponds to observations made with the galaxy survey experiment with aperture 2.5 m, and the dotted line corresponds to the galaxy survey experiment with 25.0 m aperture. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=6$ according to the toy Schechter model of a given slope $\alpha$.}
+\label{fig:ngal_frac_vs_time_z6}
 \end{figure}
 
 
