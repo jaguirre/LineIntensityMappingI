@@ -204,7 +204,7 @@ The resulting mean intensities for a variety of FIR lines are plotted in Figure 
 
 %We can characterize the redshift evolution of $\kappa$ from the IR luminosity function. This behavior is plotted in Figure XXX. 
 
-\begin{figure}[h]
+\begin{figure*}[h]
  \centering
  \subfloat{
  \label{}
@@ -310,14 +310,14 @@ fields becomes comparable.
 
 \begin{figure}[!h]
 \centering
-%\includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_obs}
+\includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
 \caption{Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 2.5 meter aperture and a survey area of 1 square degree.}
 \label{fig:pcii_zall}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
-%\includegraphics[width=0.4\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg}
+\includegraphics[width=0.4\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
 \caption{Signal to noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}$ and number of modes as a function of $k$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial pixel volume, $V_{pix}$, are shown as the dotted, solid, and dashed lines, respectively.}
 \label{fig:snr_nmode_k}
 \end{figure}
@@ -360,7 +360,7 @@ Recall that the units of $\frac{\sigma_{N}}{\sqrt{t_{pix}}}$ and $S_{i}$ are Jy 
  
  \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix}
+\includegraphics[width=0.4\textwidth]{lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix}
 \caption{$L_{IR,min}$ as a function of the survey observing time, for the various $V_{pix}$, at $z = 1.5$. The value of our adopted $L_{*}$ is plotted for comparison.}
  \label{fig:lirmin_z1p5}
 \end{figure}
@@ -394,36 +394,36 @@ Figure , which compares intensity mapping and galaxy surveys in the flattest of 
 
 \begin{figure}[h]
  \centering
- \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
-\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted as magenta and black curves, respectively. Thin and thick dotted lines correspond to galaxy survey experiments with pixel volumes 0.1 and 10.0 times the fiducial value. The horizontal dashed \emph{red line} is the maximum SNR, set by the number of modes in the survey volume. Note that the mean [CII] intensity is increasing for decreasing faint-end slopes, which is a consequence of fixing the total IR light for a given Schechter model to the B11 value, and then applying the $L_{[CII]}-L_{IR}$ relation to predict [CII] luminosity.}
+ \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_z1p5_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
+\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted. Magenta curves represent the intensity mapping experiment. Cyan, black, and green dashed lines correspond to galaxy survey experiments with pixel volumes 0.1, 1.0, 10.0 times the fiducial value. The horizontal dotted \emph{red line} is the maximum SNR, set by the number of modes in the survey volume. Note that the mean [CII] intensity is increasing for decreasing faint-end slopes, which is a consequence of fixing the total IR light for a given Schechter model to the B11 value, and then applying the $L_{[CII]}-L_{IR}$ relation to predict [CII] luminosity.}
  \label{fig:snr_vs_time_z1p5}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_alpham3p0}
-\caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=1.5$ in a galaxy redshift survey as a function of the survey observing time for telescopes with voxel sizes 0.1 (thin dotted), 1.0 (solid), and 10.0 (thick dotted) $V_{pix}$. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=1.5$ according to the toy Schechter model of a given slope $\alpha$.}
+\includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}
+\caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=1.5$ in a galaxy redshift survey as a function of the survey observing time for telescopes with voxel sizes 0.1 (cyan), 1.0 (black), and 10.0 (green) $V_{pix}$. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=1.5$ according to the toy Schechter model of a given slope $\alpha$.}
 \label{fig:ngal_frac_vs_time_z1p5}
 \end{figure}
 
  \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix}
+\includegraphics[width=0.4\textwidth]{lirmin_lsun_moretsurvey_z6_0p01vpix_vpix}
 \caption{\label{} $L_{IR,min}$ as a function of the survey observing time, for various $V_{pix}$, at $z=6$. The value of our adopted $L_{*}$ is plotted for comparison.}
 \label{fig:lirmin_z6}
 \end{figure}
 
 \begin{figure}[h]
  \centering
- \includegraphics[width=0.4\textwidth]{SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
-\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted as magenta and black curves, respectively. Thin dotted lines correspond to a galaxy survey experiment with pixel volumes 0.01 times the fiducial value, or telescope aperture $D_{ap} = 25.0$ m. The horizontal dashed \emph{red line} is the maximum SNR, set by the number of modes in the survey volume.}
+ \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p01Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
+\caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted. Magenta solid curves represent the intensity mapping experiment and the cyan and black dashed lines correspond to a galaxy survey experiment with pixel volumes 0.01 times the fiducial value, or telescope aperture $D_{ap} = 25.0$ m, and the fiducial 2.5 m telescope. The horizontal dotted \emph{red line} is the maximum SNR, set by the number of modes in the survey volume.}
  \label{fig:snr_vs_time_z6}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_alpham3p0}
-\caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=6$ as a function of the survey observing time. The solid line corresponds to observations made with the galaxy survey experiment with aperture 2.5 m, and the dotted line corresponds to the galaxy survey experiment with 25.0 m aperture. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=6$ according to the toy Schechter model of a given slope $\alpha$.}
+\includegraphics[width=0.4\textwidth]{Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}
+\caption{(\emph{Top panel}) The number of $5\sigma$-detected galaxies at $z=6$ as a function of the survey observing time. The solid line corresponds to observations made with the galaxy survey experiment with aperture 2.5 m, and the cyan line corresponds to the galaxy survey experiment with 25.0 m aperture. (\emph{Bottom panel}) The fraction of the luminosity density in [CII] emitted by the population of observed galaxies relative to the total luminosity density in [CII] at $z=6$ according to the toy Schechter model of a given slope $\alpha$.}
 \label{fig:ngal_frac_vs_time_z6}
 \end{figure}
 
