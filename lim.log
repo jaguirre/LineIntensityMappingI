@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 FEB 2014 11:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 FEB 2014 12:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,33 +311,6 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `' multiply defined.
 
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `fig:bethermin_fir_frac' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `fig:bethermin_fir_frac' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `fig:bethermin_fir_frac' multiply defined.
-
 )
 \openout1 = `lim.aux'.
 
@@ -490,10 +463,17 @@ File: intensity_vs_lambda_vs_Hz.pdf Graphic file (type pdf)
 Package pdftex.def Info: intensity_vs_lambda_vs_Hz.pdf used on input line 214.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-Overfull \hbox (173.72127pt too wide) in paragraph at lines 211--216
- [][][] 
- []
 
+./lim.tex:217: LaTeX Error: \begin{figure*} on input line 207 ended by \end{fig
+ure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 \end{figure}
+                  
+? 
 
 Overfull \hbox (12.51207pt too wide) in paragraph at lines 287--307
  []$ 
@@ -503,25 +483,47 @@ Overfull \hbox (12.51207pt too wide) in paragraph at lines 287--307
 Class revtex4 Warning: Float cannot be placed.
 
 
+./lim.tex:313: LaTeX Error: File `pcii_STARFIRE_z63_z88_z116_z148_halofit_bethe
+rmin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
+                                                  
+? 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./b11_spinoglio_intensity_jysr_vs_z.pdf> <./intensity_vs_lambda_vs_Hz.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 325.
+<snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzer
+o.pdf, id=29, 505.89pt x 361.35pt>
+File: snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktn
+onzero.pdf Graphic file (type pdf)
 
-[4]
+<use snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktno
+nzero.pdf>
+Package pdftex.def Info: snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5
+p3sqdeg_10sqdeg_ktnonzero.pdf used on input line 320.
+(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 325.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 337.
+
+[4 <./b11_spinoglio_intensity_jysr_vs_z.pdf> <./intensity_vs_lambda_vs_Hz.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 337.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 
-LaTeX Warning: Reference `fig:schechterfuncs' on page 5 undefined on input line
- 336.
-
-
-<phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=54, 50
+<phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=52, 50
 5.89pt x 361.35pt>
 File: phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graph
 ic file (type pdf)
@@ -543,94 +545,78 @@ Underfull \hbox (badness 2326) in paragraph at lines 341--341
  []
 
 
-<lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix.pdf, id=55, 505.89pt x 361.35pt>
-File: lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix.pdf Graphic file (type pdf)
-
-<use lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix.pdf>
-Package pdftex.def Info: lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix.pdf used 
-on input line 363.
+<lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix.pdf, id=53, 505.89pt x 361.35
+pt>
+File: lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix.pdf Graphic file (type p
+df)
+ <use lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix.pdf>
+Package pdftex.def Info: lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix.pdf u
+sed on input line 363.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
- [5 <./phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./
-lirmin_lsun_tsurvey_z1p5_0p1vpix_vpix_10vpix.pdf>]
+ [5 <./snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_kt
+nonzero.pdf> <./phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13
+.pdf> <./lirmin_lsun_moretsurvey_z1p5_0p1vpix_vpix_10vpix.pdf>]
 
-LaTeX Warning: Reference `fig:snr_vs_time_z1p5' on page 6 undefined on input li
-ne 387.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 381.
 
+[6]
+<SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lsta
+r1d12_Lmin1d8_Lmax1d13.pdf, id=87, 505.89pt x 361.35pt>
+File: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
+_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:snr_vs_time_z1p5' on page 6 undefined on input li
-ne 387.
-
-
-LaTeX Warning: Reference `fig:ngal_frac_vs_time_z1p5' on page 6 undefined on in
-put line 390.
-
-
-LaTeX Warning: Reference `fig:snr_vs_time_z6' on page 6 undefined on input line
- 392.
-
-
-LaTeX Warning: Reference `fig:ngal_frac_vs_time_z6' on page 6 undefined on inpu
-t line 393.
-
-
-<SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10
-Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=75, 505.89pt x 361.35pt>
-File: SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vp
-ix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
-
-<use SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpi
-x_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf>
-Package pdftex.def Info: SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpha
-m_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 
-397.
+<use SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_
+Lstar1d12_Lmin1d8_Lmax1d13.pdf>
+Package pdftex.def Info: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_Vpix
+R450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 397.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
 <Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alp
-ham2p0_alpham3p0.pdf, id=76, 505.89pt x 361.35pt>
+ham1p5_alpham2p0.pdf, id=88, 505.89pt x 361.35pt>
 File: Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p
-0_alpham2p0_alpham3p0.pdf Graphic file (type pdf)
+0_alpham1p5_alpham2p0.pdf Graphic file (type pdf)
 
 <use Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0
-_alpham2p0_alpham3p0.pdf>
+_alpham1p5_alpham2p0.pdf>
 Package pdftex.def Info: Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_v
-pix_10vpix_alpham1p0_alpham2p0_alpham3p0.pdf used on input line 404.
+pix_10vpix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 404.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix.pdf, id=77, 505.89pt x 361.35pt>
-File: lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix.pdf Graphic file (type pdf)
+<lirmin_lsun_moretsurvey_z6_0p01vpix_vpix.pdf, id=89, 505.89pt x 361.35pt>
+File: lirmin_lsun_moretsurvey_z6_0p01vpix_vpix.pdf Graphic file (type pdf)
 
-<use lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix.pdf>
-Package pdftex.def Info: lirmin_lsun_tsurvey_z6_0p1vpix_vpix_10vpix.pdf used on
- input line 411.
+<use lirmin_lsun_moretsurvey_z6_0p01vpix_vpix.pdf>
+Package pdftex.def Info: lirmin_lsun_moretsurvey_z6_0p01vpix_vpix.pdf used on i
+nput line 411.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-<SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar1d12_
-Lmin1d8_Lmax1d13.pdf, id=78, 505.89pt x 361.35pt>
-File: SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar
-1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
+<SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p01Vpix_10Vpix_Lst
+ar1d12_Lmin1d8_Lmax1d13.pdf, id=90, 505.89pt x 361.35pt>
+File: SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p01Vpix_10Vpi
+x_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
 
-<use SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar1
-d12_Lmin1d8_Lmax1d13.pdf>
-Package pdftex.def Info: SNRtot_starfire_CCAT_ciifree_z6_tsurvey_alpham_im_Vpix
-R450_0p01Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 418.
+<use SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p01Vpix_10Vpix
+_Lstar1d12_Lmin1d8_Lmax1d13.pdf>
+Package pdftex.def Info: SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_alpham_im_Vpix
+R450_0p01Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 418.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
-m2p0_alpham3p0.pdf, id=79, 505.89pt x 361.35pt>
-File: Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_
-alpham2p0_alpham3p0.pdf Graphic file (type pdf)
+<Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vpix_10vpix_alpham1p0_alph
+am1p5_alpham2p0.pdf, id=91, 505.89pt x 361.35pt>
+File: Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vpix_10vpix_alpham1p0
+_alpham1p5_alpham2p0.pdf Graphic file (type pdf)
 
-<use Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_a
-lpham2p0_alpham3p0.pdf>
-Package pdftex.def Info: Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpi
-x_10vpix_alpham1p0_alpham2p0_alpham3p0.pdf used on input line 425.
+<use Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vpix_10vpix_alpham1p0_
+alpham1p5_alpham2p0.pdf>
+Package pdftex.def Info: Ngal_frac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vp
+ix_10vpix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 425.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
 
@@ -640,25 +626,22 @@ No file lim.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[6 <./SNRtot_starfire_cii_z1p5_asurvey5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vp
-ix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf>] [7 <./Ngal_frac_cii_STARFIRE_5p3sqde
-g_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_alpham3p0.pdf> <./lirmin
-_lsun_tsurvey_z6_0p1vpix_vpix_10vpix.pdf>] [8 <./SNRtot_starfire_CCAT_ciifree_z
-6_tsurvey_alpham_im_VpixR450_0p01Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./Ngal_f
-rac_cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_al
-pham3p0.pdf>] (./lim.aux)
-
-LaTeX Warning: There were undefined references.
-
+[7 <./SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
+_Lstar1d12_Lmin1d8_Lmax1d13.pdf>] [8 <./Ngal_frac_cii_STARFIRE_5p3sqdeg_z1p5_ts
+urvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0.pdf> <./lirmin_lsun_mor
+etsurvey_z6_0p01vpix_vpix.pdf>] [9 <./SNRtot_starfire_cii_z6_5p3sqdeg_tsurvey_a
+lpham_im_VpixR450_0p01Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./Ngal_frac_
+cii_STARFIRE_5p3sqdeg_z6_tsurvey_0p01vpix_vpix_10vpix_alpham1p0_alpham1p5_alpha
+m2p0.pdf>] (./lim.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5870 strings out of 493315
- 84293 string characters out of 6137904
- 199389 words of memory out of 5000000
- 9220 multiletter control sequences out of 15000+600000
+ 5889 strings out of 493315
+ 84893 string characters out of 6137904
+ 190798 words of memory out of 5000000
+ 9225 multiletter control sequences out of 15000+600000
  13175 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,18n,42p,1056b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -683,10 +666,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (8 pages, 459956 bytes).
+Output written on lim.pdf (9 pages, 490733 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
