@@ -108,8 +108,16 @@
 
 \begin{abstract}
 
-%Three dimensional (3D) measurements of galaxy clustering provide rich information about the process of galaxy formation and evolution, linking the theoretical structure of dark matter halos to the masses, types, luminosities, star formation rates, and numbers of galaxies inhabiting them at any epoch.  The largest such surveys to date have been conducted using optically selected galaxies discovered in photometric surveys, followed up by spectroscopy.  At redshifts $z>1$, however, the cosmic star formation rate becomes dominated by extremely dusty systems, and the appropriateness of using optically selected galaxies to study the clustering properties of these dusty star-forming galaxies (DSFGs) is suspect.  Far-infrared lines are excellent unextincted tracers of the physics of the ISM and of star formation, but it is technically daunting to produce redshift surveys using these lines which will attain the necessary density to make precision measurements of the 3D clustering function.  In this paper, we explore 
-a new technique to measure galaxy clustering without individual detections of galaxies.  We develop robust predictions of line specific intensity for a suite of astrophysically interesting lines and make predictions about the detectability of the clustering signal via the 3D power spectrum of a data cube, where the galaxies need not be either spatially or spectrally resolved.  We show that line intensity mapping is an efficient method for imaging spectrometers like SPICA/SAFARI to obtain galaxy clustering measurements down to $k<0.1~h$Mpc$^{-1}$ and out as far as $z\sim3$.
+We explore the possibility of studying the redshifted [CII] fine structure transition through cosmic time using the three-dimensional (3D) power spectra obtained with an imaging spectrometer. The intensity mapping approach measures the spatio-spectral fluctuations due to line emission from all galaxies, including those below the individual detection threshold. This technique not only provides 3D measurements of galaxy clustering, but contains astrophysical information---namely, the average intensity of total [CII] emission---which can be extracted from the linear portion of the power spectrum, with redshift information naturally encoded. We further compare the intensity mapping approach to galaxy surveys comprised of individually detected galaxies, and find that intensity mapping uniquely provides an unbiased estimate of the mean [CII] intensity and, depending on the shape of the luminosity function, can be a more efficient means of measuring the power spectrum. 
+
+
+
+
+%Three dimensional (3D) measurements of galaxy clustering provide rich information about the process of galaxy formation and evolution, linking the theoretical structure of dark matter halos to the masses, types, luminosities, star formation rates, and numbers of galaxies inhabiting them at any epoch
+%At redshifts $z>1$, however, the cosmic star formation rate becomes dominated by extremely dusty systems, and the appropriateness of using optically selected galaxies to study the clustering properties of these dusty star-forming galaxies (DSFGs) is suspect.  Far-infrared lines are excellent unextincted tracers of the physics of the ISM and of star formation, but it is technically daunting to produce redshift surveys using these lines which will attain the necessary density to make precision measurements of the 3D clustering function.  In this paper, we explore 
+%a new technique to measure galaxy clustering without individual detections of galaxies.  We develop robust predictions of line specific intensity for a suite of astrophysically interesting lines and make predictions about the detectability of the clustering signal via the 3D power spectrum of a data cube, where the galaxies need not be either spatially or spectrally resolved.  We show that line intensity mapping is an efficient method for imaging spectrometers like SPICA/SAFARI to obtain galaxy clustering measurements down to $k<0.1~h$Mpc$^{-1}$ and out as far as $z\sim3$.  
+
+%intensity mapping is the only way to get an unbiased estimate of the total intensity, and in certain situations (ie, steep luminosity function) may be the best way of measuring the power spectrum.
  
 \end{abstract}
 
@@ -279,8 +287,7 @@ P_N& = \left(\sigma_N^2 A_{pix} \Delta r_{los}^{pix}\right) / \left({\frac{t_{su
 \label{eq:pnoise}
 \end{equation}
 
-In this form, it becomes apparent that---with fixed number of spatial pixels, spectral resolution, and total observing time---the only factor driving up the amplitude of noise power is the survey area; the effect of increasing aperture only allows access to higher wavenumbers, which can be useful for subtracting the shot noise from the total power in later steps of data analysis.This behavior is shown clearly in Figure 5, where the SNR is plotted as a function of $k$ for different survey geometries and both mirror diameters. Also seen in Figure 5, the greater number of wavemodes sampled (entering as $N_{modes}^{-1/2}$ in the expression for $\sigma$) with the larger survey area does not necessarily compensate for the the increase in $P_{N}$. For example, the factor of ten increase in $P_N$ going from $A_{survey}$ = 1 to 10 deg$^2$ is only overcome by the additional modes in the larger survey area for $k < 1$, leading to a higher S/N for these modes. At $k > 1$, the S/N in each mode for the 1 and 10 deg$^2$ 
-fields becomes comparable. 
+In this form, it becomes apparent that---with fixed number of spatial pixels, spectral resolution, and total observing time---the only factor driving up the amplitude of noise power is the survey area; the effect of increasing aperture only allows access to higher wavenumbers, which can be useful for subtracting the shot noise from the total power in later steps of data analysis.This behavior is shown clearly in Figure 5, where the SNR is plotted as a function of $k$ for different survey geometries and both mirror diameters.
 
 \begin {table*}[!h]
 \begin{center}
@@ -327,23 +334,42 @@ $A_{survey}$ (deg$^2$) &\multicolumn{4}{c}{1.0}\\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
+\includegraphics[width=0.5\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
 \caption{Signal to noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}$ and number of modes as a function of $k$ at $z=0.88$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial pixel volume, $V_{pix}$, are shown as the dotted, solid, and dashed lines, respectively.}
 \label{fig:snr_nmode_k}
 \end{figure}
 
 \subsection{Measuring $\bar{S}_{[CII]}(z)$}
 
-Recall that the [CII] clustering power spectrum $P_{[CII],[CII]}^{clust}$ as measured by intensity mapping is sensitive to intensity fluctuations from the full range of normal to ULIRG-class systems because its amplitude is proportional to the mean line intensity, $\bar{S}_{[CII]}$: $P_{[CII],[CII]}^{clust} = \bar{S}_{[CII]}^2 \bar{b}^2 P_{\delta,\delta}$. In order to successfully extract $\bar{S}_{[CII]}$ from the power spectrum, then, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and $\bar{b}_{[CII]}(z)$. (High sensitivity on shot noise-dominated modes ensures that the preliminary step of accurate shot noise subtraction is readily attainable.) The confidence with which these are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on $L_{IR}$ of the contributing sources (Viero et al 2013), indicating the need to map sufficiently wide areas that access $k$ modes dominated by the linear 2-halo term. 
+Recall that the [CII] clustering power spectrum $P_{[CII],[CII]}^{clust}$ as measured by intensity mapping is sensitive to intensity fluctuations from the full range of normal to ULIRG-class systems because its amplitude is proportional to the mean line intensity, squared. The effect on the measured power spectrum of limiting the galaxy populations (categorized by their IR luminosities) that are observed in the fiducial survey field is depicted in Figure~\ref{fig:pcii_lirmin}. In this Figure, we see the clustering amplitude decrease as the IR detection threshold, $L_{IR, min}$, is lowered from 10$^{12}$ L$_{\odot}$ to 10$^{8}$ L$_{\odot}$. The level of decrease is most dramatic at the lower end of the redshift range of interest, when the luminosity function is represented mostly by normal galaxies and LIRGs. As ULIRGs rise to dominate the IR luminosity density at $z \sim 1.5$, we see that SNR on the power spectrum becomes relatively robust until $L_{IR,min} =$ 10$^{12}$ L$_{\odot}$. In fact, the reduction in the clustering amplitude is quantified in Figure~\ref{fig:frac_cii_b11_lirmin}, which shows how the observed fraction of the total mean [CII] intensity depends on $L_{IR,min}$ for our empirically-based model. To be specific, the original SNR that was computed in Figure~\ref{fig:pcii_zall} is subsequently reduced by the square of the observed fraction of $S_{[CII}$. We infer from Figure~\ref{fig:frac_cii_b11_lirmin} that in order to resolve at least half of $\bar{S}_{[CII]}$, galaxy surveys must be capable of integrating to depths of $10^{11}$, $2\times10^{11}$, $6\times10^{11}$, and $10^{12}$ L$_{\odot}$ for redshifts $z$ = 0.6, 1.0, 1.5, and 3, respectively.
+
+%Figure ~\ref{fig:frac_cii_b11_lirmin} shows the fraction of total [CII] intensity recovered by integrating Eq.~\ref{eq:intensity} with different lower limits on the IR luminosity, $L_{IR,min}$, calculated up to $z=3$ for our empirically-based model. (The upper limit, $L_{IR,max}$ stays fixed at 10$^{13}$ L$_{\odot}$.) If one identifies the $L_{IR,min}$ with the detection threshold ($5\sigma-1$ hr) for a particular galaxy survey, then Figure 3 illustrates the  depth necessary to achieve in order for a survey to resolve a given fraction of the [CII] emission. Specifically, to resolve at least half of $\bar{S}_{[CII]}$, galaxy surveys must be capable of integrating to depths of $10^{11}$, $2\times10^{11}$, $6\times10^{11}$, and $10^{12}$ L$_{\odot}$ for redshifts $z$ = 0.6, 1.0, 1.5, and 3, respectively.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
+\caption{Predicted [CII] power spectra from $z = 0.63$ to $z = 1.48$. Blue, red, cyan, magenta, and green curves represent the power spectrum computed with a lower limit in the luminosity function corresponding to $10^8$, $10^9$, $10^{10}$, $10^{11}$, and $10^{12}$ L$_{\odot}$, respectively.}
+\label{fig:pcii_lirmin}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{fraction_cii_emissivity_vs_LIRmin_vs_z}
+\caption{The fraction of total [CII] mean intensity as a function of lower limit in the luminosity function. Different color curves represent different redshifts, as labeled on the plot.}
+\label{fig:frac_cii_b11_lirmin}
+\end{figure}
+
+In order to successfully extract $\bar{S}_{[CII]}$ from the power spectrum, then, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and $\bar{b}_{[CII]}^2(z)$. (High sensitivity on shot noise-dominated modes ensures that the preliminary step of accurate shot noise subtraction is readily attainable.) The confidence with which these are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on $L_{IR}$ of the contributing sources (Viero et al 2013), indicating the need to map sufficiently wide areas that access $k$ modes dominated by the linear 2-halo term. 
 
 Returning to Figure~\ref{fig:snr_nmode_k}, we see that, for the purpose of measuring $\bar{S}_{[CII]}$, $A_{survey}$ must be greater than our fiducial value of 1 deg$^2$ so that there are at least three $k$ bins, namely, $k = 0.08, 0.16,$ and 0.32 h/Mpc, with the power from halo-halo clustering accounting for 75\% or greater of the total power at each $k$, for each observed redshift\footnote{The only exception is for $z=0.63$, for which the 5.3 deg$^2$ survey observes modes down to $k = 0.08$ and 0.16 h/Mpc only.}. Thus, in considering the case of $A_{survey} = 5.3$ deg$^2$, we find that it is possible to measure $\bar{S}_{[CII]}(z)$ within $\sim10\%$ accuracy from $z = 0.63$ to $z=1.5$, as shown in Figure~\ref{fig:scii_z}, where the fractional uncertainty on $\bar{S}_{[CII]}(z)$ has been calculated as half the fractional uncertainty on $P_{[CII],[CII]}(k,z)$. For this scenario, we have adopted an observing time achievable in ultra long duration balloon flights, namely, $t_{obs}^{survey} =$ 1,000 hr, which increases the sensitivities reported in the fiducial case by a factor of 5. 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.4\textwidth]{scii_vs_z_starfire_5p3sqdeg_tobs1d3hr}
+\includegraphics[width=0.5\textwidth]{scii_vs_z_starfire_5p3sqdeg_tobs1d3hr}
 \caption{Error bar estimates on $\bar{S}_{[CII]}$, as measured by the fiducial instrument for $A_{survey}$ = 5.3 deg$^2$ and $t_{obs}^{survey} =$ 1,000 hr, at observed redshifts $z$ = 0.63, 0.88, 1.16, and 1.48. Errors in $z$ correspond to the redshift space spanned by the spectrometer bandwidth. The solid curve is the underlying model for [CII] mean intensity.}
 \label{fig:scii_z}
 \end{figure}
+
 
 
 \section{Observational Strategy}
@@ -361,7 +387,7 @@ To facilitate our comparisons in what follows, we employ toy models for the IR L
 
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13}
+\includegraphics[width=0.5\textwidth]{phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13}
 \caption{Toy model IR luminosity functions with faint-end slope (from top to bottom) $\alpha=-1.0, -1.5, -2.0, -2.5, -3.0$. The B11 and Muprhy \& Bradford models are plotted as blue and red curves, respectively, for comparison.}
 \label{fig:schechterfuncs}
 
@@ -395,7 +421,7 @@ Figure~\ref{fig:snr_vs_time_z1p5} also shows the effect of changing pixel area b
  
  \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{lirmin_lsun_tsurvey_z1p5_1sqdeg_0p1vpix_vpix_10vpix}
+\includegraphics[width=0.5\textwidth]{lirmin_lsun_tsurvey_z1p5_1sqdeg_0p1vpix_vpix_10vpix}
 \caption{$L_{IR,min}$ as a function of the survey observing time, for the various $V_{pix}$, at $z = 1.5$. The value of our adopted $L_{*}$ is plotted for comparison.}
  \label{fig:lirmin_z1p5}
 \end{figure}
@@ -430,7 +456,7 @@ In Figure ~\ref{fig:ngal_frac}, SNR$_{GS}$  is broken down in terms of the numbe
 
 \begin{figure}[h]
  \centering
- \includegraphics[width=0.4\textwidth]{SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
+ \includegraphics[width=0.5\textwidth]{SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13}
 \caption{Total Signal-to-Noise ratio ($\textrm{SNR}_{tot}$) on the linear portion of the clustering power spectrum of [CII] at $z=1.5$ as a function of the survey observing time (in hours). $\textrm{SNR}_{tot}$ as computed from intensity mapping---which depends only on the integral of the luminosity function, and not the shape---and from the Schechter function models are plotted. Magenta curves represent the intensity mapping experiment. Black Triple-dot-dashed, dashed, and dot-dashed lines correspond to galaxy survey experiments with pixel volumes 0.1, 1.0, 10.0 times the fiducial value. The horizontal dotted \emph{red line} is the maximum SNR, set by the number of modes in the survey volume. Note that the mean [CII] intensity is increasing for decreasing faint-end slopes, which is a consequence of fixing the total IR light for a given Schechter model to the B11 value, and then applying the $L_{[CII]}-L_{IR}$ relation to predict [CII] luminosity.}
  \label{fig:snr_vs_time_z1p5}
 \end{figure}
@@ -439,33 +465,16 @@ In Figure ~\ref{fig:ngal_frac}, SNR$_{GS}$  is broken down in terms of the numbe
  \centering
  \subfloat{
  \label{}
- \includegraphics[width=0.4\textwidth]{Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}}
+ \includegraphics[width=0.5\textwidth]{Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}}
  \subfloat{
  \label{}
- \includegraphics[width=0.4\textwidth]{frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}}
+ \includegraphics[width=0.5\textwidth]{frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0}}
  \centering
 \caption{The predicted number of [CII]-detected galaxies and observed fraction of [CII] intensity as a function of observing time for the square degree field. Solid, dash-triple-dotted, and dash-dotted curves represent the fiducial $V_{pix}$, $0.1V_{pix}$, and $10 V_{pix}$, resp.}
 \label{fig:ngal_frac}
 \end{figure}
 
-Figure ~\ref{fig:frac_cii_b11_lirmin} shows the fraction of total [CII] intensity recovered by integrating Eq.~\ref{eq:intensity} with different lower limits on the IR luminosity, $L_{IR,min}$, calculated up to $z=3$ for our empirically-based model. (The upper limit, $L_{IR,max}$ stays fixed at 10$^{13}$ L$_{\odot}$.) If one identifies the $L_{IR,min}$ with the detection threshold ($5\sigma-1$ hr) for a particular galaxy survey, then Figure 3 illustrates the  depth necessary to achieve in order for a survey to resolve a given fraction of the [CII] emission. Specifically, to resolve at least half of $\bar{S}_{[CII]}$, galaxy surveys must be capable of integrating to depths of $10^{11}$, $2\times10^{11}$, $6\times10^{11}$, and $10^{12}$ L$_{\odot}$ for redshifts $z$ = 0.6, 1.0, 1.5, and 3, respectively.
 
-On the other hand, the 
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{fraction_cii_emissivity_vs_LIRmin_vs_z}
-\caption{The fraction of total [CII] mean intensity as a function of lower limit in the luminosity function. Different color curves represent different redshifts, as labeled on the plot.}
-\label{fig:frac_cii_b11_lirmin}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
-\caption{Predicted [CII] power spectra from $z = 0.63$ to $z = 1.48$. Blue, red, cyan, and magenta curves represent the power spectrum computed with a lower limit in the luminosity function corresponding to $10^8$ (the fiducial lower limit), $10^9$, $10^{10}$, $10^{11}$, and $10^{12}$ L$_{\odot}$, respectively.}
-\label{fig:pcii_lirmin}
-\end{figure}
 
 
 
