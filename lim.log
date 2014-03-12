@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 MAR 2014 14:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 MAR 2014 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -434,91 +434,107 @@ space {}Uzgil\textsuperscript {1,2}J.\nobreakspace {}E.\nobreakspace {}Aguirre\
 textsuperscript {1}C.\nobreakspace {}M.\nobreakspace {}Bradford\textsuperscript
  {2}.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 136.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 133.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 136.
+LaTeX Font Info:    Try loading font information for U+msa on input line 133.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 136.
+LaTeX Font Info:    Try loading font information for U+msb on input line 133.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
+Package natbib Warning: Citation `gong11cii' on page 1 undefined on input line 
+135.
+
+
+Package natbib Warning: Citation `visbal11' on page 1 undefined on input line 1
+35.
+
+
+Package natbib Warning: Citation `lidz11' on page 1 undefined on input line 135
+.
+
+
+Package natbib Warning: Citation `gong11co' on page 1 undefined on input line 1
+35.
+
+
 Package natbib Warning: Citation `bethermin' on page 1 undefined on input line 
-144.
+141.
 
 
-Package natbib Warning: Citation `viero' on page 1 undefined on input line 144.
+Package natbib Warning: Citation `viero' on page 1 undefined on input line 141.
 
 
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
 
-./lim.tex:221: LaTeX Error: File `bethermin_spinoglio_intensity_jysr_vs_z' not 
+./lim.tex:218: LaTeX Error: File `bethermin_spinoglio_intensity_jysr_vs_z' not 
 found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 ...bethermin_spinoglio_intensity_jysr_vs_z}}
+l.218 ...bethermin_spinoglio_intensity_jysr_vs_z}}
                                                   
 ? 
 
-LaTeX Warning: File `interloper_intensity_jysr.pdf' not found on input line 224
+LaTeX Warning: File `interloper_intensity_jysr.pdf' not found on input line 221
 .
 
 
-./lim.tex:224: Package pdftex.def Error: File `interloper_intensity_jysr.pdf' n
+./lim.tex:221: Package pdftex.def Error: File `interloper_intensity_jysr.pdf' n
 ot found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 ...extwidth]{interloper_intensity_jysr.pdf}}
+l.221 ...extwidth]{interloper_intensity_jysr.pdf}}
                                                   
 ? 
 
-./lim.tex:227: LaTeX Error: \begin{figure*} on input line 217 ended by \end{fig
+./lim.tex:224: LaTeX Error: \begin{figure*} on input line 214 ended by \end{fig
 ure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 \end{figure}
+l.224 \end{figure}
                   
 ? 
-./lim.tex:297: Extra }, or forgotten $.
-l.297 $R = \nu_{obs}}
+./lim.tex:294: Extra }, or forgotten $.
+l.294 $R = \nu_{obs}}
                       / \delta\nu$ & \multicolumn{4}{c}{450} \\
 ? 
 
-./lim.tex:311: LaTeX Error: \begin{table*} on input line 292 ended by \end{tabl
+./lim.tex:308: LaTeX Error: \begin{table*} on input line 289 ended by \end{tabl
 e}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.311  \end{table}
+l.308  \end{table}
                   
 ? 
 
-./lim.tex:330: LaTeX Error: File `pcii_STARFIRE_z63_z88_z116_z148_halofit_bethe
+./lim.tex:327: LaTeX Error: File `pcii_STARFIRE_z63_z88_z116_z148_halofit_bethe
 rmin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.330 ...in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
+l.327 ...in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
                                                   
 ? 
 
@@ -533,10 +549,10 @@ onzero.pdf Graphic file (type pdf)
 <use snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktno
 nzero.pdf>
 Package pdftex.def Info: snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5
-p3sqdeg_10sqdeg_ktnonzero.pdf used on input line 337.
+p3sqdeg_10sqdeg_ktnonzero.pdf used on input line 334.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 337--338
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 334--335
  [][] 
  []
 
@@ -544,17 +560,17 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 337--338
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 344--345
+Underfull \hbox (badness 2285) in paragraph at lines 341--342
 []\OT1/cmr/m/n/10 Recall that the [CII] clus-ter-ing power spec-trum
  []
 
 [3]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 345.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 342.
 
 [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 345.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 342.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
@@ -568,10 +584,10 @@ _1sqdeg_uhp_ktnonzero.pdf Graphic file (type pdf)
 <use pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_
 1sqdeg_uhp_ktnonzero.pdf>
 Package pdftex.def Info: pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_betherm
-in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero.pdf used on input line 350.
+in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero.pdf used on input line 347.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 350--351
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 347--348
  [][] 
  []
 
@@ -580,27 +596,40 @@ File: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf Graphic file (type pdf)
 
 <use fraction_cii_emissivity_vs_LIRmin_vs_z.pdf>
 Package pdftex.def Info: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf used on inp
-ut line 357.
+ut line 354.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 357--358
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 354--355
  [][] 
  []
 
-[5 <./snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktn
-onzero.pdf> <./pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinogl
-io_ap2p5m_1sqdeg_uhp_ktnonzero.pdf> <./fraction_cii_emissivity_vs_LIRmin_vs_z.p
-df>] <scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf, id=67, 505.89pt x 361.35pt>
+<scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf, id=40, 505.89pt x 361.35pt>
 File: scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf Graphic file (type pdf)
 
 <use scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf>
 Package pdftex.def Info: scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf used on inpu
-t line 368.
+t line 365.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 368--369
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 365--366
  [][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktn
+onzero.pdf> <./pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinogl
+io_ap2p5m_1sqdeg_uhp_ktnonzero.pdf> <./fraction_cii_emissivity_vs_LIRmin_vs_z.p
+df>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 372.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 372.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
 
 
 <phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=68, 50
@@ -610,45 +639,54 @@ ic file (type pdf)
 
 <use phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf>
 Package pdftex.def Info: phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8
-_Lmax1d13.pdf used on input line 390.
+_Lmax1d13.pdf used on input line 387.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 390--391
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 387--388
  [][] 
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 391--391
+Underfull \hbox (badness 4303) in paragraph at lines 388--388
 []  []\OT1/cmr/m/sc/8 .---\OT1/cmr/m/n/10 : |Toy model IR lu-mi-nos-ity func-ti
 ons
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 391--391
+Underfull \hbox (badness 2326) in paragraph at lines 388--388
 \OT1/cmr/m/n/10 with faint-end slope (from top to bot-tom) $\OML/cmm/m/it/10  
 \OT1/cmr/m/n/10 =
  []
 
-./lim.tex:415: Missing $ inserted.
+./lim.tex:412: Missing $ inserted.
 <inserted text> 
                 $
-l.415 ...actor $\epsilon$, $but will not alter $P_
+l.412 ...actor $\epsilon$, $but will not alter $P_
                                                   {N}$ (as seen previously i...
 
 ? 
-[6 <./scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf> <./phi_lir_schechter_bethermin
-11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf>]
 
-./lim.tex:424: LaTeX Error: File `lirmin_lsun_tsurvey_z1p5_1sqdeg_0p1vpix_vpix_
+./lim.tex:421: LaTeX Error: File `lirmin_lsun_tsurvey_z1p5_1sqdeg_0p1vpix_vpix_
 10vpix' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.424 ..._tsurvey_z1p5_1sqdeg_0p1vpix_vpix_10vpix}
+l.421 ..._tsurvey_z1p5_1sqdeg_0p1vpix_vpix_10vpix}
                                                   
 ? 
+[6 <./scii_vs_z_starfire_5p3sqdeg_tobs1d3hr.pdf> <./phi_lir_schechter_bethermin
+11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 448.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 448.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
 
 <SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lsta
 r1d12_Lmin1d8_Lmax1d13.pdf, id=88, 505.89pt x 361.35pt>
@@ -658,10 +696,10 @@ _Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
 <use SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_
 Lstar1d12_Lmin1d8_Lmax1d13.pdf>
 Package pdftex.def Info: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_Vpix
-R450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 459.
+R450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 456.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 459--460
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 456--457
  [][] 
  []
 
@@ -674,7 +712,7 @@ m1p5_alpham2p0.pdf Graphic file (type pdf)
 <use Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham
 1p5_alpham2p0.pdf>
 Package pdftex.def Info: Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10v
-pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 468.
+pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 465.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
 <frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_
@@ -685,25 +723,29 @@ m1p5_alpham2p0.pdf Graphic file (type pdf)
 <use frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham
 1p5_alpham2p0.pdf>
 Package pdftex.def Info: frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10v
-pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 471.
+pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 468.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (5.66675pt too wide) in paragraph at lines 468--473
+Overfull \hbox (5.66675pt too wide) in paragraph at lines 465--470
  [][][] 
  []
 
 
-./lim.tex:475: LaTeX Error: \begin{figure*} on input line 464 ended by \end{fig
+./lim.tex:472: LaTeX Error: \begin{figure*} on input line 461 ended by \end{fig
 ure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.475 \end{figure}
+l.472 \end{figure}
                   
 ? 
-No file lim.bbl.
+(./lim.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 4.
+
+)
 
 Package natbib Warning: There were undefined citations.
 
@@ -717,10 +759,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5878 strings out of 493315
- 84348 string characters out of 6137904
- 177131 words of memory out of 5000000
- 9212 multiletter control sequences out of 15000+600000
+ 5887 strings out of 493315
+ 84488 string characters out of 6137904
+ 176131 words of memory out of 5000000
+ 9219 multiletter control sequences out of 15000+600000
  13343 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,18n,42p,1730b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -746,7 +788,7 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (8 pages, 468061 bytes).
+Output written on lim.pdf (8 pages, 468042 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams
