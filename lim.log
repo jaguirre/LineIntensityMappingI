@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 MAR 2014 17:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 MAR 2014 16:15
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **lim.tex
 (./lim.tex
@@ -306,7 +307,14 @@ Package caption Info: rotating package is loaded.
 LaTeX Warning: Unused global option(s):
     [12pt,preprint].
 
-(./lim.aux)
+(./lim.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+)
 \openout1 = `lim.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -326,7 +334,7 @@ Class revtex4 Info: Patching unrecognized longtable package. (Proceeding with f
 ingers crossed) on input line 91.
 
 
-! LaTeX Error: Command \longtable* already defined.
+./lim.tex:91: LaTeX Error: Command \longtable* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -505,22 +513,12 @@ File: interloper_intensity_jysr.pdf Graphic file (type pdf)
 Package pdftex.def Info: interloper_intensity_jysr.pdf used on input line 196.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-
-LaTeX Warning: Reference `fig:interlopers' on page 3 undefined on input line 20
-1.
-
-
-LaTeX Warning: Reference `tab:ExpParams' on page 3 undefined on input line 246.
-
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 3 undefined on input line 24
-6.
-
-
-LaTeX Warning: Reference `fig:pcii_zall' on page 3 undefined on input line 248.
-
-
+./lim.tex:282: Undefined control sequence.
+\@versohead ...pping during $0.5 < \Makelowercase 
+                                                  {z} < 1.5$
+l.282 
+      
+? 
 [3 <./interloper_intensity_jysr.pdf>]
 
 Class revtex4 Warning: Float cannot be placed.
@@ -558,21 +556,9 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 328--329
  []
 
 
-LaTeX Warning: Reference `fig:pcii_lirmin' on page 4 undefined on input line 33
-5.
-
-
-LaTeX Warning: Reference `fig:frac_cii_b11_lirmin' on page 4 undefined on input
- line 335.
-
-
 Underfull \hbox (badness 1681) in paragraph at lines 335--336
 []\OT1/cmr/m/n/10 Recall that the [CII] clus-ter-ing power spec-trum,
  []
-
-
-LaTeX Warning: Reference `fig:frac_cii_b11_lirmin' on page 4 undefined on input
- line 337.
 
 
 <pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqd
@@ -609,23 +595,18 @@ bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 354.
 
+./lim.tex:354: Undefined control sequence.
+\@versohead ...pping during $0.5 < \Makelowercase 
+                                                  {z} < 1.5$
+l.354 
+      
+? 
 [5]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 354.
 
 
 Class revtex4 Warning: Deferred float stuck during \clearpage processing.
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 6 undefined on input line 35
-5.
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 6 undefined on input line 35
-5.
-
-
-LaTeX Warning: Reference `fig:scii_z' on page 6 undefined on input line 355.
 
 <rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf, id=76, 505.89pt x 361.35pt>
 File: rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf Graphic file (type pdf)
@@ -641,10 +622,6 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 359--360
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:schechterfuncs' on page 6 undefined on input line
- 375.
 
 
 <phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=77, 50
@@ -676,25 +653,6 @@ Underfull \hbox (badness 2326) in paragraph at lines 380--380
 [6 <./fraction_cii_emissivity_vs_LIRmin_vs_z.pdf> <./rhocii_vs_z_starfire_1sqde
 g_tobs200hr.pdf> <./phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax
 1d13.pdf>]
-
-LaTeX Warning: Reference `fig:snr_vs_time_z1p5' on page 7 undefined on input li
-ne 402.
-
-
-LaTeX Warning: Reference `fig:snr_vs_time_z1p5' on page 7 undefined on input li
-ne 404.
-
-
-LaTeX Warning: Reference `eq:pnoise' on page 7 undefined on input line 404.
-
-
-LaTeX Warning: Reference `fig:ngal_frac' on page 7 undefined on input line 439.
-
-
-
-LaTeX Warning: Reference `fig:scii_z' on page 7 undefined on input line 439.
-
-
 <SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lsta
 r1d12_Lmin1d8_Lmax1d13.pdf, id=105, 505.89pt x 361.35pt>
 File: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
@@ -748,8 +706,15 @@ Underfull \hbox (badness 3158) in paragraph at lines 468--469
 []\OT1/cmr/m/n/10 Should men-tion here im-pli-ca-tions for high red-
  []
 
-(./lim.bbl [7 <./SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1
-Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf>]
+(./lim.bbl
+./lim.bbl:1: Undefined control sequence.
+\@versohead ...pping during $0.5 < \Makelowercase 
+                                                  {z} < 1.5$
+l.1 \begin{thebibliography}{0}
+                              
+? 
+[7 <./SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
+_Lstar1d12_Lmin1d8_Lmax1d13.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
 
@@ -763,20 +728,22 @@ LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
 Package natbib Warning: There were undefined citations.
 
+./lim.tex:484: Undefined control sequence.
+\@versohead ...pping during $0.5 < \Makelowercase 
+                                                  {z} < 1.5$
+l.484 \end{document}
+                    
+? 
 [9] (./lim.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5885 strings out of 493315
- 84923 string characters out of 6137904
- 185672 words of memory out of 5000000
- 9232 multiletter control sequences out of 15000+600000
+ 5886 strings out of 493315
+ 84936 string characters out of 6137904
+ 185959 words of memory out of 5000000
+ 9233 multiletter control sequences out of 15000+600000
  13175 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,18n,42p,1730b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,7 +768,7 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (9 pages, 553705 bytes).
+Output written on lim.pdf (9 pages, 553636 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  155 compressed objects within 2 object streams
