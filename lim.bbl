@@ -1,4 +1,150 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
+  Borgne}, \& {Penin}}]{bethermin11}
+{B{\'e}thermin}, M., {Dole}, H., {Lagache}, G., {Le Borgne}, D., \& {Penin}, A.
+  2011, \aap, 529, A4
+
+\bibitem[{{Brauher} {et~al.}(2008){Brauher}, {Dale}, \& {Helou}}]{brauher08}
+{Brauher}, J.~R., {Dale}, D.~A., \& {Helou}, G. 2008, \apjs, 178, 280
+
+\bibitem[{{Burgarella} {et~al.}(2013){Burgarella}, {Buat}, {Gruppioni},
+  {Cucciati}, {Heinis}, {Berta}, {B{\'e}thermin}, {Bock}, {Cooray}, {Dunlop},
+  {Farrah}, {Franceschini}, {Le Floc'h}, {Lutz}, {Magnelli}, {Nordon},
+  {Oliver}, {Page}, {Popesso}, {Pozzi}, {Riguccini}, {Vaccari}, \&
+  {Viero}}]{burgarella13}
+{Burgarella}, D. {et~al.} 2013, \aap, 554, A70
+
+\bibitem[{{Cooray} {et~al.}(2010){Cooray}, {Amblard}, {Wang}, {Arumugam},
+  {Auld}, {Aussel}, {Babbedge}, {Blain}, {Bock}, {Boselli}, {Buat},
+  {Burgarella}, {Castro-Rodriguez}, {Cava}, {Chanial}, {Clements}, {Conley},
+  {Conversi}, {Dowell}, {Dwek}, {Eales}, {Elbaz}, {Farrah}, {Fox},
+  {Franceschini}, {Gear}, {Glenn}, {Griffin}, {Halpern}, {Hatziminaoglou},
+  {Ibar}, {Isaak}, {Ivison}, {Khostovan}, {Lagache}, {Levenson}, {Lu},
+  {Madden}, {Maffei}, {Mainetti}, {Marchetti}, {Marsden}, {Mitchell-Wynne},
+  {Mortier}, {Nguyen}, {O'Halloran}, {Oliver}, {Omont}, {Page}, {Panuzzo},
+  {Papageorgiou}, {Pearson}, {Perez Fournon}, {Pohlen}, {Rawlings}, {Raymond},
+  {Rigopoulou}, {Rizzo}, {Roseboom}, {Rowan-Robinson}, {Schulz}, {Scott},
+  {Serra}, {Seymour}, {Shupe}, {Smith}, {Stevens}, {Symeonidis}, {Trichas},
+  {Tugwell}, {Vaccari}, {Valtchanov}, {Vieira}, {Vigroux}, {Ward}, {Wright},
+  {Xu}, \& {Zemcov}}]{cooray10}
+{Cooray}, A. {et~al.} 2010, \aap, 518, L22
+
+\bibitem[{{de Putter} {et~al.}(2014){de Putter}, {Holder}, {Chang}, \&
+  {Dore}}]{deputter14}
+{de Putter}, R., {Holder}, G.~P., {Chang}, T.-C., \& {Dore}, O. 2014, ArXiv
+  e-prints
+
+\bibitem[{{D{\'{\i}}az-Santos} {et~al.}(2013){D{\'{\i}}az-Santos}, {Armus},
+  {Charmandaris}, {Stierwalt}, {Murphy}, {Haan}, {Inami}, {Malhotra},
+  {Meijerink}, {Stacey}, {Petric}, {Evans}, {Veilleux}, {van der Werf}, {Lord},
+  {Lu}, {Howell}, {Appleton}, {Mazzarella}, {Surace}, {Xu}, {Schulz},
+  {Sanders}, {Bridge}, {Chan}, {Frayer}, {Iwasawa}, {Melbourne}, \&
+  {Sturm}}]{diaz-santos13}
+{D{\'{\i}}az-Santos}, T. {et~al.} 2013, \apj, 774, 68
+
+\bibitem[{{Dole} {et~al.}(2006){Dole}, {Lagache}, {Puget}, {Caputi},
+  {Fern{\'a}ndez-Conde}, {Le Floc'h}, {Papovich}, {P{\'e}rez-Gonz{\'a}lez},
+  {Rieke}, \& {Blaylock}}]{dole2006}
+{Dole}, H. {et~al.} 2006, \aap, 451, 417
+
+\bibitem[{{Glenn} {et~al.}(2010){Glenn}, {Conley}, {B{\'e}thermin}, {Altieri},
+  {Amblard}, {Arumugam}, {Aussel}, {Babbedge}, {Blain}, {Bock}, {Boselli},
+  {Buat}, {Castro-Rodr{\'{\i}}guez}, {Cava}, {Chanial}, {Clements}, {Conversi},
+  {Cooray}, {Dowell}, {Dwek}, {Eales}, {Elbaz}, {Ellsworth-Bowers}, {Fox},
+  {Franceschini}, {Gear}, {Griffin}, {Halpern}, {Hatziminaoglou}, {Ibar},
+  {Isaak}, {Ivison}, {Lagache}, {Laurent}, {Levenson}, {Lu}, {Madden},
+  {Maffei}, {Mainetti}, {Marchetti}, {Marsden}, {Nguyen}, {O'Halloran},
+  {Oliver}, {Omont}, {Page}, {Panuzzo}, {Papageorgiou}, {Pearson},
+  {P{\'e}rez-Fournon}, {Pohlen}, {Rigopoulou}, {Rizzo}, {Roseboom},
+  {Rowan-Robinson}, {Portal}, {Schulz}, {Scott}, {Seymour}, {Shupe}, {Smith},
+  {Stevens}, {Symeonidis}, {Trichas}, {Tugwell}, {Vaccari}, {Valtchanov},
+  {Vieira}, {Vigroux}, {Wang}, {Ward}, {Wright}, {Xu}, \& {Zemcov}}]{glenn10}
+{Glenn}, J. {et~al.} 2010, \mnras, 409, 109
+
+\bibitem[{{Gong} {et~al.}(2012){Gong}, {Cooray}, {Silva}, {Santos}, {Bock},
+  {Bradford}, \& {Zemcov}}]{gongcii}
+{Gong}, Y., {Cooray}, A., {Silva}, M., {Santos}, M.~G., {Bock}, J., {Bradford},
+  C.~M., \& {Zemcov}, M. 2012, \apj, 745, 49
+
+\bibitem[{{Gong} {et~al.}(2011){Gong}, {Cooray}, {Silva}, {Santos}, \&
+  {Lubin}}]{gong11co}
+{Gong}, Y., {Cooray}, A., {Silva}, M.~B., {Santos}, M.~G., \& {Lubin}, P. 2011,
+  \apjl, 728, L46
+
+\bibitem[{{Graci{\'a}-Carpio} {et~al.}(2011){Graci{\'a}-Carpio}, {Sturm},
+  {Hailey-Dunsheath}, {Fischer}, {Contursi}, {Poglitsch}, {Genzel},
+  {Gonz{\'a}lez-Alfonso}, {Sternberg}, {Verma}, {Christopher}, {Davies},
+  {Feuchtgruber}, {de Jong}, {Lutz}, \& {Tacconi}}]{gracia-carpio11}
+{Graci{\'a}-Carpio}, J. {et~al.} 2011, \apjl, 728, L7
+
+\bibitem[{{Lidz} {et~al.}(2011){Lidz}, {Furlanetto}, {Oh}, {Aguirre}, {Chang},
+  {Dor{\'e}}, \& {Pritchard}}]{lidz11}
+{Lidz}, A., {Furlanetto}, S.~R., {Oh}, S.~P., {Aguirre}, J., {Chang}, T.-C.,
+  {Dor{\'e}}, O., \& {Pritchard}, J.~R. 2011, \apj, 741, 70
+
+\bibitem[{{Morales} \& {Wyithe}(2010)}]{morales10rev}
+{Morales}, M.~F. \& {Wyithe}, J.~S.~B. 2010, \araa, 48, 127
+
+\bibitem[{{Parsons} {et~al.}(2013){Parsons}, {Liu}, {Aguirre}, {Ali},
+  {Bradley}, {Carilli}, {DeBoer}, {Dexter}, {Gugliucci}, {Jacobs}, {Klima},
+  {MacMahon}, {Manley}, {Moore}, {Pober}, {Stefan}, \& {Walbrugh}}]{parsons14}
+{Parsons}, A.~R. {et~al.} 2013, ArXiv e-prints 1304.4991
+
+\bibitem[{{Planck Collaboration} {et~al.}(2013){Planck Collaboration}, {Ade},
+  {Aghanim}, {Armitage-Caplan}, {Arnaud}, {Ashdown}, {Atrio-Barandela},
+  {Aumont}, {Baccigalupi}, {Banday}, \& et~al.}]{planckXXX}
+{Planck Collaboration} {et~al.} 2013, ArXiv e-prints
+
+\bibitem[{{Pullen} {et~al.}(2013){Pullen}, {Dore}, \& {Bock}}]{Pullen13}
+{Pullen}, A., {Dore}, O., \& {Bock}, J. 2013, ArXiv e-prints
+
+\bibitem[{{Sargsyan} {et~al.}(2012){Sargsyan}, {Lebouteiller}, {Weedman},
+  {Spoon}, {Bernard-Salas}, {Engels}, {Stacey}, {Barry}, {Miles}, \&
+  {Samsonyan}}]{sargsyan12}
+{Sargsyan}, L. {et~al.} 2012, \apj, 755, 171
+
+\bibitem[{{Smith} {et~al.}(2003){Smith}, {Peacock}, {Jenkins}, {White},
+  {Frenk}, {Pearce}, {Thomas}, {Efstathiou}, \& {Couchman}}]{halofit}
+{Smith}, R.~E. {et~al.} 2003, \mnras, 341, 1311
+
+\bibitem[{{Spinoglio} {et~al.}(2012){Spinoglio}, {Dasyra}, {Franceschini},
+  {Gruppioni}, {Valiante}, \& {Isaak}}]{spinoglio12}
+{Spinoglio}, L., {Dasyra}, K.~M., {Franceschini}, A., {Gruppioni}, C.,
+  {Valiante}, E., \& {Isaak}, K. 2012, \apj, 745, 171
+
+\bibitem[{{Switzer} {et~al.}(2013){Switzer}, {Masui}, {Bandura}, {Calin},
+  {Chang}, {Chen}, {Li}, {Liao}, {Natarajan}, {Pen}, {Peterson}, {Shaw}, \&
+  {Voytek}}]{switzer13}
+{Switzer}, E.~R. {et~al.} 2013, \mnras, 434, L46
+
+\bibitem[{{Tingay} {et~al.}(2013){Tingay}, {Oberoi}, {Cairns}, {Donea},
+  {Duffin}, {Arcus}, {Bernardi}, {Bowman}, {Briggs}, {Bunton}, {Cappallo},
+  {Corey}, {Deshpande}, {deSouza}, {Emrich}, {Gaensler}, {R}, {Greenhill},
+  {Hazelton}, {Herne}, {Hewitt}, {Johnston-Hollitt}, {Kaplan}, {Kasper},
+  {Kennewell}, {Kincaid}, {Koenig}, {Kratzenberg}, {Lonsdale}, {Lynch},
+  {McWhirter}, {Mitchell}, {Morales}, {Morgan}, {Ord}, {Pathikulangara},
+  {Prabu}, {Remillard}, {Rogers}, {Roshi}, {Salah}, {Sault}, {Udaya-Shankar},
+  {Srivani}, {Stevens}, {Subrahmanyan}, {Waterson}, {Wayth}, {Webster},
+  {Whitney}, {Williams}, {Williams}, \& {Wyithe}}]{tingay13}
+{Tingay}, S.~J. {et~al.} 2013, Journal of Physics Conference Series, 440,
+  012033
+
+\bibitem[{{Viero} {et~al.}(2012){Viero}, {Wang}, {Zemcov}, {Addison},
+  {Amblard}, {Arumugam}, {Aussel}, {Bethermin}, {Bock}, {Boselli}, {Buat},
+  {Burgarella}, {Casey}, {Clements}, {Conley}, {Conversi}, {Cooray}, {De
+  Zotti}, {Dowell}, {Farrah}, {Franceschini}, {Glenn}, {Griffin},
+  {Hatziminaoglou}, {Heinis}, {Ibar}, {Ivision}, {Lagache}, {Levenson},
+  {Marchetti}, {Marsden}, {Nguyen}, {O'Halloran}, {Oliver}, {Omont}, {Page},
+  {Papageorgiou}, {Peason}, {Perez-Fournon}, {Pohlen}, {Rigopoulou},
+  {Roseboom}, {Rowan-Robinson}, {Scott}, {Seymour}, {Schulz}, {Shupe}, {Smith},
+  {Symeonidis}, {Vaccari}, {Valtchanov}, {Vieira}, {Wardlow}, \&
+  {Xu}}]{viero13}
+{Viero}, M.~P. {et~al.} 2012, ArXiv e-prints
+
+\bibitem[{{Visbal} {et~al.}(2011){Visbal}, {Trac}, \& {Loeb}}]{visbal11}
+{Visbal}, E., {Trac}, H., \& {Loeb}, A. 2011, J. Cosmology Astropart. Phys., 8,
+  10
 
 \end{thebibliography}

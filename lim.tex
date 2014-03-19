@@ -1,6 +1,6 @@
 % Template for ApJ-type papers
 
-\documentclass[12pt,preprint]{emulateapj}
+\documentclass[iop]{emulateapj}
 
 \usepackage{rotating}
 \usepackage{amssymb,amsmath}
@@ -85,7 +85,7 @@
 	% End definitions
 
 
-\shorttitle{[CII] Line Intensity Mapping during $0.5 < \Makelowercase{z} < 1.5$}
+\shorttitle{[CII] Line Intensity Mapping During $0.5 < \Makelowercase{z} < 1.5$}
 \shortauthors{Ugzil, Aguirre \& Bradford}
 
 \begin{document}
@@ -130,9 +130,9 @@ We explore the possibility of studying the redshifted [CII] fine structure trans
 
 \section{Introduction}
 
-Various observational techniques in astronomy, including, but not limited to, photometric and spectroscopic stacking analysis, ``P(D)" fluctuation analysis, and recently, cosmological spectral deconvolution, have been developed to provide a means to study the nature of galaxies that are otherwise too faint to be detected individually at high significance. These methods, which aim to maximize the information in low signal-to-noise datasets, rely heavily on interpreting the statistical and aggregate properties of the extragalactic sources, and yet the insight they have provided into the nature of galaxies and their evolution with cosmic time has been invaluable. 
+Various observational techniques in astronomy, including, but not limited to, photometric and spectroscopic stacking analysis, ``P(D)" fluctuation analysis, and recently, cosmological spectral deconvolution (cf. \citet{dole2006, glenn10,deputter14} for examples of each), have been developed to provide a means to study the nature of galaxies that are otherwise too faint to be detected individually at high significance. These methods, which aim to maximize the information in low signal-to-noise datasets, rely heavily on interpreting the statistical and aggregate properties of the extragalactic sources, and yet the insight they have provided into the nature of galaxies and their evolution with cosmic time has been invaluable. 
 
-\emph{Line intensity mapping}, also known as, simply, intensity mapping, or 3-D tomographic mapping, is one such technique that allows astronomers to probe extragalactic populations beyond their brightest sources. Through a statistical analysis of the spatial fluctuations in spectral line emission, an intensity mapping survey of a spectral line at different frequencies \emph{produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction, which is then decomposed into its power spectrum}. Atomic \cite{gong11cii,visbal11} and molecular \cite{lidz11,gong11co} transitions -- such as the 21 cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII] 158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization. Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{FOB} for a review) and in the experimental arena (e.g., PAPER (Parsons et al 2010), MWA), and so interest in measuring the [CII] power spectrum, for instance, primarily erupted as a means to complement the 21 cm studies at high redshift via the cross-correlation. 
+\emph{Line intensity mapping}, also known as, simply, intensity mapping, or 3-D tomographic mapping, is one such technique that allows astronomers to probe extragalactic populations beyond their brightest sources. Through a statistical analysis of the spatial fluctuations in spectral line emission, an intensity mapping survey of a spectral line at different frequencies \emph{produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction, which is then decomposed into its power spectrum}. Atomic \citep{gongcii,visbal11} and molecular \citep{lidz11,gong11co} transitions -- such as the 21 cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII] 158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization. Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{morales10rev} for a review) and in the experimental arena (e.g., PAPER \citep{parsons14}, MWA \citep{tingay13}), and so interest in measuring the [CII] power spectrum, for instance, primarily erupted as a means to complement the 21 cm studies at high redshift via the cross-correlation. 
 
 As a proof of principal, the appeal of intensity mapping experiments in the post-Reionization era is obvious. Neutral hydrogen is, again, the most mature in this respect, as 21cm experiments have successfully measured the 21cm-galaxy cross power spectrum (Chang et al 2011) or put limits on the 21cm auto-power \citep{switzer13}, but the detectability of another transition Hydrogen transition, the Ly$\alpha$ line, has also been explored in \citep{Pullen13} et al for redshifts from before Reionization down to $z \sim 2$. 
 
@@ -175,11 +175,11 @@ P_{i,i}^{shot}(z) = \int{\mathrm{d}n_{i} \left( \frac{L_{i}}{4\pi D_L^2} \right)
 The number density of line emitters and the line luminosity that appear in equations (2) and (3) can be derived by a variety of methods. In earlier papers on intensity mapping of molecular and fine-structure emission lines at high redshift (z $\gtrsim$ 6), one approach involved using the dark matter halo mass function in lieu of the line emitter density (and invoking a one-to-one correlation between halos and galaxies, which is not unreasonable at high redshifts). The line luminosity, in turn, could be scaled according to the star formation rate, which was related to halo mass via a proportionality constant comprised of factors that described the fraction of baryons available for star formation, as well as the dynamical timescale for star formation and a duty cycle for emission. While this theoretical model is feasible at high redshift to provide an estimate on the mean intensity $\bar{S}_i$, we take advantage of the relative wealth of observations of [CII] luminosities in individual galaxies, IR galaxy 
 number counts, and cosmic star formation rate density at the lower redshifts relevant to this study. To this end, we first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from \citet{bethermin11} (hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$.  One major drawback of our empirical approach is that it does not allow us to model the bias in a self-contained manner, e.g., such as in the halo model formalism that other predictions, which connect $L_{IR}$ to halo mass, employ. 
 
-To convert the infrared luminosity to a line luminosity, we apply the relation for $L_{i}$ as a function of $L_{IR}$ provided by Spinoglio et al (2012). The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in Brauher et al (2008), and is reproduced below for [CII]: 
+To convert the infrared luminosity to a line luminosity, we apply the relation for $L_{i}$ as a function of $L_{IR}$ provided by \citet{spinoglio12}. The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in \citet{brauher08}, and is reproduced below for [CII]: 
 \begin{equation}
 L_{\mathrm{[CII]158}}(L_{\mathrm{IR}}) = (0.89 \pm 0.03) \mathrm{log_{10}}L_{\mathrm{IR}} - (2.44 \pm 0.07)
 \end{equation}
-Thus, it becomes possible to write the cosmic mean intensity and shot noise of the line, in units of Jy sr$^{-1}$,  as a function of redshift based on the B11 luminosity function and Spinoglio et al (2012) $L_{i}-L_{\mathrm{IR}}$ relation as
+Thus, it becomes possible to write the cosmic mean intensity and shot noise of the line, in units of Jy sr$^{-1}$,  as a function of redshift based on the B11 luminosity function and \citet{spinoglio12} $L_{i}-L_{\mathrm{IR}}$ relation as
 
 \begin{equation} \label{eq:intensity}
 \bar{S}_{\mathrm{i}}(z) = \int_{L_{IR,min}}^{L_{IR,max}} \mathrm{dlog}L_{IR}  \Phi(L_{IR}, z) \frac{f_{i} L_{IR} }{4 \pi D_{L}^2} y D_A^2
@@ -191,7 +191,7 @@ P_{i,i}^{shot}(z) = \int_{L_{IR,min}}^{L_{IR,max}} \mathrm{dlog}L_{IR}  \Phi(L_{
 
 where $f_{i}$, i.e. $\frac{L_{i}(L_{IR})}{L_{IR}}$, is the fraction of IR luminosity emitted in line $i$, as computed from equation (3). In other words, we have written $\bar{S}_{i}$ and $P_{i,i}^{shot}(z)$ as the first and the second moments of the luminosity function.
 
-It should be noted that the mean line luminosity $\bar{L}_i$ does, in reality, include a contribution from diffuse gas in the intergalactic medium (IGM), yet Gong et al (2012) estimated that the specific intensity of one of the brightest lines typically observed in galaxies, namely [CII],  coming from the IGM ranges from $\sim 10^{-3}$ Jy sr$^{-1}$ to $\sim$ 1 Jy sr$^{-1}$ for different physical conditions in the ISM at $z = 1$---a negligible amount compared to the emission from the interstellar medium (ISM) of galaxies. 
+It should be noted that the mean line luminosity $\bar{L}_i$ does, in reality, include a contribution from diffuse gas in the intergalactic medium (IGM), yet \citet{gongcii} estimated that the specific intensity of one of the brightest lines typically observed in galaxies, namely [CII],  coming from the IGM ranges from $\sim 10^{-3}$ Jy sr$^{-1}$ to $\sim$ 1 Jy sr$^{-1}$ for different physical conditions in the ISM at $z = 1$---a negligible amount compared to the emission from the interstellar medium (ISM) of galaxies. 
 
 \begin{figure}[h]
  \centering
@@ -247,7 +247,7 @@ The resulting mean intensities for a variety of FIR lines are plotted in Figure~
 
 We present in this section predictions for the [CII] power spectrum with error bar estimates for a feasible experimental platform, namely, a balloon-borne experiment that allows for uninterrupted spectral coverage in the wavelength range 240 to 420 $\mu$m pertinent to this study. Fiducial experimental parameters are summarized in Table ~\ref{tab:ExpParams}. The telescope mirror aperture, $D_{ap}$, survey area, $A_{survey}$, and total observing time, $t_{obs}^{survey}$, are taken as 2.5 m, 1 deg$^2$, and 200 hours, respectively, though we explore the effect of varying $D_{ap}$ and $A_{survey}$ on SNR (cf. Figure~\ref{fig:snr_nmode_k}).
 
-Predictions for the fiducial case---as computed from the method of combining the cosmological matter power spectrum and the IR LF model outlined in Section 2.1---for the  [CII] power spectrum at four redshifts $z = 0.63, 0.88, 1.16$, and $1.48$ are shown in Figure~\ref{fig:pcii_zall}. (Note that we use  $\Delta_{[CII],[CII]}^2 = k^3 P_{[CII], [CII]}(k)/(2\pi^2)$ when plotting the power spectrum. In this notation, the factor $k^3$ cancels out the volumetric units of $P_{\delta,\delta}(k,z)$ and the integral of $\Delta_{[CII],[CII]}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$, in line with theoretical predictions from (Cooray and Sheth ???). The crossing of the one-halo and two-halo terms in the power spectrum can be detected with SNR of order 10 at all redshifts.  In calculating the power spectrum sensitivity, the two lowest line-of-sight modes and the lowest transverse mode are not included, since these modes will likely be compromised by the necessity of continuum foreground subtraction and beam-differencing in the fluctuation analysis. The exact effect of continuum subtraction will need to be modeled via simulation. 
+Predictions for the fiducial case---as computed from the method of combining the cosmological matter power spectrum and the IR LF model outlined in Section 2.1---for the  [CII] power spectrum at four redshifts $z = 0.63, 0.88, 1.16$, and $1.48$ are shown in Figure~\ref{fig:pcii_zall}. (Note that we use  $\Delta_{[CII],[CII]}^2 = k^3 P_{[CII], [CII]}(k)/(2\pi^2)$ when plotting the power spectrum. In this notation, the factor $k^3$ cancels out the volumetric units of $P_{\delta,\delta}(k,z)$ and the integral of $\Delta_{[CII],[CII]}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$, in line with observations from \citet{cooray10}. The crossing of the one-halo and two-halo terms in the power spectrum can be detected with SNR of order 10 at all redshifts.  In calculating the power spectrum sensitivity, the two lowest line-of-sight modes and the lowest transverse mode are not included, since these modes will likely be compromised by the necessity of continuum foreground subtraction and beam-differencing in the fluctuation analysis. The exact effect of continuum subtraction will need to be modeled via simulation. 
 
 Error bar estimates and the total SNR for the power spectrum are calculated by assuming a spectrally flat noise power spectrum, so that the noise power in each pixel, $P_{N}$, is written as
 
@@ -352,7 +352,7 @@ The level of decrease in clustering power as a result of raising $L_{IR,min}$ is
 \label{fig:frac_cii_b11_lirmin}
 \end{figure}
 
-To avoid missing the fainter systems when quantifying the mean [CII] intensity, and thus ensure a complete view of the extragalactic [CII]-emitting populations, we introduce intensity mapping as a means of measuring $\bar{S}_{\textrm{[CII]}}$ and its evolution across cosmic time. In order to successfully extract $\bar{S}_{\textrm{[CII]}}$ from the power spectrum, then, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and $\bar{b}_{\textrm{[CII]}}^2(z)$. (High sensitivity on shot noise-dominated modes ensures that the preliminary step of accurate shot noise subtraction is readily attainable.) The confidence with which these are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on $L_{IR}$ of the contributing sources (Viero et al 2013), indicating the need to map sufficiently wide areas that access $k$ modes where the power is largely independent of the level of 1-halo power. 
+To avoid missing the fainter systems when quantifying the mean [CII] intensity, and thus ensure a complete view of the extragalactic [CII]-emitting populations, we introduce intensity mapping as a means of measuring $\bar{S}_{\textrm{[CII]}}$ and its evolution across cosmic time. In order to successfully extract $\bar{S}_{\textrm{[CII]}}$ from the power spectrum, then, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and $\bar{b}_{\textrm{[CII]}}^2(z)$. (High sensitivity on shot noise-dominated modes ensures that the preliminary step of accurate shot noise subtraction is readily attainable.) The confidence with which these are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on $L_{IR}$ of the contributing sources \citep{viero13}, indicating the need to map sufficiently wide areas that access $k$ modes where the power is largely independent of the level of 1-halo power. 
 
 Returning to Figure~\ref{fig:snr_nmode_k}, we see that, for the purpose of measuring $\bar{S}_{\textrm{[CII]}}$ with the fiducial survey of 1 deg$^2$, there are two $k$ bins, namely, $k = 0.16$ and 0.27 h/Mpc in which the 2-halo clustering accounts for at least 75\% of the total power. (Surveys with $A_{survey} = 5.3 and 10$ deg$^2$, also shown in Figure~\ref{fig:snr_nmode_k}, are wide enough to have three $k$ bins available in the linear regime, but the sensitivity on the additional mode with $t_{obs}^{survey}$= 200 hours is marginal.) Thus, in considering the case of $A_{survey} = 1.0$ deg$^2$, we find that it is possible to measure $\bar{S}_{\textrm{[CII]}}(z)$ within $\sim10\%$ accuracy from $z = 0.63$ to $z=1.48$, as shown in Figure~\ref{fig:scii_z}, where the fractional uncertainty on $\bar{S}_{\textrm{[CII]}}(k,z)$ has been calculated as half the fractional uncertainty on $P_{\textrm{[CII],[CII]}}(k,z)$.
 
@@ -477,7 +477,7 @@ We have presented predictions for the measurement of the [CII] power spectrum be
 
 \appendix
 
-To explore the effect of the luminosity function shape on the relative performances of intensity mapping and galaxy surveys in observing the [CII] power spectrum and mean intensity of [CII] emitters, we have introduced toy models to represent different $\Phi(L_{IR}, z) \equiv \frac{\textrm{d}N}{\textrm{d}L_{IR}\textrm{d}V}.
+To explore the effect of the luminosity function shape on the relative performances of intensity mapping and galaxy surveys in observing the [CII] power spectrum and mean intensity of [CII] emitters, we have introduced toy models to represent different $\Phi(L_{IR}, z) \equiv \frac{\textrm{d}N}{\textrm{d}L_{IR}\textrm{d}V}$.
 
 We parametrize our luminosity function as a Schechter function
 
@@ -496,7 +496,7 @@ Power-law luminosity functions are notoriously ill-behaved if the lower limit of
 
 This is motivated by the observation that in many cases we do have constraints on the integrated light (from, for example, the cosmic infrared background or from the cosmic star formation rate density or the requirement of critical reionization), whereas we may not in general have detailed constraints on the distribution of light among galaxies, i.e., the shape of luminosity function.
  
-The number density, $n$, of sources of a given $L_{IR}$, can, in turn, be computed from 
+The number density of sources, $n$, can, in turn, be computed from 
 
 \begin{equation}
 n = \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) n_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha}\exp\left(-\frac{L_{IR}}{L_*}\right)
@@ -511,8 +511,6 @@ Finally, equation~\ref{eq:schechterlum} allows us to calculate the [CII] luminos
 where $f_{\textrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], or $\frac{L_{\textrm{[CII]}}(L_{IR})}{L_{IR}}$, described by the Spinoglio relations. Because $L_{\textrm{[CII]}}$ is slightly sublinear in $L_{IR}$, it follows that the toy models with steep faint-end slopes will produce more [CII] emission than their flatter counterparts. 
 
 \bibliography{master_references}
-
-
 
 \end{document}
 

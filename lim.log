@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 MAR 2014 09:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 MAR 2014 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,75 +10,106 @@ Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./emulateapj.cls
 Document Class: emulateapj 
 \bibbaselineskip=\skip41
-(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex4/revtex4.cls
-Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
-cumentation)
- Copyright (c) 2001 The American Physical Society.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex/revtex4-1.cls
+Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
+ex4/ for documentation)
+ Copyright (c) 2009 The American Physical Society.
  mailto:revtex@aps.org
  Licensed under the LPPL:
 http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
- Arthur Ogawa <ogawa@teleport.com>
- Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
-ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
-Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
+. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 308.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
+\eqncolsep=\skip42
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 433.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
 \intertabularlinepenalty=\count79
 \@tbpen=\count80
 \@arstrutbox@hline=\box26
-Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
-ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
-\c@linecount=\count81
-\output=\toks14
-\@protection@box=\box27
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
+Class revtex4-1 Info: Making \typeout \long on input line 2046.
+ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
+\c@affil=\count81
+\c@collab=\count82
+\absbox=\box27
+ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
+. Baxter web at superscript.com)]
+\c@linecount=\count83
+\output@latex=\toks14
+\box@size@1=\box28
+\box@size@2=\box29
+\@protection@box=\box30
 \@topmark@saved=\toks15
-\footins@saved=\box28
-\pagesofar=\box29
-\footbox=\box30
-\pagegrid@col=\count82
-Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
-ly upper/lower case changing (DPC)]. on input line 3682.
+\footins@saved=\box31
+\footins@recovered=\box32
+\column@recovered=\box33
+\pagesofar=\box34
+\footsofar=\box35
+\pagegrid@col=\count84
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5578.
+\c@part=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@subparagraph=\count90
+\abovecaptionskip=\skip43
+\belowcaptionskip=\skip44
+\c@figure=\count91
+\fbox@1=\box36
+\c@table=\count92
+\fbox@2=\box37
+\c@video=\count93
+\fbox@4=\box38
+\@bibdataout=\write3
+\widetext@top=\box39
+\widetext@bot=\box40
+
+Class revtex4-1 Warning: No Society specified, using default society aps.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex/aps4-1.rtx
+File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
+mentation)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
+)
+
+Class revtex4-1 Warning: No journal specified, using default pra.
+
+Class revtex4-1 Info: APS journal PRA selected on input line 7545.
+
+Class revtex4-1 Warning: No type size specified, using default 10.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+documentation)
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-\c@affil=\count83
-\absbox=\box31
-\c@part=\count84
-\c@section=\count85
-\c@subsection=\count86
-\c@subsubsection=\count87
-\c@paragraph=\count88
-\c@subparagraph=\count89
-\abovecaptionskip=\skip42
-\belowcaptionskip=\skip43
-\c@figure=\count90
-\c@table=\count91
-
 (/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip44
-\bibsep=\skip45
+\bibhang=\skip45
+\bibsep=\skip46
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count92
+\c@NAT@ctr=\count94
 )
-\widetext@top=\box32
-\widetext@bot=\box33
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex4/revsymb.sty
-Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
-tion)
-LaTeX Info: Redefining \REV@mathfrak on input line 118.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
+or documentation)
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
 ))
-
-Class revtex4 Warning: No Society specified, using generic APS style.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex4/aps.rtx
-File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
-n)
-)
-(/usr/local/texlive/2013/texmf-dist/tex/latex/revtex4/10pt.rtx
-File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
-on)
-)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
@@ -112,7 +143,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count93
+\Gread@gobject=\count95
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -132,20 +163,20 @@ LaTeX Info: Redefining \Bbb on input line 113.
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip46
-\LTright=\skip47
-\LTpre=\skip48
-\LTpost=\skip49
-\LTchunksize=\count94
+\LTleft=\skip47
+\LTright=\skip48
+\LTpre=\skip49
+\LTpost=\skip50
+\LTchunksize=\count96
 \LTcapwidth=\dimen104
-\LT@head=\box34
-\LT@firsthead=\box35
-\LT@foot=\box36
-\LT@lastfoot=\box37
-\LT@cols=\count95
-\LT@rows=\count96
-\c@LT@tables=\count97
-\c@LT@chunks=\count98
+\LT@head=\box41
+\LT@firsthead=\box42
+\LT@foot=\box43
+\LT@lastfoot=\box44
+\LT@cols=\count97
+\LT@rows=\count98
+\c@LT@tables=\count99
+\c@LT@chunks=\count100
 \LT@p@ftn=\toks18
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/epsf/epsf.sty
@@ -160,41 +191,41 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfysize=\dimen111
 \pspoints=\dimen112
 )
-\c@front@matter@foot@note=\count99
+\c@front@matter@foot@note=\count101
 \alt@affil@toks=\toks19
 \alt@affil@toks@count=\toks20
-\keys@width=\skip50
-\c@lastfootnote=\count100
-\c@remember@figure@num=\count101
-\c@remember@table@num=\count102
+\keys@width=\skip51
+\c@lastfootnote=\count102
+\c@remember@figure@num=\count103
+\c@remember@table@num=\count104
 \bibindent=\dimen113
-\plot@width=\skip51
-\c@table@save=\count103
-\table@note@skip=\skip52
-\deluxe@table@width=\skip53
-\@d@t@a=\skip54
-\c@deluxe@table@num=\count104
-\abovedeluxetableskip=\skip55
-\belowdeluxetableskip=\skip56
+\plot@width=\skip52
+\c@table@save=\count105
+\table@note@skip=\skip53
+\deluxe@table@width=\skip54
+\@d@t@a=\skip55
+\c@deluxe@table@num=\count106
+\abovedeluxetableskip=\skip56
+\belowdeluxetableskip=\skip57
 \lastrowheight=\dimen114
 \DT@p@ftn=\toks21
-\pt@column=\count105
-\pt@ncol=\count106
+\pt@column=\count107
+\pt@ncol=\count108
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count107
-\rotFPtop=\skip57
-\rotFPbot=\skip58
-\rot@float@box=\box38
+\c@r@tfl@t=\count109
+\rotFPtop=\skip58
+\rotFPbot=\skip59
+\rot@float@box=\box45
 \rot@mess@toks=\toks22
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip59
+\@mathmargin=\skip60
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -204,7 +235,9 @@ Package: amstext 2000/06/29 v2.01
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks23
 \ex@=\dimen115
-))
+)
+LaTeX Info: Redefining \text on input line 39.
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen116
@@ -212,30 +245,30 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count108
+\inf@bad=\count110
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count109
-\leftroot@=\count110
+\uproot@=\count111
+\leftroot@=\count112
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count111
-\DOTSCASE@=\count112
+\classnum@=\count113
+\DOTSCASE@=\count114
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box39
-\strutbox@=\box40
+\Mathstrutbox@=\box46
+\strutbox@=\box47
 \big@size=\dimen117
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count113
-\c@MaxMatrixCols=\count114
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
 \dotsspace@=\muskip11
-\c@parentequation=\count115
-\dspbrk@lvl=\count116
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
 \tag@help=\toks24
-\row@=\count117
-\column@=\count118
-\maxfields@=\count119
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
 \andhelp@=\toks25
 \eqnshift@=\dimen118
 \alignsep@=\dimen119
@@ -244,8 +277,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen122
 \lineht@=\dimen123
 \@envbody=\toks26
-\multlinegap=\skip60
-\multlinetaggap=\skip61
+\multlinegap=\skip61
+\multlinetaggap=\skip62
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -276,37 +309,52 @@ See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = \long macro:#1#2->\noindent \begin {minip
 age}{0.9999\linewidth } \if \csname ftype@\@captype \endcsname 2 \vskip 2ex\noi
-ndent \centering \@table@type@size \scshape #1\par #2\par \medskip \else \vspac
-e *{\abovecaptionskip }\footnotesize \noindent #1 #2\par \vskip \belowcaptionsk
-ip \fi \end {minipage} .
-\c@ContinuedFloat=\count120
+ndent \centering \@table@type@size {\@eapj@cap@font #1}\par \if@chicago \@eapj@
+cap@font \fi #2\par \medskip \else \vspace *{\abovecaptionskip }\noindent \foot
+notesize #1 #2\par \vskip \belowcaptionskip \fi \end {minipage}\par .
+\c@ContinuedFloat=\count122
 Package caption Info: longtable package is loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 )
-\c@KVtest=\count121
-\sf@farskip=\skip62
+\c@KVtest=\count123
+\sf@farskip=\skip63
 \sf@captopadj=\dimen131
-\sf@capskip=\skip63
-\sf@nearskip=\skip64
-\c@subfigure=\count122
-\c@subfigure@save=\count123
-\c@lofdepth=\count124
-\c@subtable=\count125
-\c@subtable@save=\count126
-\c@lotdepth=\count127
-\sf@top=\skip65
-\sf@bottom=\skip66
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count124
+\c@subfigure@save=\count125
+\c@lofdepth=\count126
+\c@subtable=\count127
+\c@subtable@save=\count128
+\c@lotdepth=\count129
+\sf@top=\skip66
+\sf@bottom=\skip67
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen132
 )
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 91.
+Class revtex4-1 Info: Patching longtable package on input line 91.
 
-LaTeX Warning: Unused global option(s):
-    [12pt,preprint].
 
+./lim.tex:91: LaTeX Error: Command \longtable* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \begin{document}
+                     
+? 
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 91.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 91.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 91.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 91.
 (./lim.aux
 
 LaTeX Warning: Label `' multiply defined.
@@ -329,35 +377,18 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
 LaTeX Font Info:    ... okay on input line 91.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
 LaTeX Font Info:    ... okay on input line 91.
-Class revtex4 Info: Patching LaTeX tabular. on input line 91.
-Class revtex4 Info: Patching unrecognized longtable package. (Proceeding with f
-ingers crossed) on input line 91.
-
-
-./lim.tex:91: LaTeX Error: Command \longtable* already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 \begin{document}
-                     
-? 
-Class revtex4 Info: cite was not loaded (OK!) on input line 91.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 91.
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
+\scratchcounter=\count130
 \scratchdimen=\dimen133
-\scratchbox=\box41
-\nofMPsegments=\count129
-\nofMParguments=\count130
+\scratchbox=\box48
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count131
+\MPscratchCnt=\count133
 \MPscratchDim=\dimen134
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -409,24 +440,12 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: Incompatible package detected (regarding \caption).
-(caption)             \caption = macro:->\minipagefootnote@here \ifx \@captype 
-\@undefined \@latex@error {\noexpand \caption outside float}\@ehd \expandafter 
-\@gobble \else \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblar
-g {\@caption \@captype }}.
-
-
-Package caption Warning: \caption will not be redefined since it's already
-(caption)                redefined by a document class or package which is
-(caption)                unknown to the caption package.
-See the caption package documentation for explanation.
-
 Package caption Info: End \AtBeginDocument code.
+\openout3 = `limNotes.bib'.
 
-Class revtex4 Warning: Assuming \noaffiliation for B.\nobreakspace {}D.\nobreak
-space {}Uzgil\textsuperscript {1,2}J.\nobreakspace {}E.\nobreakspace {}Aguirre\
-textsuperscript {1}C.\nobreakspace {}M.\nobreakspace {}Bradford\textsuperscript
- {2}.
+
+
+Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
 LaTeX Font Info:    Try loading font information for U+lasy on input line 131.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
@@ -441,87 +460,24 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 131.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
-Package natbib Warning: Citation `gong11cii' on page 1 undefined on input line 
-135.
-
-
-Package natbib Warning: Citation `visbal11' on page 1 undefined on input line 1
-35.
-
-
-Package natbib Warning: Citation `lidz11' on page 1 undefined on input line 135
-.
-
-
-Package natbib Warning: Citation `gong11co' on page 1 undefined on input line 1
-35.
-
-
-Package natbib Warning: Citation `FOB' on page 1 undefined on input line 135.
-
-
-Package natbib Warning: Citation `switzer13' on page 1 undefined on input line 
-137.
-
-
-Package natbib Warning: Citation `Pullen13' on page 1 undefined on input line 1
-37.
-
-
-Package natbib Warning: Citation `burgarella13' on page 1 undefined on input li
-ne 139.
-
-
-Package natbib Warning: Citation `gracia-carpio11' on page 1 undefined on input
- line 139.
-
-
-Package natbib Warning: Citation `sargsyan12' on page 1 undefined on input line
- 139.
-
-
-Package natbib Warning: Citation `diaz-santos13' on page 1 undefined on input l
-ine 139.
-
-
-Package natbib Warning: Citation `bethermin11' on page 1 undefined on input lin
-e 141.
-
-
-Package natbib Warning: Citation `viero13' on page 1 undefined on input line 14
-1.
-
-
-Package natbib Warning: Citation `planckXXX' on page 1 undefined on input line 
-143.
-
-[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `halofit' on page 2 undefined on input line 15
-1.
-
-
-Package natbib Warning: Citation `bethermin11' on page 2 undefined on input lin
-e 176.
-
-[2] <interloper_intensity_jysr.pdf, id=27, 505.89pt x 361.35pt>
+<interloper_intensity_jysr.pdf, id=26, 505.89pt x 361.35pt>
 File: interloper_intensity_jysr.pdf Graphic file (type pdf)
 
 <use interloper_intensity_jysr.pdf>
 Package pdftex.def Info: interloper_intensity_jysr.pdf used on input line 198.
 (pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
 
-./lim.tex:273: Undefined control sequence.
-\@versohead ...pping during $0.5 < \Makelowercase 
+./lim.tex:262: Undefined control sequence.
+\@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.273 
-      
+l.262 \end{equation}
+                    
 ? 
 [3 <./interloper_intensity_jysr.pdf>]
 
-Class revtex4 Warning: Float cannot be placed.
+Class revtex4-1 Warning: Float cannot be placed.
 
 
 <pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_
@@ -595,22 +551,22 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 350--351
 _uhp_ktnonzero.pdf> <./snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3
 sqdeg_10sqdeg_ktnonzero.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 356.
 
-./lim.tex:358: Undefined control sequence.
-\@versohead ...pping during $0.5 < \Makelowercase 
+./lim.tex:356: Undefined control sequence.
+\@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.358 
+l.356 
       
 ? 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 356.
 
 
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-<rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf, id=68, 505.89pt x 361.35pt>
+<rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf, id=69, 505.89pt x 361.35pt>
 File: rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf Graphic file (type pdf)
 
 <use rhocii_vs_z_starfire_1sqdeg_tobs200hr.pdf>
@@ -623,10 +579,7 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 361--362
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=69, 50
+<phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=70, 50
 5.89pt x 361.35pt>
 File: phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graph
 ic file (type pdf)
@@ -641,9 +594,8 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 381--382
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 382--382
-[]  []\OT1/cmr/m/sc/8 .---\OT1/cmr/m/n/10 : |Toy model IR lu-mi-nos-ity func-ti
-ons
+Underfull \hbox (badness 5274) in paragraph at lines 382--382
+[][] \OT1/cmr/m/n/10 : |Toy model IR lu-mi-nos-ity func-tions
  []
 
 
@@ -656,17 +608,17 @@ Underfull \hbox (badness 2326) in paragraph at lines 382--382
 _1sqdeg_uhp_ktnonzero.pdf> <./fraction_cii_emissivity_vs_LIRmin_vs_z.pdf> <./rh
 ocii_vs_z_starfire_1sqdeg_tobs200hr.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 405.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 399.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 405.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 399.
 
 
-Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
 <SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lsta
-r1d12_Lmin1d8_Lmax1d13.pdf, id=97, 505.89pt x 361.35pt>
+r1d12_Lmin1d8_Lmax1d13.pdf, id=98, 505.89pt x 361.35pt>
 File: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
 _Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
 
@@ -682,7 +634,7 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 450--451
 
 
 <Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_
-alpham2p0.pdf, id=98, 505.89pt x 361.35pt>
+alpham2p0.pdf, id=99, 505.89pt x 361.35pt>
 File: Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
 m1p5_alpham2p0.pdf Graphic file (type pdf)
 
@@ -693,7 +645,7 @@ pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 459.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
 <frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_
-alpham2p0.pdf, id=99, 505.89pt x 361.35pt>
+alpham2p0.pdf, id=100, 505.89pt x 361.35pt>
 File: frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
 m1p5_alpham2p0.pdf Graphic file (type pdf)
 
@@ -708,86 +660,73 @@ Overfull \hbox (5.66675pt too wide) in paragraph at lines 459--464
  []
 
 
-Class revtex4 Warning: Float cannot be placed.
+Class revtex4-1 Warning: Float cannot be placed.
 
-
-Underfull \hbox (badness 3158) in paragraph at lines 470--471
-[]\OT1/cmr/m/n/10 Should men-tion here im-pli-ca-tions for high red-
- []
-
-./lim.tex:475: Undefined control sequence.
-\@versohead ...pping during $0.5 < \Makelowercase 
+./lim.tex:468: Undefined control sequence.
+\@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.475 
-      
+l.468 \section{Discussion}
+                          
 ? 
 [7 <./phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./S
 NRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1
 d12_Lmin1d8_Lmax1d13.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 475.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 468.
 
 [8 <./Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
 m1p5_alpham2p0.pdf> <./frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpi
 x_alpham1p0_alpham1p5_alpham2p0.pdf>]
-./lim.tex:481: Missing $ inserted.
-<inserted text> 
-                $
-l.481 
-      
-? 
+Underfull \hbox (badness 3158) in paragraph at lines 470--471
+[]\OT1/cmr/m/n/10 Should men-tion here im-pli-ca-tions for high red-
+ []
+
 (./lim.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 4.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-./lim.tex:517: Undefined control sequence.
-\@versohead ...pping during $0.5 < \Makelowercase 
+./lim.bbl:143: Undefined control sequence.
+\@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.517 \end{document}
-                    
+l.143   {Xu}}]{viero13}
+                       
 ? 
-[9] (./lim.aux)
+[9]) [10] (./lim.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5889 strings out of 493315
- 84974 string characters out of 6137904
- 168976 words of memory out of 5000000
- 9236 multiletter control sequences out of 15000+600000
- 13175 words of font info for 54 fonts, out of 8000000 for 9000
+ 6415 strings out of 493315
+ 93045 string characters out of 6137904
+ 183485 words of memory out of 5000000
+ 9755 multiletter control sequences out of 15000+600000
+ 13484 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,18n,42p,1730b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,18n,42p,1730b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (9 pages, 559991 bytes).
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on lim.pdf (10 pages, 573613 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 216 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
