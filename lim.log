@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 MAR 2014 17:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 MAR 2014 00:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,7 +729,26 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 475.
 
 [8 <./Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
 m1p5_alpham2p0.pdf> <./frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpi
-x_alpham1p0_alpham1p5_alpham2p0.pdf>] (./lim.bbl
+x_alpham1p0_alpham1p5_alpham2p0.pdf>]
+./lim.tex:481: Missing $ inserted.
+<inserted text> 
+                $
+l.481 
+      
+? 
+./lim.tex:512: Missing $ inserted.
+<inserted text> 
+                $
+l.512 
+      
+? 
+./lim.tex:512: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.512 
+      
+? 
+(./lim.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
@@ -737,47 +756,62 @@ LaTeX Warning: Empty `thebibliography' environment on input line 4.
 
 Package natbib Warning: There were undefined citations.
 
-./lim.tex:486: Undefined control sequence.
+
+./lim.tex:519: LaTeX Error: \begin{equation} on input line 509 ended by \end{do
+cument}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.519 \end{document}
+                    
+? 
+./lim.tex:519: Undefined control sequence.
 \@versohead ...pping during $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.486 \end{document}
+l.519 \end{document}
                     
 ? 
 [9] (./lim.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 509 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 5888 strings out of 493315
- 84957 string characters out of 6137904
- 168959 words of memory out of 5000000
- 9235 multiletter control sequences out of 15000+600000
+ 5889 strings out of 493315
+ 84974 string characters out of 6137904
+ 168976 words of memory out of 5000000
+ 9236 multiletter control sequences out of 15000+600000
  13175 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,18n,42p,1730b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (9 pages, 556322 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on lim.pdf (9 pages, 560276 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  155 compressed objects within 2 object streams

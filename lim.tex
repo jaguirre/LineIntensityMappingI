@@ -140,7 +140,7 @@ Here we examine the application of the intensity mapping technique to moderate r
 
 Due to the spatio-spectral nature of intensity mapping, this technique as applied to [CII] line intensity fluctuations can be a highly complementary probe to recent studies of the 2-dimensional clustering properties of dusty, star-forming galaxies (DSFGs) (see Casey et al 2014 for a review). These studies, using a modification of the ``$P(D)$" approach, for example by \citep{bethermin11,viero13}, have already shed light on some aspects of the clustering of the most extreme star-forming system from $z = 1- 3$, but they are limited by the lack of redshift information, and by the need to include ``nuisance parameters'' in their estimation of the halo model. From the far-IR to the millimeter, it remains for the future for ALMA or NOEMA to produce redshift surveys with $\sim10^3$ galaxies, or even further down the road for CCAT. Thus we present a novel method of characterizing the 3D clustering of DSFGs with [CII] intensity mapping, which, importantly, does not rely on detecting individual galaxies in order to measure the power spectrum with high significance. 
 
-Furthermore, this sensitivity of the power spectrum to galaxies which are below the threshold for individual detections by current and future instruments---paired with the fact that the amplitude of the power spectrum is proportional on large scales to the mean intensity of the target line---introduces additional astrophysically interesting information inherent in the intensity mapping technique. Namely, by extracting the mean intensity of [CII], or any emission line of interest, from the power spectrum at a number of observed frequencies, intensity mapping provides a means of quantifying the aggregate luminosity from all [CII]-emitting sources at a given redshift. An example of using the power spectrum to determine luminosity density can be found in \citet{planckXXX}, although the results discussed there were derived from the 2-D angular power spectrum of IR continuum fluctuations, which relies on fits which include uncertainties in the dust spectral energy distributions, for instance. With inherent redshift information from the spectral line, such an observation of the 3-D power spectrum would ascertain the cosmic evolution of [CII] luminosity with a level of precision not available by other means. 
+Furthermore, this sensitivity of the power spectrum to galaxies which are below the threshold for individual detections by current and future instruments---paired with the fact that the amplitude of the power spectrum is proportional on large scales to the mean intensity of the target line---introduces additional astrophysically interesting information inherent in the intensity mapped data. Namely, by extracting the mean intensity of [CII], or any emission line of interest, from the power spectrum at a number of observed frequencies, intensity mapping provides a means of quantifying the aggregate luminosity from all [CII]-emitting sources at a given redshift. An example of using the power spectrum to determine luminosity density can be found in \citet{planckXXX}, although the results discussed there were derived from the 2-D angular power spectrum of IR continuum fluctuations, which relies on fits which include uncertainties in the dust spectral energy distributions, for instance. With inherent redshift information from the spectral line, such an observation of the 3-D power spectrum would ascertain the cosmic evolution of the Universe's total output in [CII] with a level of precision not available by other means. 
 
 The organization of this paper is as follows. We have calculated the mean intensity for a suite of fine structure IR emission lines, including the [CII] line, based on the IR luminosity function and empirical line-to-IR luminosity correlations, and present these results in the context of a power spectrum model in Section 2. In Section 3, we envision a suitable platform---namely, a balloon-borne experiment operating at frequencies between 240$\mu$m to 420$\mu$m---for conducting the [CII] intensity mapping experiment and discuss the feasibility of detecting the [CII] power spectra in terms of the Signal-to-Noise Ratio. From the power spectra, we provide estimates for accuracy on measuring the mean [CII] intensity as a function of redshift. To better assess the value of intensity mapping studies in the case of [CII] at moderate redshifts, and of intensity mapping experiments in general, we compare in Section 4 the performance of the intensity mapping approach against spectroscopic galaxy surveys that rely on individual detections of sources to measure the power spectrum. 
 
@@ -477,7 +477,40 @@ We have presented predictions for the measurement of the [CII] power spectrum be
 
 \appendix
 
-Schechter function details
+To explore the effect of the luminosity function shape on the relative performances of intensity mapping and galaxy surveys in observing the [CII] power spectrum and mean intensity of [CII] emitters, we have introduce toy models to represent different $\Phi(L_{IR}, z) \equiv \frac{\textrm{d}N}{\textrm{d}L_{IR}\textrm{d}V}.
+
+We parametrize our luminosity function as a Schechter function
+
+\begin{equation}
+\Phi(L_{IR},z) \textrm{d}L_{IR} = n_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha} \exp\left(-\frac{L_{IR}}{L_*}\right) \textrm{d} \left(\frac{L_{IR}}{L_*}\right)
+\end{equation}
+
+where $n_*$ is the normalization for number density, $L_*$ is the characteristic luminosity at the knee, and $\alpha$ is the faint-end slope, as usual. 
+
+Power-law luminosity functions are notoriously ill-behaved if the lower limit of integration for either the luminosity functions or its moments is extended to zero. Rather than implement a break in the power law, we simply cut it off at some $L_{IR, min}$ and choose to fix in our analysis the total IR luminosity density from galaxies as predicted by B11, denoted as $\rho_{IR}^{\textrm{B11}}$, such that
+
+\begin{equation}
+\zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) L_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha+1} \exp\left(-\frac{L_{IR}}{L_*}\right) \equiv \rho_{IR}^{\textrm{B11}}
+\label{eq:schechterlum}
+\end{equation}
+
+Here, $\zeta$ is the required normalization to force equality. 
+
+This is motivated by the observation that in many cases we do have constraints on the integrated light (from, for example, the cosmic infrared background or from the cosmic star formation rate density or the requirement of critical reionization), whereas we may not in general have detailed constraints on the distribution of light among galaxies, i.e., the shape of luminosity function.
+ 
+The number density, $n$, of sources of a given $L_{IR}$, can, in turn, be computed from 
+
+\begin{equation}
+n = \zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) \left(\frac{L_{IR}}{L_*}\right)^{\alpha}\exp\left(-\frac{L_{IR}}{L_*}\right)
+\end{equation}
+
+Finally, equation~\ref{eq:schechterlum} allows us to calculate the [CII] luminosity density for each IR-normalized toy model as
+
+\begin{equation}
+\zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) L_* \left(\frac{f_{\textrm{[CII]}}L_{IR}}{L_*}\right)^{\alpha+1} \exp\left(-\frac{L_{IR}}{L_*}\right) \equiv \rho_{IR}^{\textrm{B11}}
+\label{eq:schechterlum}
+
+where $f_{\textrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], or $\frac{L_{\textrm{[CII]}}(L_{IR})}{L_{IR}}$, described by the Spinoglio relations. Because $L_{\textrm{[CII]}}$ is slightly sublinear in $L_{IR}$, it follows that the toy models with flat faint-end slopes will produce more [CII] emission than their steeper counterparts. 
 
 \bibliography{master_references}
 
