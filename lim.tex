@@ -477,7 +477,7 @@ We have presented predictions for the measurement of the [CII] power spectrum be
 
 \appendix
 
-To explore the effect of the luminosity function shape on the relative performances of intensity mapping and galaxy surveys in observing the [CII] power spectrum and mean intensity of [CII] emitters, we have introduce toy models to represent different $\Phi(L_{IR}, z) \equiv \frac{\textrm{d}N}{\textrm{d}L_{IR}\textrm{d}V}.
+To explore the effect of the luminosity function shape on the relative performances of intensity mapping and galaxy surveys in observing the [CII] power spectrum and mean intensity of [CII] emitters, we have introduced toy models to represent different $\Phi(L_{IR}, z) \equiv \frac{\textrm{d}N}{\textrm{d}L_{IR}\textrm{d}V}.
 
 We parametrize our luminosity function as a Schechter function
 
@@ -490,24 +490,22 @@ where $n_*$ is the normalization for number density, $L_*$ is the characteristic
 Power-law luminosity functions are notoriously ill-behaved if the lower limit of integration for either the luminosity functions or its moments is extended to zero. Rather than implement a break in the power law, we simply cut it off at some $L_{IR, min}$ and choose to fix in our analysis the total IR luminosity density from galaxies as predicted by B11, denoted as $\rho_{IR}^{\textrm{B11}}$, such that
 
 \begin{equation}
-\zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) L_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha+1} \exp\left(-\frac{L_{IR}}{L_*}\right) \equiv \rho_{IR}^{\textrm{B11}}
+\int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) n_* L_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha+1} \exp\left(-\frac{L_{IR}}{L_*}\right) \equiv \rho_{IR}^{\textrm{B11}}
 \label{eq:schechterlum}
 \end{equation}
-
-Here, $\zeta$ is the required normalization to force equality. 
 
 This is motivated by the observation that in many cases we do have constraints on the integrated light (from, for example, the cosmic infrared background or from the cosmic star formation rate density or the requirement of critical reionization), whereas we may not in general have detailed constraints on the distribution of light among galaxies, i.e., the shape of luminosity function.
  
 The number density, $n$, of sources of a given $L_{IR}$, can, in turn, be computed from 
 
 \begin{equation}
-n = \zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) \left(\frac{L_{IR}}{L_*}\right)^{\alpha}\exp\left(-\frac{L_{IR}}{L_*}\right)
+n = \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) n_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha}\exp\left(-\frac{L_{IR}}{L_*}\right)
 \end{equation}
 
 Finally, equation~\ref{eq:schechterlum} allows us to calculate the [CII] luminosity density for each IR-normalized toy model as
 
 \begin{equation}
-\rho_{\textrm{[CII]}} = \zeta \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) L_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha} f_{\textrm{[CII]}}L_{IR} \exp\left(-\frac{L_{IR}}{L_*}\right) 
+\rho_{\textrm{[CII]}} = \int \textrm{d}\left(\frac{L_{IR}}{L_*}\right) n_* L_* \left(\frac{L_{IR}}{L_*}\right)^{\alpha} f_{\textrm{[CII]}}L_{IR} \exp\left(-\frac{L_{IR}}{L_*}\right) 
 \end{equation}
 
 where $f_{\textrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], or $\frac{L_{\textrm{[CII]}}(L_{IR})}{L_{IR}}$, described by the Spinoglio relations. Because $L_{\textrm{[CII]}}$ is slightly sublinear in $L_{IR}$, it follows that the toy models with steep faint-end slopes will produce more [CII] emission than their flatter counterparts. 
