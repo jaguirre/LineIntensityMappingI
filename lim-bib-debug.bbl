@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
+  Borgne}, \& {Penin}}]{bethermin11}
+{B{\'e}thermin}, M., {Dole}, H., {Lagache}, G., {Le Borgne}, D., \& {Penin}, A.
+  2011, \aap, 529, A4
+
+\end{thebibliography}

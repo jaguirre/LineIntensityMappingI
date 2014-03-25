@@ -1,10 +1,15 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{25}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
   Borgne}, \& {Penin}}]{bethermin11}
 {B{\'e}thermin}, M., {Dole}, H., {Lagache}, G., {Le Borgne}, D., \& {Penin}, A.
   2011, \aap, 529, A4
+
+\bibitem[{{Bouwens} {et~al.}(2014){Bouwens}, {Illingworth}, {Oesch}, {Trenti},
+  {Labbe'}, {Bradley}, {Carollo}, {van Dokkum}, {Gonzalez}, {Holwerda},
+  {Franx}, {Spitler}, {Smit}, \& {Magee}}]{bouwens14}
+{Bouwens}, R.~J. {et~al.} 2014, ArXiv e-prints
 
 \bibitem[{{Brauher} {et~al.}(2008){Brauher}, {Dale}, \& {Helou}}]{brauher08}
 {Brauher}, J.~R., {Dale}, D.~A., \& {Helou}, G. 2008, \apjs, 178, 280
@@ -78,6 +83,9 @@
   {Gonz{\'a}lez-Alfonso}, {Sternberg}, {Verma}, {Christopher}, {Davies},
   {Feuchtgruber}, {de Jong}, {Lutz}, \& {Tacconi}}]{gracia-carpio11}
 {Graci{\'a}-Carpio}, J. {et~al.} 2011, \apjl, 728, L7
+
+\bibitem[{{Hopkins} \& {Beacom}(2006)}]{hb06}
+{Hopkins}, A.~M. \& {Beacom}, J.~F. 2006, \apj, 651, 142
 
 \bibitem[{{Lidz} {et~al.}(2011){Lidz}, {Furlanetto}, {Oh}, {Aguirre}, {Chang},
   {Dor{\'e}}, \& {Pritchard}}]{lidz11}
