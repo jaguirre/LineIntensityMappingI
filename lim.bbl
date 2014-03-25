@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
@@ -86,6 +86,9 @@
 
 \bibitem[{{Hopkins} \& {Beacom}(2006)}]{hb06}
 {Hopkins}, A.~M. \& {Beacom}, J.~F. 2006, \apj, 651, 142
+
+\bibitem[{{Kennicutt}(1998)}]{kennicutt98}
+{Kennicutt}, Jr., R.~C. 1998, \apj, 498, 541
 
 \bibitem[{{Lidz} {et~al.}(2011){Lidz}, {Furlanetto}, {Oh}, {Aguirre}, {Chang},
   {Dor{\'e}}, \& {Pritchard}}]{lidz11}
