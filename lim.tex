@@ -132,7 +132,7 @@ We explore the possibility of studying the redshifted [CII] fine structure trans
 
 Various observational techniques in astronomy, including, but not limited to, photometric and spectroscopic stacking analysis, ``P(D)" fluctuation analysis, and recently, cosmological spectral deconvolution (cf. \citet{dole2006, glenn10,deputter14} for examples of each), have been developed to provide a means to study the nature of galaxies that are otherwise too faint to be detected individually at high significance. These methods, which aim to maximize the information in low signal-to-noise datasets, rely heavily on interpreting the statistical and aggregate properties of the extragalactic sources, and yet the insight they have provided into the nature of galaxies and their evolution with cosmic time has been invaluable. 
 
-\emph{Line intensity mapping}, also known as, simply, intensity mapping, or 3-D tomographic mapping, is one such technique that allows astronomers to probe extragalactic populations beyond their brightest sources. An intensity mapping survey of a spectral line at different frequencies \emph{produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction.} The spatial fluctuations in spectral line emission, contained in the data cube, are then decomposed into the power spectrum. Atomic \citep{gongcii,visbal11} and molecular \citep{lidz11,gong11co} transitions -- such as the 21 cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII] 158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization. Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{morales10rev} for a review) and in the experimental arena (e.g., PAPER \citep{parsons14}, MWA \citep{tingay13}), and so interest in measuring the [CII] power spectrum, for instance, primarily erupted as a means to complement the 21 cm studies at high redshift via the cross-correlation. 
+\emph{Line intensity mapping}, also known as, simply, intensity mapping, or 3-D tomographic mapping, is another such technique that allows astronomers to probe extragalactic populations beyond their brightest sources. An intensity mapping survey of a spectral line at different frequencies \emph{produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction.} The spatial fluctuations in spectral line emission, contained in the data cube, are then decomposed into the power spectrum. Atomic \citep{gongcii,visbal11} and molecular \citep{lidz11,gong11co} transitions -- such as the 21 cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII] 158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization. Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{morales10rev} for a review) and in the experimental arena (e.g., PAPER \citep{parsons14}, MWA \citep{tingay13}), and so interest in measuring the [CII] power spectrum, for instance, primarily erupted as a means to complement the 21 cm studies at high redshift via the cross-correlation. 
 
 As a proof of principal, the appeal of intensity mapping experiments in the post-Reionization era is obvious. Neutral hydrogen is, again, the most mature in this respect, as 21cm experiments have successfully measured the 21cm-galaxy cross power spectrum (Chang et al 2011) or put limits on the 21cm auto-power \citep{switzer13}, but the detectability of another Hydrogen transition, the Ly$\alpha$ line, has also been explored in \citep{Pullen13} et al for redshifts after Reionization down to $z \sim 2$. 
 
@@ -240,6 +240,17 @@ The resulting mean intensities for a variety of FIR lines are plotted in Figure~
 %\end{multline}
 
 %It should be noted that the mean [CII] luminosity $\bar{L}^{[CII]}$ does, in reality, include a contribution from diffuse gas in the intergalactic medium (IGM), yet Gong et al (2012) estimated that the specific intensity coming from the IGM ranges from $\sim 10^{-3}$ Jy sr$^{-1}$ to $\sim$ 1 Jy sr$^{-1}$ at $z = 1$---a negligible amount compared to the emission from the interstellar medium (ISM) of galaxies. 
+
+\section{Observational Strategy}
+
+This section to contain material from the section on observational strategy which currently appears later in the draft, supplemented by the new contour plot (Figure~\ref{fig:contours})
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{contour_depth_alpha_oi63_cii_oiii88}
+\caption{Contours of SNR$_{IM}$/SNR$_{GS}$ for the linear term in the clustering power spectrum, determined for a given depth (in $L_{IR}$) and IR LF faint-end slope $\alpha$. The FIR lines [OI]63$\mu$m, [CII]158$\mu$m, and [OIII]88$\mu$m are plotted from left to right.}
+\label{fig:contours}
+\end{figure}
 
 \section{The [CII] Power Spectrum}
 
@@ -403,7 +414,7 @@ The line sensitivity, $S_{\gamma}$ (units of W m$^{-2}$ s$^{1/2}$), is the figur
  
 %Recall that the units of $\frac{\sigma_{N}}{\sqrt{t_{pix}}}$ and $S_{i}$ are Jy sr$^{-1}$, which does not depend on aperture. One converts between $\sigma_N$ and $S_{\gamma}$ by dividing (or multiplying) by the frequency resolution d$\nu$ and beam solid angle d$\Omega$.
  
-Since the intensity mapping technique contains information in the power spectrum from sources below a given $S_{\gamma}$, we expect that regimes in which the majority of galaxies are too faint to be resolved are better-suited for intensity mapping observations than observations via the traditional galaxy survey. 
+Since the intensity mapping technique contains information in the power spectrum from sources below a given $S_{\gamma}$, we expect that regimes in which the majority of galaxies are too faint to be resolved are better-suited for intensity mapping observations than observations via the traditional galaxy survey. %We identify, and will discuss each in turn, three regimes where this scenario is likely: when the faint-end slope of the luminosity function is steep; when the telescope aperture (i.e., pixel size) is large; and, when the instrumental noise is large. 
 
 One such regime is when the bulk of the galaxy number density at a certain redshift is comprised of galaxies with sub-$L_*$ luminosities (i.e., for steep slope $\alpha$ in the LF). Indeed, this case is illustrated in the middle and righthand panels of Figure~\ref{fig:snr_vs_time_z1p5}, where, for LFs with $\alpha < -1.5$, the intensity mapping method (magenta curve) has higher SNR than the corresponding galaxy survey performed with the same instrument (dashed black curve), for all survey observing times. (Note the galaxy survey and intensity mapping survey map the same fiducial area in this example.) However, for the flattest faint-end slope ($\alpha = -1$, lefthand panel), both techniques have comparable SNR for most observing times. We point out that SNR$_{IM} >$ SNR$_{GS}$ for very short and very long observing times, which correspond to shot-noise dominated and cosmic variance-dominated regimes, respectively, for the galaxy surveys. Also, note that SNR$_{GS}$ and SNR$_{IM}$ have the opposite behavior with steepening $\alpha$. The intensity mapping technique is not degraded by a steepening of the luminosity function because it does not rely on individual detections. In our model, SNR$_{IM}$ is actually enhanced due to the unmitigated [CII] emission in normal galaxies (versus ULIRG-class galaxies that are deficient in [CII]).
 
@@ -527,34 +538,6 @@ Finally, equation~\ref{eq:schechterlum} allows us to calculate the [CII] luminos
 where $f_{\textrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], or $\frac{L_{\textrm{[CII]}}(L_{IR})}{L_{IR}}$, described by the Spinoglio relations. Because $L_{\textrm{[CII]}}$ is slightly sublinear in $L_{IR}$, it follows that the toy models with steep faint-end slopes will produce more [CII] emission than their flatter counterparts. 
 
 \bibliography{master_references}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_5p3sqdeg_uhp_ktnonzero_space}
-\caption{Same as previous figure, except for the space telescope and 5 square degree survey area.}
-%\label{fig:pcii_zall}
-\end{figure}
-
-\begin{figure}[h]
- \centering
- \includegraphics[width=0.5\textwidth]{SNRtot_starfire_cii_z1p5_5p3sqdeg_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13_space}
-\caption{Same as previous figure, except for the space telescope and 5 square degree field.}
-%\label{fig:snr_vs_time_z1p5}
-\end{figure}
-
-\begin{figure*}[h]
- \centering
- \subfloat{
- \label{}
- \includegraphics[width=0.5\textwidth]{Ngal_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0_space}}
- \subfloat{
- \label{}
- \includegraphics[width=0.5\textwidth]{frac_cii_STARFIRE_5p3sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_alpham2p0_space}}
- \centering
-\caption{Same as previous figure, except for the space telescope and 5 square degree field.}
-%\label{fig:ngal_frac}
-\end{figure*}
 
 \end{document}
 
