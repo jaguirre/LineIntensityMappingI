@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{29}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
@@ -21,6 +21,14 @@
   {Viero}}]{burgarella13}
 {Burgarella}, D. {et~al.} 2013, \aap, 554, A70
 
+\bibitem[{{Casey} {et~al.}(2014){Casey}, {Narayanan}, \& {Cooray}}]{casey14}
+{Casey}, C.~M., {Narayanan}, D., \& {Cooray}, A. 2014, ArXiv e-prints
+
+\bibitem[{{Chang} {et~al.}(2010){Chang}, {Pen}, {Bandura}, \&
+  {Peterson}}]{chang10}
+{Chang}, T.-C., {Pen}, U.-L., {Bandura}, K., \& {Peterson}, J.~B. 2010, ArXiv
+  e-prints 1007.3709
+
 \bibitem[{{Cooray} {et~al.}(2010){Cooray}, {Amblard}, {Wang}, {Arumugam},
   {Auld}, {Aussel}, {Babbedge}, {Blain}, {Bock}, {Boselli}, {Buat},
   {Burgarella}, {Castro-Rodriguez}, {Cava}, {Chanial}, {Clements}, {Conley},
@@ -33,7 +41,7 @@
   {Rigopoulou}, {Rizzo}, {Roseboom}, {Rowan-Robinson}, {Schulz}, {Scott},
   {Serra}, {Seymour}, {Shupe}, {Smith}, {Stevens}, {Symeonidis}, {Trichas},
   {Tugwell}, {Vaccari}, {Valtchanov}, {Vieira}, {Vigroux}, {Ward}, {Wright},
-  {Xu}, \& {Zemcov}}]{cooray10}
+  {Xu}, \& {Zemcov}}]{Cooray10}
 {Cooray}, A. {et~al.} 2010, \aap, 518, L22
 
 \bibitem[{{de Putter} {et~al.}(2014){de Putter}, {Holder}, {Chang}, \&
@@ -86,6 +94,10 @@
 
 \bibitem[{{Hopkins} \& {Beacom}(2006)}]{hb06}
 {Hopkins}, A.~M. \& {Beacom}, J.~F. 2006, \apj, 651, 142
+
+\bibitem[{{Jullo} {et~al.}(2012){Jullo}, {Rhodes}, {Kiessling}, {Taylor},
+  {Massey}, {Berge}, {Schimd}, {Kneib}, \& {Scoville}}]{Jullo12}
+{Jullo}, E. {et~al.} 2012, \apj, 750, 37
 
 \bibitem[{{Kennicutt}(1998)}]{kennicutt98}
 {Kennicutt}, Jr., R.~C. 1998, \apj, 498, 541

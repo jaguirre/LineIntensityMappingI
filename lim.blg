@@ -4,44 +4,44 @@ The top-level auxiliary file: lim.aux
 The style file: apj_w_etal.bst
 Database file #1: limNotes.bib
 Database file #2: master_references.bib
-You've used 26 entries,
+You've used 29 entries,
             2964 wiz_defined-function locations,
-            784 strings with 16239 characters,
-and the built_in function-call counts, 22677 in all, are:
-= -- 1713
-> -- 2553
+            798 strings with 16759 characters,
+and the built_in function-call counts, 24095 in all, are:
+= -- 1831
+> -- 2668
 < -- 3
-+ -- 992
-- -- 966
-* -- 2436
-:= -- 4356
-add.period$ -- 26
-call.type$ -- 26
-change.case$ -- 563
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 472
-empty$ -- 671
-format.name$ -- 1046
-if$ -- 4014
++ -- 1034
+- -- 1005
+* -- 2563
+:= -- 4633
+add.period$ -- 29
+call.type$ -- 29
+change.case$ -- 591
+chr.to.int$ -- 29
+cite$ -- 29
+duplicate$ -- 526
+empty$ -- 741
+format.name$ -- 1094
+if$ -- 4276
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 26
-newline$ -- 82
-num.names$ -- 104
-pop$ -- 566
+missing$ -- 29
+newline$ -- 91
+num.names$ -- 116
+pop$ -- 597
 preamble$ -- 1
-purify$ -- 563
+purify$ -- 591
 quote$ -- 0
-skip$ -- 389
+skip$ -- 428
 stack$ -- 0
-substring$ -- 480
+substring$ -- 520
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 234
+type$ -- 261
 warning$ -- 0
-while$ -- 84
+while$ -- 93
 width$ -- 0
-write$ -- 257
+write$ -- 285
