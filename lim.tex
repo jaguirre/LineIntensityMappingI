@@ -207,7 +207,7 @@ The resulting mean intensities for a variety of FIR lines are plotted in Figure~
 
 As laid out in Equation~\ref{eq:pclust}, $P_{\textrm{[CII],[CII]}}^{clust}$ is sensitive to intensity fluctuations from the full range of normal ($L_{IR} < 10^{11}$ L$_{\odot}$) to ULIRG-class ($L_{IR} > 10^{12}$ L$_{\odot}$) systems because its amplitude is proportional to the mean line intensity, squared. Figure~\ref{fig:frac_cii_b11_lirmin} shows the integrated luminosity functions for [CII] in our model, which gives a sense of the depth that a galaxy survey must reach in order to completely probe the full integrated [CII] emission, i.e. all of $\bar{S}_i$. In this section, we examine the role of the various luminosity ranges on the amplitude of the observed [CII] power.  
 
-Power spectra at four representative redshifts ($z = 0.63, 0.88, 1.16$, and $1.48$) comprised of the sources above a few different survey depths, or  $L_{IR, min}$, are represented by Figure~\ref{fig:pcii_lirmin}. (Note that we use  $\Delta_{[CII],[CII]}^2 = k^3 P_{[CII], [CII]}(k)/(2\pi^2)$ when plotting the power spectrum. In this notation, the factor $k^3$ cancels out the volumetric units of $P_{\delta,\delta}(k,z)$ and the integral of $\Delta_{[CII],[CII]}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$. In this Figure, we see the clustering amplitude decrease as the IR detection threshold is raised from 10$^{8}$ L$_{\odot}$ to 10$^{12}$ L$_{\odot}$.  (Note that the reduction in the clustering amplitude is precisely the square of the factor of reduction in $\bar{S}_{\textrm{[CII]}}$ plotted in Figure~\ref{fig:frac_cii_b11_lirmin}.) The level of decrease in clustering power as a result of raising $L_{IR,min}$ is most dramatic at the lower end of the redshift range of interest, when the luminosity function is represented mostly by normal galaxies and LIRGs. As ULIRGs rise to dominate the IR luminosity function at $z\sim1.5$, we see that the amplitude of the clustering component of $P_{\textrm{[CII],[CII]}}(k,z)$ becomes relatively robust until $L_{IR,min} \sim 10^{12}$ L$_{\odot}$. In fact, we infer from from Figure~\ref{fig:frac_cii_b11_lirmin} that, at $z = 1.48$, individually resolving galaxies at a depth of $6\times10^{11}$ will recover half of the [CII] light. (For redshifts $z=0.63, 1.16$ and $3.0$, the corresponding depths to observe half of the [CII] light are $\sim 10^{11}$, $2\times10^{11}$, and $10^{12}$ L$_{\odot}$, respectively.
+Power spectra at four representative redshifts ($z = 0.63, 0.88, 1.16$, and $1.48$) comprised of the sources above a few different survey depths, or  $L_{IR, min}$, are represented by Figure~\ref{fig:pcii_lirmin}. (Note that we use  $\Delta_{\textrm{[CII],[CII]}}^2 = k^3 P_{\textrm{[CII], [CII]}}(k)/(2\pi^2)$ when plotting the power spectrum. In this notation, the factor $k^3$ cancels out the volumetric units of $P_{\delta,\delta}(k,z)$ and the integral of $\Delta_{\textrm{[CII],[CII]}}^2$ over logarithmic k bins is equal to the variance in real space.) At these redshifts, respectively, the average linear bias has been assumed to be $\bar{b} = 2.0, 2.3, 2.6$, and $2.9$. In this Figure, we see the clustering amplitude decrease as the IR detection threshold is raised from 10$^{8}$ L$_{\odot}$ to 10$^{12}$ L$_{\odot}$.  (Note that the reduction in the clustering amplitude is precisely the square of the factor of reduction in $\bar{S}_{\textrm{[CII]}}$ plotted in Figure~\ref{fig:frac_cii_b11_lirmin}.) The level of decrease in clustering power as a result of raising $L_{IR,min}$ is most dramatic at the lower end of the redshift range of interest, when the luminosity function is represented mostly by normal galaxies and LIRGs. As ULIRGs rise to dominate the IR luminosity function at $z\sim1.5$, we see that the amplitude of the clustering component of $P_{\textrm{[CII],[CII]}}(k,z)$ becomes relatively robust until $L_{IR,min} \sim 10^{12}$ L$_{\odot}$. In fact, we infer from from Figure~\ref{fig:frac_cii_b11_lirmin} that, at $z = 1.48$, individually resolving galaxies at a depth of $6\times10^{11}$ will recover half of the [CII] light. (For redshifts $z=0.63, 1.16$ and $3.0$, the corresponding depths to observe half of the [CII] light are $\sim 10^{11}$, $2\times10^{11}$, and $10^{12}$ L$_{\odot}$, respectively.
 
 \begin{figure}
 \centering
@@ -277,7 +277,7 @@ P_N = \sigma_N^2 \frac{V_{pix}}{t_{pix}},
 where $\sigma_N^2$ is the instrument sensitivity (noise equivalent intensity, or NEI, in units of Jy sr$^{-1}$ s$^{1/2}$, $V_{pix}$ is the volume of a pixel, and $t_{obs}^{pix}$ is the time spent observing on a single pixel. The variance of a measured $k$, $\sigma^2(k)$, is then written as
 
 \begin{equation}
-\sigma^2(k) = \frac{\left({P_{[CII],[CII]}(k) + P_N(k)}\right)^{2}}{N_{modes}},
+\sigma^2(k) = \frac{\left({P_{\textrm{[CII],[CII]}}(k) + P_N(k)}\right)^{2}}{N_{modes}},
 \end{equation}
 
 where $N_{modes}$ is the number of wavemodes that are sampled for a given $k$ bin of some finite width $\Delta$log(k). (We have chosen $\Delta$log(k) = 0.3 for this analysis.)
@@ -285,7 +285,7 @@ where $N_{modes}$ is the number of wavemodes that are sampled for a given $k$ bi
 The total SNR, in turn, is calculated from the expression 
 
 \begin{equation}
-SNR_{tot} = \sqrt{\sum_{bins} \left(\frac{P_{[CII],[CII]}(k)}{\sigma(k)}\right)^2}
+SNR_{tot} = \sqrt{\sum_{bins} \left(\frac{P_{\textrm{[CII],[CII]}}(k)}{\sigma(k)}\right)^2}
 \end{equation}
 
 The expected [CII] power spectrum, with corresponding predictions for SNR, at the same redshifts from Figure~\ref{fig:pcii_lirmin} are shown in Figure~\ref{fig:pcii_zall}. In calculating the power spectrum sensitivity for these power spectra, the two lowest line-of-sight modes and the lowest transverse mode are not included, since these modes will likely be compromised by the necessity of continuum foreground subtraction and beam-differencing in the fluctuation analysis. (The exact effect of continuum subtraction will need to be modeled via simulation.) We find that the total power spectrum, including power from both shot noise and clustering, is observable with $\textrm{SNR}>10$ in the redshift range from $z = 0.88-1.48$; the clustering power, in turn, can be detected with $\textrm{SNR}>5$ at all examined redshifts. 
@@ -456,7 +456,7 @@ In Figure ~\ref{fig:ngal_frac}, SNR$_{GS}$  is broken down in terms of the numbe
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{contour_depth_alpha_cii}
+\includegraphics[width=0.5\textwidth]{contour_depth_alpha_cii_starfire}
 \caption{Contours of SNR$_{IM}$/SNR$_{GS}$ for the linear term in the [CII] clustering power spectrum at $z = 1.5$, determined for a given depth (in $L_{IR}$) and IR LF faint-end slope $\alpha$. }
 \label{fig:contours}
 \end{figure}
