@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 APR 2014 10:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 APR 2014 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -355,14 +355,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 91.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 91.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 91.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 91.
-(./lim.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `sub@' multiply defined.
-
-)
+(./lim.aux)
 \openout1 = `lim.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -582,20 +575,20 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 367--368
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-./lim.tex:381: Undefined control sequence.
+./lim.tex:377: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.381 \end{eqnarray}
-                    
+l.377 
+      
 ? 
 [5 <./pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg
 _uhp_ktnonzero.pdf> <./snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3
 sqdeg_10sqdeg_ktnonzero.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 381.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 377.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 381.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 377.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -608,47 +601,70 @@ ic file (type pdf)
 
 <use phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf>
 Package pdftex.def Info: phi_lir_schechter_bethermin11_murphy_Lstar1d12_Lmin1d8
-_Lmax1d13.pdf used on input line 387.
+_Lmax1d13.pdf used on input line 380.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 387--388
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 380--381
  [][] 
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 388--388
+Underfull \hbox (badness 5274) in paragraph at lines 381--381
 [][] \OT1/cmr/m/n/10 : |Toy model IR lu-mi-nos-ity func-tions
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 388--388
+Underfull \hbox (badness 2326) in paragraph at lines 381--381
 \OT1/cmr/m/n/10 with faint-end slope (from top to bot-tom) $\OML/cmm/m/it/10  
 \OT1/cmr/m/n/10 =
  []
 
+
+LaTeX Warning: Reference `:' on page 6 undefined on input line 412.
+
+./lim.tex:412: Missing $ inserted.
+<inserted text> 
+                $
+l.412 ... must be observed (cf. Figure~\ref:{ngal_
+                                                  frac}.)
+? 
+./lim.tex:412: Extra }, or forgotten $.
+l.412 ... be observed (cf. Figure~\ref:{ngal_frac}
+                                                  .)
+? 
+./lim.tex:413: Missing $ inserted.
+<inserted text> 
+                $
+l.413 
+      
+? 
 [6 <./rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb.pdf> <./phi_lir_schechter_bether
 min11_murphy_Lstar1d12_Lmin1d8_Lmax1d13.pdf>]
-<SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_Lsta
-r1d12_Lmin1d8_Lmax1d13.pdf, id=106, 505.89pt x 361.35pt>
-File: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
-_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file (type pdf)
+<Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5
+_alpham2p0.pdf, id=106, 505.89pt x 361.35pt>
+File: Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alph
+am1p5_alpham2p0.pdf Graphic file (type pdf)
 
-<use SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix_
-Lstar1d12_Lmin1d8_Lmax1d13.pdf>
-Package pdftex.def Info: SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_Vpix
-R450_0p1Vpix_10Vpix_Lstar1d12_Lmin1d8_Lmax1d13.pdf used on input line 455.
+<use Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alpha
+m1p5_alpham2p0.pdf>
+Package pdftex.def Info: Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10
+vpix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 455.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
 Overfull \hbox (11.29219pt too wide) in paragraph at lines 455--456
  [][] 
  []
 
-<contour_depth_alpha_cii_starfire.pdf, id=107, 505.89pt x 361.35pt>
-File: contour_depth_alpha_cii_starfire.pdf Graphic file (type pdf)
 
-<use contour_depth_alpha_cii_starfire.pdf>
-Package pdftex.def Info: contour_depth_alpha_cii_starfire.pdf used on input lin
-e 462.
+<snr_im_gs_ferr_1d-1_1d3_alpham1p0_alpham1p5_alpham2p0_0p1vpix_vpix_10vpix_z148
+.pdf, id=107, 505.89pt x 361.35pt>
+File: snr_im_gs_ferr_1d-1_1d3_alpham1p0_alpham1p5_alpham2p0_0p1vpix_vpix_10vpix
+_z148.pdf Graphic file (type pdf)
+
+<use snr_im_gs_ferr_1d-1_1d3_alpham1p0_alpham1p5_alpham2p0_0p1vpix_vpix_10vpix_
+z148.pdf>
+Package pdftex.def Info: snr_im_gs_ferr_1d-1_1d3_alpham1p0_alpham1p5_alpham2p0_
+0p1vpix_vpix_10vpix_z148.pdf used on input line 462.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
 Overfull \hbox (11.29219pt too wide) in paragraph at lines 462--463
@@ -656,125 +672,81 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 462--463
  []
 
 
-<Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_
-alpham2p0.pdf, id=108, 505.89pt x 361.35pt>
-File: Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
-m1p5_alpham2p0.pdf Graphic file (type pdf)
-
-<use Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham
-1p5_alpham2p0.pdf>
-Package pdftex.def Info: Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10v
-pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 471.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (14.12556pt too wide) in paragraph at lines 471--471
- [][] 
- []
-
-
-<frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham1p5_
-alpham2p0.pdf, id=109, 505.89pt x 361.35pt>
-File: frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
-m1p5_alpham2p0.pdf Graphic file (type pdf)
-
-<use frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpham
-1p5_alpham2p0.pdf>
-Package pdftex.def Info: frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10v
-pix_alpham1p0_alpham1p5_alpham2p0.pdf used on input line 474.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (14.12556pt too wide) in paragraph at lines 474--476
- [][] 
- []
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<contour_depth_alpha_cii_starfire.pdf, id=108, 505.89pt x 361.35pt>
+File: contour_depth_alpha_cii_starfire.pdf Graphic file (type pdf)
 
-<SNRtot_Ngal_fCII_gs_im_vs_tsurvey_1sqdeg_tsurvey200hr_alpham1p0_alpham2p0_spac
-e.pdf, id=110, 578.16pt x 650.43pt>
-File: SNRtot_Ngal_fCII_gs_im_vs_tsurvey_1sqdeg_tsurvey200hr_alpham1p0_alpham2p0
-_space.pdf Graphic file (type pdf)
+<use contour_depth_alpha_cii_starfire.pdf>
+Package pdftex.def Info: contour_depth_alpha_cii_starfire.pdf used on input lin
+e 469.
+(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-<use SNRtot_Ngal_fCII_gs_im_vs_tsurvey_1sqdeg_tsurvey200hr_alpham1p0_alpham2p0_
-space.pdf>
-Package pdftex.def Info: SNRtot_Ngal_fCII_gs_im_vs_tsurvey_1sqdeg_tsurvey200hr_
-alpham1p0_alpham2p0_space.pdf used on input line 484.
-(pdftex.def)             Requested size: 256.55872pt x 288.62164pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 484--485
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 469--470
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-./lim.tex:496: Undefined control sequence.
+Missing character: There is no   in font cmr10!
+Missing character: There is no   in font cmr10!
+./lim.tex:497: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.496 
+l.497 
       
 ? 
-[7 <./SNRtot_starfire_cii_1sqdeg_z1p5_tsurvey_alpham_im_VpixR450_0p1Vpix_10Vpix
-_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./contour_depth_alpha_cii_starfire.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 496.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 496.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-[8 <./Ngal_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpix_alpham1p0_alpha
-m1p5_alpham2p0.pdf> <./frac_cii_STARFIRE_1sqdeg_z1p5_tsurvey_0p1vpix_vpix_10vpi
-x_alpham1p0_alpham1p5_alpham2p0.pdf> <./SNRtot_Ngal_fCII_gs_im_vs_tsurvey_1sqde
-g_tsurvey200hr_alpham1p0_alpham2p0_space.pdf>] (./lim.bbl)
-./lim.tex:540: Undefined control sequence.
+[7 <./Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alph
+am1p5_alpham2p0.pdf> <./snr_im_gs_ferr_1d-1_1d3_alpham1p0_alpham1p5_alpham2p0_0
+p1vpix_vpix_10vpix_z148.pdf> <./contour_depth_alpha_cii_starfire.pdf>]
+(./lim.bbl [8])
+./lim.tex:539: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.540 \end{document}
+l.539 \end{document}
                     
 ? 
 [9] (./lim.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 412 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 6446 strings out of 493315
- 94012 string characters out of 6137904
- 189045 words of memory out of 5000000
- 9784 multiletter control sequences out of 15000+600000
+ 6432 strings out of 493315
+ 92920 string characters out of 6137904
+ 186965 words of memory out of 5000000
+ 9772 multiletter control sequences out of 15000+600000
  13484 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,18n,42p,2020b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (9 pages, 604373 bytes).
+ 44i,18n,42p,1998b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on lim.pdf (9 pages, 579777 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
+ 213 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
