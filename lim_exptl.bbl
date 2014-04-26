@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
@@ -20,9 +20,6 @@
   {Oliver}, {Page}, {Popesso}, {Pozzi}, {Riguccini}, {Vaccari}, \&
   {Viero}}]{burgarella13}
 {Burgarella}, D. {et~al.} 2013, \aap, 554, A70
-
-\bibitem[{{Carilli}(2011)}]{carilli11}
-{Carilli}, C.~L. 2011, \apjl, 730, L30
 
 \bibitem[{{Casey} {et~al.}(2014){Casey}, {Narayanan}, \& {Cooray}}]{casey14}
 {Casey}, C.~M., {Narayanan}, D., \& {Cooray}, A. 2014, ArXiv e-prints
