@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{43}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{B{\'e}thermin} {et~al.}(2011){B{\'e}thermin}, {Dole}, {Lagache}, {Le
@@ -6,34 +6,10 @@
 {B{\'e}thermin}, M., {Dole}, H., {Lagache}, G., {Le Borgne}, D., \& {Penin}, A.
   2011, \aap, 529, A4
 
-\bibitem[{{Bothwell} {et~al.}(2013){Bothwell}, {Aguirre}, {Chapman}, {Marrone},
-  {Vieira}, {Ashby}, {Aravena}, {Benson}, {Bock}, {Bradford}, {Brodwin},
-  {Carlstrom}, {Crawford}, {de Breuck}, {Downes}, {Fassnacht}, {Gonzalez},
-  {Greve}, {Gullberg}, {Hezaveh}, {Holder}, {Holzapfel}, {Ibar}, {Ivison},
-  {Kamenetzky}, {Keisler}, {Lupu}, {Ma}, {Malkan}, {McIntyre}, {Murphy},
-  {Nguyen}, {Reichardt}, {Rosenman}, {Spilker}, {Stalder}, {Stark}, {Strandet},
-  {Vernet}, {Wei{\ss}}, \& {Welikala}}]{bothwell13}
-{Bothwell}, M.~S. {et~al.} 2013, \apj, 779, 67
-
 \bibitem[{{Bouwens} {et~al.}(2014){Bouwens}, {Illingworth}, {Oesch}, {Trenti},
   {Labbe'}, {Bradley}, {Carollo}, {van Dokkum}, {Gonzalez}, {Holwerda},
   {Franx}, {Spitler}, {Smit}, \& {Magee}}]{bouwens14}
 {Bouwens}, R.~J. {et~al.} 2014, ArXiv e-prints
-
-\bibitem[{{Bradford} {et~al.}(2009){Bradford}, {Aguirre}, {Bock}, {Earle},
-  {Glenn}, {Inami}, {Maloney}, {Matsuhara}, {Naylor}, {Nguyen}, \&
-  {Zmuidzinas}}]{bradford09ccat}
-{Bradford}, C.~M. {et~al.} 2009, in Astronomical Society of the Pacific
-  Conference Series, Vol. 417, Submillimeter Astrophysics and Technology: a
-  Symposium Honoring Thomas G. Phillips, ed. D.~C. {Lis}, J.~E. {Vaillancourt},
-  P.~F. {Goldsmith}, T.~A. {Bell}, N.~Z. {Scoville}, \& J.~{Zmuidzinas}, 341
-
-\bibitem[{{Bradford} {et~al.}(2012){Bradford}, {Beyer}, {Kenyon}, {Runyan},
-  {Bumble}, {Echternach}, {Prouv{\'e}}, {Holmes}, {Bock}, \&
-  {Irwin}}]{bradford12}
-{Bradford}, C.~M. {et~al.} 2012, in Society of Photo-Optical Instrumentation
-  Engineers (SPIE) Conference Series, Vol. 8442, Society of Photo-Optical
-  Instrumentation Engineers (SPIE) Conference Series
 
 \bibitem[{{Brauher} {et~al.}(2008){Brauher}, {Dale}, \& {Helou}}]{brauher08}
 {Brauher}, J.~R., {Dale}, D.~A., \& {Helou}, G. 2008, \apjs, 178, 280
@@ -47,6 +23,9 @@
 
 \bibitem[{{Carilli}(2011)}]{carilli11}
 {Carilli}, C.~L. 2011, \apjl, 730, L30
+
+\bibitem[{{Casey} {et~al.}(2014){Casey}, {Narayanan}, \& {Cooray}}]{casey14}
+{Casey}, C.~M., {Narayanan}, D., \& {Cooray}, A. 2014, ArXiv e-prints
 
 \bibitem[{{Chang} {et~al.}(2010){Chang}, {Pen}, {Bandura}, \&
   {Peterson}}]{chang10}
@@ -199,11 +178,6 @@
   {Aghanim}, {Armitage-Caplan}, {Arnaud}, {Ashdown}, {Atrio-Barandela},
   {Aumont}, {Baccigalupi}, {Banday}, \& et~al.}]{planckXXX}
 {Planck Collaboration} {et~al.} 2013, ArXiv e-prints
-
-\bibitem[{{Riechers} {et~al.}(2014){Riechers}, {Carilli}, {Capak}, {Scoville},
-  {Smolcic}, {Schinnerer}, {Yun}, {Cox}, {Bertoldi}, {Karim}, \&
-  {Yan}}]{Riechers14}
-{Riechers}, D.~A. {et~al.} 2014, ArXiv e-prints
 
 \bibitem[{{Rubin}(1985)}]{rubin85}
 {Rubin}, R.~H. 1985, \apjs, 57, 349
