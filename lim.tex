@@ -235,7 +235,6 @@ We present in this section an assessment of detectability of the [CII] power spe
 \caption {Parameters for Envisioned Experimental Platforms} \label{tab:ExpParams} 
 \begin{tabular}{ l c c c c}
 \hline \hline
-$A_{survey}$ (deg$^2$) &\multicolumn{4}{c}{1.0}\\
 $D_{ap}$ (m) &\multicolumn{4}{c}{2.5} \\
 $R = \lambda_{obs}/\Delta\lambda$ & \multicolumn{4}{c}{450} \\
 N of Spectral Channels & \multicolumn{4}{c}{64} \\
@@ -244,21 +243,23 @@ $t_{obs}^{survey}$ (hr)&\multicolumn{4}{c}{200}\\
 \hline
 $z_{cen}$ for [CII] & 0.63 & 0.88 & 1.16 & 1.48 \\
 Wavelength Range ($\mu$m) & 240-276 & 276-317 & 317-365 & 365-420 \\
-$V_{voxel}$ (Mpc$^3$ h$^{-3}$) & 0.36} & 0.81 & 1.59 & 2.87 \\
-$A_{pix}$ (Mpc$^2 h$^{-2}$) & 0.044 & 0.096 & 0.19 & 0.35 \\
-$\Delta$r$_{los}^{vox} (Mpc h$^{-1}$) & 7.8 & 7.8 & 7.7 & 7.5 \\
+$V_{voxel}$ (Mpc$^3$ h$^{-3}$) & 0.36 & 0.81 & 1.59 & 2.87 \\
+$A_{pix}$ (Mpc$^2$ h$^{-2}$) & 0.044 & 0.096 & 0.19 & 0.35 \\
+$\Delta$r$_{los}^{vox}$ (Mpc h$^{-1}$) & 7.8 & 7.8 & 7.7 & 7.5 \\
 $\bar{S}_{\mathrm{[CII]}}$ (Jy sr$^{-1}$) & 4.56 $\times 10^3$ & 6.33 $\times$ 10$^3$ & 4.05 $\times 10^3$ & 2.55 $\times 10^3$ \\
 \hline
 \hline
- & \multicolumn{4}{c}{\emph{Atmospheric Balloon}} \\
+ & \multicolumn{4}{c}{\emph{Atmospheric Balloon}}\\
+$A_{survey}$ (deg$^2$) & 1 & 1 & 1 & 1 \\ 
 $\sigma_N$ (10$^7$ Jy sr$^{-1}$ sec$^{1/2}$) & 3.4 & 2.1 & 1.5 & 1.0  \\
 Line Sensitivity, $S_\gamma$ (10$^{-18}$ W m$^{-2}$ sec$^{1/2}$) & 15.8 & 11.3 & 9.20 & 7.10 \\
 $f_{err}$ & 230 & 90.4 & 88 & 81 \\
 \hline
  & \multicolumn{4}{c}{\emph{Cryogenic Satellite}} \\
+$A_{survey}$ (deg$^2$) & 1,000 & 1,000 & 1,000 & 1,000 \\ 
 $\sigma_N$ (10$^7$ Jy sr$^{-1}$ sec$^{1/2}$) & 0.030 & 0.034 & 0.039 & 0.043 \\
 Line Sensitivity, $S_\gamma$ (10$^{-18}$ W m$^{-2}$ sec$^{1/2}$) & 0.139 & 0.185 & 0.240 & 0.306 \\
-$f_{err}$ & 2.1 & 1.5 & 2.3 & 3.5 \\
+$f_{err}$ & 68 & 48 & 75 & 110 \\
 \hline
 \end{tabular}
 \end{center}
@@ -278,7 +279,7 @@ P_N & = \sigma_N^2 \frac{V_{vox}}{t_{obs}^{vox}} \\
 & = \left(f_{err} \bar{S}_i \right)^2 V_{vox} \nonumber
 \end{align}
 
-where $\sigma_N^2$ is the instrument sensitivity (noise equivalent intensity, or NEI, in units of Jy sr$^{-1}$ s$^{1/2}$, $V_{vox}$ is the volume of a voxel, and $t_{obs}^{vox}$ is the time spent observing on a single voxel. The voxel volume is the product of pixel area, $A_{pix}$ (in units of comoving Mpc$^2$ h$^{-2}$), and the line of sight distance along a spectral channel, $\Delta$r$_{los}^{vox}$ (Mpc h$^{-1}$). $A_{pix}$ depends on the telescope aperture and observed wavelength according to $A_{pix} = (\lambda_{obs}/D_{ap}\times D_{A})^2$.
+where $\sigma_N^2$ is the instrument sensitivity (noise equivalent intensity, or NEI, in units of Jy sr$^{-1}$ s$^{1/2}$, $V_{vox}$ is the volume of a voxel, and $t_{obs}^{vox}$ is the time spent observing on a single voxel. The voxel volume is the product of pixel area, $A_{pix}$ (in units of comoving Mpc$^2$ h$^{-2}$), and the line of sight distance along a spectral channel, $\Delta$r$_{los}^{vox}$ (Mpc h$^{-1}$). $A_{pix}$ depends on the telescope aperture and observed wavelength according to $A_{pix} = (\lambda_{i,obs}/D_{ap}\times D_{A})^2$.
 
 The variance of a measured $k$, $\sigma^2(k)$, is then written as
 
@@ -296,25 +297,56 @@ SNR_{tot} = \sqrt{\sum_{bins} \left(\frac{P_{i,i}(k)}{\sigma(k)}\right)^2}
 
 The expected [CII] power spectrum, with corresponding predictions for SNR, at the same redshifts from Figure~\ref{fig:pcii_lirmin} are shown in Figure~\ref{fig:pcii_zall}. In calculating the power spectrum sensitivity for these power spectra, the two lowest line-of-sight modes and the lowest transverse mode are not included, since these modes will likely be compromised by the necessity of continuum foreground subtraction and beam-differencing in the fluctuation analysis. (The exact effect of continuum subtraction will need to be modeled via simulation.)
 
-Table~\ref{tab:ExpParams} shows our instrument concepts.  We specify a 25-beam grating spectrometer covering the 240-420 $\mu$m band, each with 64 $R=450$ spectral channels operating near the photon background limit, illuminated with a 2.5-meter telescope. We consider a balloon experiment for which the photon background is due to 1\% emissivity in the atmosphere (a conservative average value) and 4\% in the telescope. A 200 hour integration (as might be obtained in a long duration balloon flight) over the 1 square degree with this system results in the $\sigma_N$, $f_{err}$, and line sensitivity values tabulated. We also consider a similar instrument on a cryogenic space-borne platform. The sensitivity in this case is obtained by specifying a detector sensitivity which adds $\sqrt{2}$ in quadrature to the noise in the photon background from the combination of zodiacal light, galactic dust, and a 6-K telescope with 4\% emissivity, similar to the proposed BLISS instrument for SPICA (e.g., see \citet{bradford12}). As the tabulated depths indicate, the space-born system is much more sensitive. Nevertheless, the balloon-borne experiment is capable of measuring the power spectrum with good sensitivity, and all error bars in plotted power spectra in this paper are based on the 200-hour balloon experiment. 
+Table~\ref{tab:ExpParams} shows our instrument concepts.  We specify a 25-beam grating spectrometer covering the 240-420 $\mu$m band, each with 64 $R=450$ spectral channels operating near the photon background limit, illuminated with a 2.5-meter telescope. We consider a balloon experiment for which the photon background is due to 1\% emissivity in the atmosphere (a conservative average value) and 4\% in the telescope. A 200 hour integration (as might be obtained in a long duration balloon flight) over the 1 square degree with this system results in the $\sigma_N$, $f_{err}$, and line sensitivity values tabulated. We also consider a similar instrument on a cryogenic space-borne platform. The sensitivity in this case is obtained by specifying a detector sensitivity which adds $\sqrt{2}$ in quadrature to the noise in the photon background from the combination of zodiacal light, galactic dust, and a 6-K telescope with 4\% emissivity, similar to the proposed BLISS instrument for SPICA (e.g., see \citet{bradford12}). As the tabulated depths indicate, the space-born system is much more sensitive. Nevertheless, the balloon-borne experiment is capable of measuring the power spectrum with good sensitivity, and all error bars in this paper are based on the 200-hour balloon experiment, unless explicitly noted. 
 
-\begin{figure}[b]
+\begin{figure}[t]
 \centering
 \includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero_minimaltext}
 \caption{Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 2.5 meter aperture and a survey area of 1 square degree, and with a total observing time of 200 hours. Dotted curves indicate power from clustering (including contributions from linear and nonlinear terms), and dashed curves indicate the contribution from shot noise power.}
 \label{fig:pcii_zall}
 \end{figure}
 
-\begin{figure}[b]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
-\caption{Signal-to-noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}^{clust}$ and number of modes as a function of $k$ at $z=0.88$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial $V_{vox}$ are shown as the dotted, solid, and dashed lines, respectively.}
-\label{fig:snr_nmode_k}
+\includegraphics[width = 0.5\textwidth]{ps_cii_z148_asurvey1000deg2_space}
+\caption{Predicted [CII] power spectrum at $z=1.48$ with error bar estimates for the cryogenic satellite experiment. Total observing time is 200 hours and the survey area is 1,000 deg$^2$. Dotted curves indicate power from clustering (including contributions from linear and nonlinear terms), and dashed curves indicate the contribution from shot noise power.}
+\label{fig:pcii_z1p48_space}
 \end{figure}
 
-We find that the total power spectrum, including power from both shot noise and clustering, is observable with SNR$>10$ in the redshift range from $z = 0.88-1.48$; the clustering power, in turn, can be detected with $\textrm{SNR}>5$ at all examined redshifts. 
+We find that the total power spectrum, including power from both shot noise and clustering, is observable using the balloon platform with $\textrm{SNR}>10$ in the redshift range from $z = 0.88-1.48$; the clustering power, in turn, can be detected with $\textrm{SNR}>5$ at all examined redshifts. From space, it becomes feasible to survey larger areas ($\sim$1,000 deg$^2$) and maintain high SNR on the order of 100 (Figure~\ref{fig:pcii_z1p48_space}). 
 
-In Figure~\ref{fig:snr_nmode_k} we examine the effect on SNR of changing the survey area and telescope aperture, where the SNR has been plotted as a function of $k$. Our fiducial choice for survey area is optimal for measuring as many large scale modes as possible with highest SNR in each $k$-bin. The 2 degree by 1 beam geometry may offer improved sensitivity for all observed $k$, with access down to $k=0.01$ h Mpc$^{-1}$, but has a more complicated mapping between the instrument and sky modes. To better demonstrate how the observational parameters drive the behavior of SNR($k$) illustrated in this Figure, we rewrite $P_N$ in terms of the parameters from Table 1 (where the units of $A_{survey}$ have been converted to physical area in units of Mpc$^{2}$ h$^{-2}$) giving 
+%\begin{figure}[b]
+%\centering
+%\includegraphics[width=0.5\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
+%\caption{Signal-to-noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}^{clust}$ and number of modes as a function of $k$ at $z=0.88$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial $V_{vox}$ are shown as the dotted, solid, and dashed lines, respectively. Observing time is fixed at 200 hours.}
+%\label{fig:snr_nmode_k}
+%\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{pcii_pnoise_k_z88}
+\caption{Noise power and cosmic variance as functions of $k$. Dot-dashed and dashed horizontal lines correspond to $P_N$ for different survey areas with the balloon and cryogenic satellite experiment, respectively. Dotted blue curves indicate power from correlations between (``2-halo" or linear term) and within dark matter halos (``1-halo" or non-linear term).}
+\label{fig:pcii_pnoise}
+\end{figure}
+
+In Figures~\ref{fig:snr_asurvey} and \ref{fig:nmode_k} we examine the effect of changing the survey area and telescope aperture on SNR and accessible wavemodes, where the SNR has been plotted as as a function of survey area, and the number of modes has been plotted as a function of $k$. Our fiducial survey area of $A_{survey} = 1.0$ deg$^2$ for the balloon experiment is optimal for measuring as many large scale ($k\lesssim0.1$ h/Mpc) modes as possible with highest SNR in each $k$-bin; the square degree field is the approximate field size at which there are roughly equal contributions from cosmic variance and $P_N$, and larger areas do not improve SNR overall, or on individual modes of interest. By the same criterion, the field size for the space experiment at $z = 1.48$ becomes optimal for 1,000 deg$^2$, as plotted in Figure~\ref{fig:pcii_z1p48_space}. According to Figure~\ref{fig:snr_nmode_k}, the 2 degree by 1 beam geometry may offer improved sensitivity for all observed $k$, with access down to $k=0.1$ h Mpc$^{-1}$. In reality, however, this geometry has a more complicated mapping between the instrument and sky modes. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{snr_tot_clust_lin_asurvey_z88}
+\caption{SNR on the total power spectrum (black), clustering power spectrum (red), and the linear portion ($k\lesssim0.1$ h/Mpc) of the clustering power spectrum (blue). Values for the balloon and cryogenic satellite experiments described in the text are designated with an ``X" and a triangle, respectively.}
+\label{fig:snr_asurvey}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{nmode_vs_k_z88_100sqdeg_1000sqdeg}
+\caption{Number of modes as a function of $k$ at $z=0.88$ for different survey areas. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial $V_{vox}$ are shown as the dotted, solid, and dashed lines, respectively.}
+\label{fig:nmode_k}
+\end{figure}
+
+To better demonstrate how the observational parameters drive the behavior of SNR($k$) illustrated in this Figure, we rewrite $P_N$ in terms of the parameters from Table 1 (where the units of $A_{survey}$ have been converted to physical area in units of Mpc$^{2}$ h$^{-2}$) giving 
 
 \begin{equation}
 \begin{split}
@@ -326,6 +358,9 @@ P_N& = \left(\sigma_N^2 A_{pix} \Delta r_{los}^{vox}\right) / \left({\frac{t_{ob
 \end{equation}
 
 In this form, it becomes apparent that---with fixed number of spatial pixels, spectral resolution, and total observing time---the only factor driving up the amplitude of noise power is the survey area; the effect of increasing aperture only allows access to higher wavenumbers, which is important for subtracting the shot noise from the total power to reveal the clustering.
+
+
+
 
 \subsection{Measuring $\bar{S}_{[CII]}(z)$}
 
@@ -339,6 +374,8 @@ In this form, it becomes apparent that---with fixed number of spatial pixels, sp
 As noted above, intensity mapping is naturally sensitive to the full range of galaxy luminosities through the mean intensity, which is imprinted in the linear (2-halo) clustering term. Shot noise must be accurately subtracted, and this should be straightforward given the high SNR in the shot-noise dominated k bins (Figure~\ref{fig:snr_nmode_k}).  Next, per Equation~\ref{eq:pclust}, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and  $\bar{b}_{\textrm{[CII]}}^2(z)$.The confidence with which are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on the IR luminosity of the contributing sources \citep{viero13}, indicating the need to map sufficiently wide areas that access $k$ modes where the power is largely independent of the level of 1-halo power. 
 
 Returning to Figure~\ref{fig:snr_nmode_k}, we see that, for the purpose of measuring $\bar{S}_{\textrm{[CII]}}$ with the fiducial survey of 1 deg$^2$, there are two $k$ bins ($k = 0.16$ and 0.27 h/Mpc) in which the 2-halo clustering accounts for at least 75\% of the total power. (Surveys with $A_{survey} = 5.3$ and 10 deg$^2$, also shown in Figure~\ref{fig:snr_nmode_k}, are wide enough to have three $k$ bins available in the linear regime, but the sensitivity on the additional mode with $t_{obs}^{survey}$= 200 hours is marginal.) Thus, in considering the case of $A_{survey} = 1.0$ deg$^2$, we find that it is possible to measure $\rho_{\textrm{[CII]}}(z)$ within $\sim10\%$ accuracy from $z = 0.63$ to $z=1.48$, as shown in Figure~\ref{fig:scii_z}, where the fractional uncertainty on $\bar{S}_{\textrm{[CII]}}(k,z)$ has been calculated as half the fractional uncertainty on $P_{\textrm{[CII],[CII]}}(k,z)$. In Figure~\ref{fig:scii_z}, we also include, for comparison, an estimate for $\rho_{\textrm{[CII]}}(z)$ based on the analytic fit to SFRD($z$) provided by \citet{hb06} and flat ratios of $L_{\textrm{[CII]}}/L_{IR} = 0.001$ and 0.003. (We use the standard relation between SFRD and infrared luminosity described in \citet{kennicutt98}.)
+
+[The cryogenic satellite offers an unprecedented platform for quantifying the evolution of far-IR line emission in cosmological volumes over time.] 
 
 \section{Observational Strategy: Comparing Intensity Mapping with Traditional Galaxy Surveys}
 
@@ -360,7 +397,7 @@ The principal advantage of intensity mapping is that it naturally measures the m
 \label{fig:lirmin_ferr}
 \end{figure}
 
-The line sensitivity, $S_{\gamma}$ (units of W m$^{-2}$ s$^{1/2}$), is the figure of merit for detecting an unresolved line in a point source, and we define individual detections at the $5\sigma$ level as having a flux above the instrumental noise in a voxel, i.e., above $5 \times S_{\gamma} t_{obs}^{vox}^{-1/2}$. A convenient expression, which explicitly ties the minimum detectable line luminosity to a set of theoretical and experimental parameters, for the detection threshold can be written as
+The line sensitivity, $S_{\gamma}$ (units of W m$^{-2}$ s$^{1/2}$), is the figure of merit for detecting an unresolved line in a point source, and we define individual detections at the $5\sigma$ level as having a flux above the instrumental noise in a voxel, i.e., above $5 \times S_{\gamma} t_{obs}^{vox}^{-1/2}$. (For this analysis, we safely assume the galaxy surveys have reliable spectroscopic redshifts and are not spatially confused. In reality, confusion can manifest when the density of sources is larger than the density of data voxels, ultimately raising the threshold for individual detection in a galaxy survey.) A convenient expression, which explicitly ties the minimum detectable line luminosity to a set of theoretical and experimental parameters, for the detection threshold can be written as
 
 \begin{equation}
 L_{i, min} = 5 \times f_{err} \rho_{i} V_{vox}, 
@@ -372,14 +409,6 @@ Here, $f_{err}$ is the fractional error (Eq.~\ref{eq:ferr}) and $\rho_{i}$ is th
 \begin{equation}
 \frac{L_{i,min}}{4\pi D_L^2} \Leftrightarrow 5 \times S_{\gamma} t_{obs}^{vox}^{-1/2}
 \end{equation}
-
-So far, in setting the above criterion for individual detection, we neglect sources of noise in the voxel other than the instrumental noise. In reality, the expression for $f_{err}$ should be expanded to include noise from the clustering and shot noise of galaxies occupying the same voxel, so that
-
-\begin{equation}
-f_{err} = \frac{(\sigma_N/\sqrt{t_{obs}^{vox}} + \sigma_{clustering} + \sigma_{shot})}{\bar{S}_i}
-\end{equation}
-
-For the regime we are in, characterized by small voxel sizes, we find that the contribution from $\sigma_{clustering}$ and $\sigma_{shot}$ is always less than the instrumental noise, and so we continue to use Equation~\ref{eq:ferr} in what follows. 
 
 The survey depths $L_{IR,min}$ as a function of $f_{err}$, $V_{vox}$, and $\alpha$ are plotted in Figure~\ref{fig:lirmin_ferr}. Note that we are investigating the effect of changing telescope aperture, which only changes the transverse dimensions of $V_{vox}$.
 
@@ -440,7 +469,7 @@ In considering only the SNR on the linear clustering term ($k<0.3$ h/Mpc) in our
 
 We have demonstrated the utility of the intensity mapping technique in measuring 3D power spectrum of bright FIR line emission at moderate redshifts, focusing on the important star-formation indicator [CII]. Fluctuations of FIR fine structure line intensities have been modeled by combining with the theorized dark matter power spectrum the empirically-constrained estimates of the IR luminosity from the B11 IR luminosity function and \citet{spinoglio12} line-to-$L_{IR}$ relations. We have presented predictions for the measurement of the [CII] power spectrum between $0.63 < z < 1.48$, and found the power spectrum to be detectable in both clustering and shot noise terms in this redshift range with a modest experimental platform. On large scales, the fact that the clustering amplitude of [CII] fluctuations is proportional to the mean [CII] intensity indicates the potential for measuring cosmic evolution of aggregate [CII], or of any target line, emission with the line intensity mapping approach. For the fiducial experiment considered in this paper, we have found that it would be possible to measure the [CII] luminosity density with fractional uncertainties on the order of 10\%. In examining the effect of luminosity function shape, telescope aperture, and fractional error (or instrument noise level) on the relative performances of intensity mapping to galaxy surveys, we have further demonstrated that, in the case where experiments with low fractional errors are not feasible, intensity mapping experiments often outperform galaxy redshift surveys when measuring the mean [CII] intensity. For steep luminosity functions, intensity mapping appears to be the only means of measuring average intensity and thus constraining the bulk of the luminosity function, as well as the optimal method of measuring the clustering power spectrum. 
 
-Although beyond the scope of this paper, our findings here reinforce the notion that the $z > 6$ Universe presents an ideal opportunity to learn about galaxy populations via intensity mapping. Strong evidence for steep ($\alpha \sim -2.0$) luminosity functions in the rest frame UV at $z\sim7$ \citep{bouwens14}, and larger voxels for a given aperture at higher redshifts, combine to position intensity mapping more favorably compared to galaxy surveys in probing the nature and clustering of the reionizing population.
+Although beyond the scope of this paper, our findings here reinforce the notion that the $z > 6$ Universe presents an ideal landscape to learn about galaxy populations via intensity mapping. Strong evidence for steep ($\alpha \sim -2.0$) luminosity functions in the rest frame UV at $z\sim7$ \citep{bouwens14}, and larger voxels for a given aperture at higher redshifts, combine to position intensity mapping more favorably compared to galaxy surveys in probing the nature and clustering of the reionizing population. Looking to the future, the unparalleled sensitivity of background-limited spectrometer technology aboard space-borne experiments as described in this paper may become novel and important platforms for learning about the Epoch of Reionization, and warrants further study. 
 
 \appendix
 
