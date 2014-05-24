@@ -1,13 +1,15 @@
 % Template for ApJ-type papers
 
-\documentclass[iop]{emulateapj}
+\documentclass[iop,twocolappendix]{emulateapj}
 
 \usepackage{rotating}
 \usepackage{amssymb,amsmath}
 \usepackage{graphicx}%[subfloat]
 \usepackage{natbib}
+\usepackage{float}
 \usepackage{subfig}
 \usepackage{multirow}
+\usepackage{subcaption}
 \citestyle{aa}
 \bibliographystyle{apj_w_etal}
 
@@ -124,9 +126,7 @@ Infrared fine-structure emission lines from trace metals are powerful diagnostic
 
 \section{Introduction}
 
-Various observational techniques in astronomy, including, but not limited to, photometric and spectroscopic stacking analysis, \emph{P(D)} fluctuation analysis, and recently, cosmological spectral deconvolution (cf. \citet{dole2006, glenn10,deputter14} for examples of each), have been developed to provide a means to study the nature of galaxies that are otherwise too faint to be detected individually at high significance. These methods rely heavily on interpreting the statistical and aggregate properties of the extragalactic sources, and yet the insight they have provided into the nature of galaxies and their evolution with cosmic time has been invaluable. 
-
-Line intensity mapping, or 3-D tomographic mapping, is another technique that allows astronomers to probe extragalactic light from all sources, including the faintest galaxies and even diffuse intergalactic emission. An intensity mapping survey of a spectral line at different frequencies produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction. The spatial fluctuations in line emission, contained in the data cube, are then decomposed into the power spectrum. Atomic \citep{gongcii,visbal11} and molecular \citep{lidz11,gong11co} transitions -- such as the 21-cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII]158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization (EoR). Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{morales10rev} for a review) and in the experimental arena (e.g., PAPER \citep{parsons14}, MWA \citep{tingay13}) because intensity mapping is the only means of studying the intergalactic HI light. [CII] later emerged as an EoR intensity mapping candidate since it both offers a way to probe the clustering of sources from the faint-end of the luminosity function, and provides an opportunity for cross-correlation with the HI datasets \citep{gongcii}.
+Line intensity mapping, or 3-D tomographic mapping, allows astronomers to probe extragalactic light from all sources, including the faintest galaxies and even diffuse intergalactic emission. An intensity mapping survey of a spectral line at different frequencies produces a fully three dimensional data cube containing ``tomographic scans" of the Universe along the spectral (i.e., redshift) direction. The spatial fluctuations in line emission, contained in the data cube, are then decomposed into the power spectrum. Atomic \citep{gongcii,visbal11} and molecular \citep{lidz11,gong11co} transitions -- such as the 21-cm spin flip transition from H$^{\mathrm{o}}$, CO (2-1), and [CII]158$\mu$m -- have been investigated as candidates for intensity mapping experiments during the Epoch of Reionization (EoR). Of these, the neutral hydrogen case is undoubtedly the most developed in terms of its standing in the literature (cf. \citet{morales10rev} for a review) and in the experimental arena (e.g., PAPER \citep{parsons14}, MWA \citep{tingay13}) because intensity mapping is the only means of studying the intergalactic HI light. [CII] later emerged as an EoR intensity mapping candidate since it both offers a way to probe the clustering of sources from the faint-end of the luminosity function, and provides an opportunity for cross-correlation with the HI datasets \citep{gongcii}.
 
 Aside from tracing large-scale structure, [CII] also contains astrophysical information about the conditions in star-forming galaxies. With an ionization potential of 11.6 eV, it arises in both ionized and neutral atomic gas.  Empirically, it is an important coolant, often the brightest single line in the spectrum of a star-forming galaxy, emitting as much as 0.5--1\% of the total FIR luminosity \citep{malhotra97,luhman98,stacey10,graciacarpio11}.   The ratio of the [CII] luminosity to the total bolometric luminosity can be used as a diagnostic tool that provides: (1) a measure of the star-formation activity, (2) a measure of the spatial extent (or ``mode") of star formation, and (3) an AGN/starburst discriminant \citep{hailey-dunsheath10,stacey10,graciacarpio11,sargsyan12,diaz-santos13}.
 
@@ -173,7 +173,7 @@ P_{i,i}^{shot}(z) = \int{\mathrm{d}n_{i} \left( \frac{L_{i}}{4\pi D_L^2} \right)
 
 The number density of line emitters and the line luminosity that appear in equations (2) and (3) can be derived by a variety of methods. In earlier papers on intensity mapping of molecular and fine-structure emission lines at high redshift (z $\gtrsim$ 6), one approach involved using the dark matter halo mass function in lieu of the line emitter density (and invoking a one-to-one correlation between halos and galaxies, which is reasonable at high redshifts). The line luminosity, in turn, could be scaled according to the star formation rate, which was related to halo mass via a proportionality constant comprised of factors describing the fraction of baryons available for star formation, as well as the dynamical timescale for star formation and a duty cycle for emission. While this approach is perhaps justified for the very early Universe (given the lack of information about the galaxy luminosity function at high redshift), the situation at later times is better understood; we make use of empirical constraints on the $z\sim1$ epoch from FIR/submm number counts and observations of FIR line emission in galaxies. 
 
-We first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from \citet{bethermin11} (hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$.
+We first employ the empirically-constrained, backwards-evolution model of the IR luminosity function $\Phi(L_{IR}, z)$ from \citet{bethermin11} (hereafter B11) to predict the number of galaxies with luminosity $L_{IR}$ at a given redshift in some comoving volume of the Universe per logarithmic luminosity interval, i.e., $\frac{\mathrm{d}N(L_{IR},z)}{\mathrm{d}V\mathrm{dlog_{10}}L_{IR}}$ or $\frac{\mathrm{d}n_{IR}}{\mathrm{dlog_{10}}L_{IR}}$. 
 
 To convert the infrared luminosity to a line luminosity, we apply the relation for $L_{i}$ as a function of $L_{IR}$ provided by \citet{spinoglio12}. (Working directly from the IR luminosity function, we do not include the population of IR-dark or IR-faint sources that nevertheless have bright emission in the far-IR fine structure lines (cf. \citet{Riechers14}).) The fit in their paper was based on the collection of ISO-LWS observations of local galaxies in \citet{brauher08}. For example, we reproduce below the relation for [CII]:
 
@@ -181,7 +181,7 @@ To convert the infrared luminosity to a line luminosity, we apply the relation f
 \mathrm{log_{10}}L_{\mathrm{[CII]}} = (0.89 \pm 0.03) \mathrm{log_{10}}L_{\mathrm{IR}} - (2.44 \pm 0.07),
 \end{equation}
 
-indicating that [CII] is suppressed for higher luminosity systems. The choice of using local $L_i$-$L_{IR}$ relations for our study of $z\sim1$ emitters may be unrealistic due to findings that suggest the so-called ``deficit" in [CII] and other FIR lines evolves with redshift such that the high-z counterparts to local systems do not exhibit suppressed FIR line emission. The local IR relations then can be interpreted as underestimating emission of the fine structure lines, since we likely overestimate the deficiency in the higher redshift, high luminosity systems of our model. While in Section 4 we explore variations in the shape of the IR luminosity function and consider an alternative line-to-IR luminosity ratio, we use the combined Bethermin-Spinoglio model to predict line intensities and adopt it as our fiducial model throughout this paper. 
+indicating that [CII] is suppressed for higher luminosity systems. The choice of using local $L_i$-$L_{IR}$ relations for our study of $z\sim1$ emitters may be unrealistic due to findings that suggest the so-called ``deficit" in [CII] and other FIR lines evolves with redshift such that the high-z counterparts to local systems do not exhibit suppressed FIR line emission. The local IR relations then can be interpreted as underestimating emission of the fine structure lines, since we likely overestimate the deficiency in the higher redshift, high luminosity systems of our model. While we use the combined Bethermin-Spinoglio model to predict line intensities and adopt it as our fiducial model throughout this paper, we hedge our predictions between estimates based on the cosmic star formation rate density as measured by \citet{hb06}. Furthermore, in Section 4 we explore variations in the shape of the IR luminosity function and consider an alternative line-to-IR luminosity ratio.
 
 Next, it becomes possible to write the cosmic mean intensity and shot noise of the line, in units of Jy sr$^{-1}$,  as a function of redshift based on the B11 luminosity function and \citet{spinoglio12} $L_{i}-L_{\mathrm{IR}}$ relation as
 
@@ -197,7 +197,7 @@ where $f_{i}$, i.e. $\frac{L_{i}(L_{IR})}{L_{IR}}$, is the fraction of IR lumino
 
 \begin{figure}[t]
  \centering
- \includegraphics[width=0.4\textwidth]{interloper_intensity_jysr_withM82CO}
+ \includegraphics[width=0.45\textwidth]{interloper_intensity_jysr_withM82CO}
 \caption{Intensity of fine structure line emission as a function of observed wavelength for the empirical model based on the B11 luminosity function. Intensities of CO lines, which are not included in the IR luminosity relations from \citet{spinoglio12}, have been estimated using a luminosity scaling provided by \citet{carilli11} for CO(1-0) and the relative intensities of the higher-J lines in \citet{bothwell13}.}
 \label{fig:interlopers}
 \end{figure}
@@ -212,14 +212,14 @@ Power spectra at four representative redshifts ($z = 0.63, 0.88, 1.16$, and $1.4
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{fraction_cii_emissivity_vs_LIRmin_vs_z}
+\includegraphics[width=0.45\textwidth]{fraction_cii_emissivity_vs_LIRmin_vs_z}
 \caption{The fraction of total [CII] mean intensity as a function of lower limit in the luminosity function. Different color curves represent different redshifts, as labeled on the plot.}
 \label{fig:frac_cii_b11_lirmin}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
+\includegraphics[width=0.45\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero}
 \caption{Predicted [CII] autocorrelation power spectra from $z = 0.63$ to $z = 1.48$. Blue, red, cyan, magenta, and green curves represent the power spectrum computed with a lower limit in the luminosity function corresponding to $10^8$, $10^9$, $10^{10}$, $10^{11}$, and $10^{12}$ L$_{\odot}$, respectively.}
 \label{fig:pcii_lirmin}
 \end{figure}
@@ -239,7 +239,7 @@ $D_{ap}$ (m) &\multicolumn{4}{c}{2.5} \\
 $R = \lambda_{obs}/\Delta\lambda$ & \multicolumn{4}{c}{450} \\
 N of Spectral Channels & \multicolumn{4}{c}{64} \\
 N of Spectrometers (instantaneous spatial pixels) & \multicolumn{4}{c}{25} \\
-$t_{obs}^{survey}$ (hr)&\multicolumn{4}{c}{200}\\
+$t_{obs}^{survey}$ (hr)&\multicolumn{4}{c}{450}\\
 \hline
 $z_{cen}$ for [CII] & 0.63 & 0.88 & 1.16 & 1.48 \\
 Wavelength Range ($\mu$m) & 240-276 & 276-317 & 317-365 & 365-420 \\
@@ -253,13 +253,13 @@ $\bar{S}_{\mathrm{[CII]}}$ (Jy sr$^{-1}$) & 4.56 $\times 10^3$ & 6.33 $\times$ 1
 $A_{survey}$ (deg$^2$) & 1 & 1 & 1 & 1 \\ 
 $\sigma_N$ (10$^7$ Jy sr$^{-1}$ sec$^{1/2}$) & 3.4 & 2.1 & 1.5 & 1.0  \\
 Line Sensitivity, $S_\gamma$ (10$^{-18}$ W m$^{-2}$ sec$^{1/2}$) & 15.8 & 11.3 & 9.20 & 7.10 \\
-$f_{err}$ & 230 & 90.4 & 88 & 81 \\
+$f_{err}$ & 160 & 63 & 61 & 56 \\
 \hline
  & \multicolumn{4}{c}{\emph{Cryogenic Satellite}} \\
 $A_{survey}$ (deg$^2$) & 1,000 & 1,000 & 1,000 & 1,000 \\ 
 $\sigma_N$ (10$^7$ Jy sr$^{-1}$ sec$^{1/2}$) & 0.030 & 0.034 & 0.039 & 0.043 \\
 Line Sensitivity, $S_\gamma$ (10$^{-18}$ W m$^{-2}$ sec$^{1/2}$) & 0.139 & 0.185 & 0.240 & 0.306 \\
-$f_{err}$ & 68 & 48 & 75 & 110 \\
+$f_{err}$ & 45 & 32 & 50 & 77 \\
 \hline
 \end{tabular}
 \end{center}
@@ -297,56 +297,38 @@ SNR_{tot} = \sqrt{\sum_{bins} \left(\frac{P_{i,i}(k)}{\sigma(k)}\right)^2}
 
 The expected [CII] power spectrum, with corresponding predictions for SNR, at the same redshifts from Figure~\ref{fig:pcii_lirmin} are shown in Figure~\ref{fig:pcii_zall}. In calculating the power spectrum sensitivity for these power spectra, the two lowest line-of-sight modes and the lowest transverse mode are not included, since these modes will likely be compromised by the necessity of continuum foreground subtraction and beam-differencing in the fluctuation analysis. (The exact effect of continuum subtraction will need to be modeled via simulation.)
 
-Table~\ref{tab:ExpParams} shows our instrument concepts.  We specify a 25-beam grating spectrometer covering the 240-420 $\mu$m band, each with 64 $R=450$ spectral channels operating near the photon background limit, illuminated with a 2.5-meter telescope. We consider a balloon experiment for which the photon background is due to 1\% emissivity in the atmosphere (a conservative average value) and 4\% in the telescope. A 200 hour integration (as might be obtained in a long duration balloon flight) over the 1 square degree with this system results in the $\sigma_N$, $f_{err}$, and line sensitivity values tabulated. We also consider a similar instrument on a cryogenic space-borne platform. The sensitivity in this case is obtained by specifying a detector sensitivity which adds $\sqrt{2}$ in quadrature to the noise in the photon background from the combination of zodiacal light, galactic dust, and a 6-K telescope with 4\% emissivity, similar to the proposed BLISS instrument for SPICA (e.g., see \citet{bradford12}). As the tabulated depths indicate, the space-born system is much more sensitive. Nevertheless, the balloon-borne experiment is capable of measuring the power spectrum with good sensitivity, and all error bars in this paper are based on the 200-hour balloon experiment, unless explicitly noted. 
+Table~\ref{tab:ExpParams} shows our instrument concepts.  We specify a 25-beam grating spectrometer covering the 240-420 $\mu$m band, each with 64 $R=450$ spectral channels operating near the photon background limit, illuminated with a 2.5-meter telescope. We consider a balloon experiment for which the photon background is due to 1\% emissivity in the atmosphere (a conservative average value) and 4\% in the telescope. A 450 hour integration (as might be obtained in a long duration balloon flight) over the 1 square degree with this system results in the $\sigma_N$, $f_{err}$, and line sensitivity values tabulated. We also consider a similar instrument on a cryogenic space-borne platform. The sensitivity in this case is obtained by specifying a detector sensitivity which adds $\sqrt{2}$ in quadrature to the noise in the photon background from the combination of zodiacal light, galactic dust, and a 6-K telescope with 4\% emissivity, similar to the proposed BLISS instrument for SPICA (e.g., see \citet{bradford12}). As the tabulated depths indicate, the space-born system is much more sensitive. Nevertheless, the balloon-borne experiment is capable of measuring the power spectrum with good sensitivity, and all error bars in this paper are based on the 450-hour balloon experiment, unless explicitly noted. 
 
-\begin{figure}[t]
+\begin{figure*}[t]
 \centering
-\includegraphics[width = 0.5\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero_minimaltext}
-\caption{Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for telescope with 2.5 meter aperture and a survey area of 1 square degree, and with a total observing time of 200 hours. Dotted curves indicate power from clustering (including contributions from linear and nonlinear terms), and dashed curves indicate the contribution from shot noise power.}
+\begin{tabular}{cc}
+\includegraphics[width = 0.49\textwidth]{pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero_minimaltext_450hr} &
+\includegraphics[width = 0.49\textwidth]{pcii_STARFIRE_z148_halofit_bethermin_spinoglio_ap2p5m_1000sqdeg_uhp_ktnonzero_minimaltext_450hr_space} \\
+\end{tabular}
+\caption{Left panel: Predicted [CII] power spectra with error bar estimates from $z$ = 0.63 to $z$ = 1.48 for the fiducial balloon experiment, and with a total observing time of 450 hours. Dotted curves indicate power from clustering (including contributions from linear and nonlinear terms), and dashed curves indicate the contribution from shot noise power. Right panel: [CII] power spectrum expected at $z=1.48$ with error bar estimates for the fiducial cryogenic satellite experiment.}
 \label{fig:pcii_zall}
 \end{figure}
 
-\begin{figure}[h]
+
+We find that the total power spectrum, including power from both shot noise and clustering, is observable using the balloon platform with $\textrm{SNR}>10$ at all examined redshifts; the clustering power, in turn, can be detected with $\textrm{SNR}>10$ in the redshift range from $z = 0.88-1.48$. From space, it becomes feasible to survey larger areas ($\sim$1,000 deg$^2$) and maintain high SNR on the order of 100. (See Figure~\ref{fig:pcii_zall} for calculated SNRs.)
+
+In Figures~\ref{fig:snr_asurvey} and \ref{fig:nmode_k} we examine the effect of changing the survey area and telescope aperture on SNR and accessible wavemodes, where the SNR has been plotted as as a function of survey area, and the number of modes has been plotted as a function of $k$. Our fiducial survey area of $A_{survey} = 1.0$ deg$^2$ for the balloon experiment is optimal for measuring as many large scale ($k\lesssim0.1$ h/Mpc) modes as possible with highest SNR in each $k$-bin; the square degree field is the approximate field size at which there are roughly equal contributions from cosmic variance and $P_N$, and larger areas do not improve SNR overall, or on individual modes of interest. By the same criterion, the field size for the space experiment at $z = 1.48$ becomes optimal for 1,000 deg$^2$. We do not consider surveys with areas less than a square degree because this prohibits measurement of power on large physical scales (cf. Figure~\ref{fig:nmode_k}).
+
+\begin{figure}[b]
 \centering
-\includegraphics[width = 0.5\textwidth]{ps_cii_z148_asurvey1000deg2_space}
-\caption{Predicted [CII] power spectrum at $z=1.48$ with error bar estimates for the cryogenic satellite experiment. Total observing time is 200 hours and the survey area is 1,000 deg$^2$. Dotted curves indicate power from clustering (including contributions from linear and nonlinear terms), and dashed curves indicate the contribution from shot noise power.}
-\label{fig:pcii_z1p48_space}
-\end{figure}
-
-We find that the total power spectrum, including power from both shot noise and clustering, is observable using the balloon platform with $\textrm{SNR}>10$ in the redshift range from $z = 0.88-1.48$; the clustering power, in turn, can be detected with $\textrm{SNR}>5$ at all examined redshifts. From space, it becomes feasible to survey larger areas ($\sim$1,000 deg$^2$) and maintain high SNR on the order of 100 (Figure~\ref{fig:pcii_z1p48_space}). 
-
-%\begin{figure}[b]
-%\centering
-%\includegraphics[width=0.5\textwidth]{snr_nmode_vs_k_starfire_ap2p5m_0p1vpix_10vpix_1sqdeg_5p3sqdeg_10sqdeg_ktnonzero}
-%\caption{Signal-to-noise on the clustering term of the [CII] power spectrum $P_{\textrm{[CII], [CII]}}^{clust}$ and number of modes as a function of $k$ at $z=0.88$. The black, blue, and red lines correspond to survey areas of 1.0, 5.3, and 10.0 deg$^2$, respectively. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial $V_{vox}$ are shown as the dotted, solid, and dashed lines, respectively. Observing time is fixed at 200 hours.}
-%\label{fig:snr_nmode_k}
-%\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{pcii_pnoise_k_z88}
-\caption{Noise power and cosmic variance as functions of $k$. Dot-dashed and dashed horizontal lines correspond to $P_N$ for different survey areas with the balloon and cryogenic satellite experiment, respectively. Dotted blue curves indicate power from correlations between (``2-halo" or linear term) and within dark matter halos (``1-halo" or non-linear term).}
-\label{fig:pcii_pnoise}
-\end{figure}
-
-In Figures~\ref{fig:snr_asurvey} and \ref{fig:nmode_k} we examine the effect of changing the survey area and telescope aperture on SNR and accessible wavemodes, where the SNR has been plotted as as a function of survey area, and the number of modes has been plotted as a function of $k$. Our fiducial survey area of $A_{survey} = 1.0$ deg$^2$ for the balloon experiment is optimal for measuring as many large scale ($k\lesssim0.1$ h/Mpc) modes as possible with highest SNR in each $k$-bin; the square degree field is the approximate field size at which there are roughly equal contributions from cosmic variance and $P_N$, and larger areas do not improve SNR overall, or on individual modes of interest. By the same criterion, the field size for the space experiment at $z = 1.48$ becomes optimal for 1,000 deg$^2$, as plotted in Figure~\ref{fig:pcii_z1p48_space}. According to Figure~\ref{fig:snr_nmode_k}, the 2 degree by 1 beam geometry may offer improved sensitivity for all observed $k$, with access down to $k=0.1$ h Mpc$^{-1}$. In reality, however, this geometry has a more complicated mapping between the instrument and sky modes. 
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{snr_tot_clust_lin_asurvey_z88}
+\includegraphics[width=0.45\textwidth]{snr_tot_clust_lin_asurvey_z88_450hr}
 \caption{SNR on the total power spectrum (black), clustering power spectrum (red), and the linear portion ($k\lesssim0.1$ h/Mpc) of the clustering power spectrum (blue). Values for the balloon and cryogenic satellite experiments described in the text are designated with an ``X" and a triangle, respectively.}
 \label{fig:snr_asurvey}
 \end{figure}
 
-
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{nmode_vs_k_z88_100sqdeg_1000sqdeg}
+\includegraphics[width=0.45\textwidth]{nmode_vs_k_z88_100sqdeg_1000sqdeg}
 \caption{Number of modes as a function of $k$ at $z=0.88$ for different survey areas. Telescopes with apertures yielding 0.1, 1, and 10 times the fiducial $V_{vox}$ are shown as the dotted, solid, and dashed lines, respectively.}
 \label{fig:nmode_k}
 \end{figure}
 
-To better demonstrate how the observational parameters drive the behavior of SNR($k$) illustrated in this Figure, we rewrite $P_N$ in terms of the parameters from Table 1 (where the units of $A_{survey}$ have been converted to physical area in units of Mpc$^{2}$ h$^{-2}$) giving 
+To better demonstrate how the observational parameters drive the behavior of SNR, we rewrite $P_N$ in terms of the parameters from Table 1 (where the units of $A_{survey}$ have been converted to physical area in units of Mpc$^{2}$ h$^{-2}$) giving 
 
 \begin{equation}
 \begin{split}
@@ -359,23 +341,20 @@ P_N& = \left(\sigma_N^2 A_{pix} \Delta r_{los}^{vox}\right) / \left({\frac{t_{ob
 
 In this form, it becomes apparent that---with fixed number of spatial pixels, spectral resolution, and total observing time---the only factor driving up the amplitude of noise power is the survey area; the effect of increasing aperture only allows access to higher wavenumbers, which is important for subtracting the shot noise from the total power to reveal the clustering.
 
-
-
-
 \subsection{Measuring $\bar{S}_{[CII]}(z)$}
+
+As noted above, intensity mapping is naturally sensitive to the full range of galaxy luminosities through the mean intensity, which is imprinted in the linear (2-halo) clustering term. Shot noise must be accurately subtracted, and this should be straightforward given the high SNR in the shot-noise dominated k bins (Figure~\ref{fig:pcii_zall}).  Next, per Equation~\ref{eq:pclust}, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and  $\bar{b}_{\textrm{[CII]}}^2(z)$.The confidence with which are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on the IR luminosity of the contributing sources \citep{viero13}, indicating the need to map sufficiently wide areas that access $k$ modes where the power is largely independent of the level of 1-halo power. 
 
 \begin{figure}[b]
 \centering
-\includegraphics[width=0.5\textwidth]{rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb}
-\caption{Error bar estimates on $\rho_{\textrm{[CII]}}$, as measured by the fiducial experiment, at observed redshifts $z$ = 0.63, 0.88, 1.16, and 1.48. Errors in $z$ correspond to the redshift space spanned by the spectrometer bandwidth. The solid blue curve is the underlying model for [CII] luminosity density. The luminosity density of other bright IR lines are shown as the dashed colored curves, and the dotted curve is an estimate for $\rho_{\textrm{[CII]}}$ based on the fit to SFRD($z$) provided by \citet{hb06}, where we have used constant ratios of $L_{\textrm{[CII]}}$ to $L_{IR}$ equal to 0.001 (bottom curve) 0.003 (top curve) to convert from IR luminosity density to [CII] luminosity density.}
+\includegraphics[width=0.45\textwidth]{s_cii_balloon_1sqdeg_450hr}
+\caption{Error bar estimates on $\rho_{\textrm{[CII]}}$, as measured by the fiducial balloon experiment, at observed redshifts $z$ = 0.63, 0.88, 1.16, and 1.48. Errors in $z$ correspond to the redshift space spanned by the spectrometer bandwidth. The solid blue curve is the underlying model for [CII] luminosity density. The luminosity density of other bright IR lines are shown as the dashed colored curves, and the dotted curve is an estimate for $\rho_{\textrm{[CII]}}$ based on the fit to SFRD($z$) provided by \citet{hb06}, where we have used constant ratios of $L_{\textrm{[CII]}}$ to $L_{IR}$ equal to 0.001 (bottom curve) 0.003 (top curve) to convert from IR luminosity density to [CII] luminosity density.}
 \label{fig:scii_z}
 \end{figure}
 
-As noted above, intensity mapping is naturally sensitive to the full range of galaxy luminosities through the mean intensity, which is imprinted in the linear (2-halo) clustering term. Shot noise must be accurately subtracted, and this should be straightforward given the high SNR in the shot-noise dominated k bins (Figure~\ref{fig:snr_nmode_k}).  Next, per Equation~\ref{eq:pclust}, it is necessary to divide out $P_{\delta,\delta}(k,z)$ and  $\bar{b}_{\textrm{[CII]}}^2(z)$.The confidence with which are \emph{a priori} known quantities becomes lower as $k$ increases. For example, the 1-halo power spectrum for DSFGs appears to be dependent on the IR luminosity of the contributing sources \citep{viero13}, indicating the need to map sufficiently wide areas that access $k$ modes where the power is largely independent of the level of 1-halo power. 
+Returning to Figure~\ref{fig:nmode_k}, we see that, for the purpose of measuring $\bar{S}_{\textrm{[CII]}}$ with the fiducial survey of 1 deg$^2$, there are two $k$ bins ($k = 0.16$ and 0.32 h/Mpc) in which the 2-halo clustering accounts for at least 80\% of the total power. (A survey with 10 deg$^2$, also shown in Figure~\ref{fig:nmode_k}, are wide enough to have three $k$ bins available in the linear regime, but the sensitivity on the additional mode with $t_{obs}^{survey}$= 450 hours is marginal.) Thus, in considering the case of $A_{survey} = 1.0$ deg$^2$, we find that it is possible to measure $\rho_{\textrm{[CII]}}(z)$ within $\sim10\%$ accuracy from $z = 0.63$ to $z=1.48$, as shown in Figure~\ref{fig:scii_z}, where the fractional uncertainty on $\bar{S}_{\textrm{[CII]}}(k,z)$ has been calculated as half the fractional uncertainty on $P_{\textrm{[CII],[CII]}}(k,z)$. In Figure~\ref{fig:scii_z}, we also include, for comparison, an estimate for $\rho_{\textrm{[CII]}}(z)$ based on the analytic fit to SFRD($z$) provided by \citet{hb06} and flat ratios of $L_{\textrm{[CII]}}/L_{IR} = 0.001$ and 0.003. (We use the standard relation between SFRD and infrared luminosity described in \citet{kennicutt98}.)
 
-Returning to Figure~\ref{fig:snr_nmode_k}, we see that, for the purpose of measuring $\bar{S}_{\textrm{[CII]}}$ with the fiducial survey of 1 deg$^2$, there are two $k$ bins ($k = 0.16$ and 0.27 h/Mpc) in which the 2-halo clustering accounts for at least 75\% of the total power. (Surveys with $A_{survey} = 5.3$ and 10 deg$^2$, also shown in Figure~\ref{fig:snr_nmode_k}, are wide enough to have three $k$ bins available in the linear regime, but the sensitivity on the additional mode with $t_{obs}^{survey}$= 200 hours is marginal.) Thus, in considering the case of $A_{survey} = 1.0$ deg$^2$, we find that it is possible to measure $\rho_{\textrm{[CII]}}(z)$ within $\sim10\%$ accuracy from $z = 0.63$ to $z=1.48$, as shown in Figure~\ref{fig:scii_z}, where the fractional uncertainty on $\bar{S}_{\textrm{[CII]}}(k,z)$ has been calculated as half the fractional uncertainty on $P_{\textrm{[CII],[CII]}}(k,z)$. In Figure~\ref{fig:scii_z}, we also include, for comparison, an estimate for $\rho_{\textrm{[CII]}}(z)$ based on the analytic fit to SFRD($z$) provided by \citet{hb06} and flat ratios of $L_{\textrm{[CII]}}/L_{IR} = 0.001$ and 0.003. (We use the standard relation between SFRD and infrared luminosity described in \citet{kennicutt98}.)
-
-[The cryogenic satellite offers an unprecedented platform for quantifying the evolution of far-IR line emission in cosmological volumes over time.] 
+The cryogenic satellite offers an unprecedented platform for quantifying the evolution of far-IR line emission in cosmological volumes over time, with fractional uncertainties on the order of a tenth of a percent at each redshift for the 1,000 deg$^2$ survey ($t_{obs}^{survey} = 450$ hr).
 
 \section{Observational Strategy: Comparing Intensity Mapping with Traditional Galaxy Surveys}
 
@@ -444,7 +423,7 @@ Cryogenic Satellite & 0.0286 & 0.0292 & 0.00526 \\
  \end{center}
  \end{table}
 
-The bottom row of Figure~\ref{fig:ngal_frac} breaks down the total emission in terms of the number of detectable galaxies. As is clear from comparison of panels in the top and bottom rows, a large sample of galaxies (of order 1,000 or greater) does not necessarily ensure an unbiased measure of the mean [CII] intensity. If, however, one extracts the aggregate, unresolved emission from [CII] via the intensity mapped power spectrum, one is essentially measuring $\frac{\rho_{[CII], obs]}}{\rho_{[CII]}} = 1$ as soon as SNR on the linear clustering term of the power spectrum is sufficiently high, which was depicted in Figure~\ref{fig:scii_z}. 
+The bottom row of Figure~\ref{fig:ngal_frac} breaks down the total emission in terms of the number of detectable galaxies. As is clear from comparison of panels in the top and bottom rows, a large sample of galaxies (of order 1,000 or greater) does not necessarily ensure an unbiased measure of the mean [CII] intensity. If, however, one extracts the aggregate, unresolved emission from [CII] via the intensity mapped power spectrum, one is essentially measuring $\frac{\rho_{\textrm{[CII]}, obs]}}{\rho_{\textrm{[CII]}}} = 1$ as soon as SNR on the linear clustering term of the power spectrum is sufficiently high, which was depicted in Figure~\ref{fig:scii_z}. 
 
 There may be applications---such as measuring the BAO peak or searching for primordial non-Gaussianity in large-scale structure---for which the mean intensity is not required, and the shape of the power spectrum, rather than its absolute value, is of interest. For this application, we compare the SNR on a linear-term $k$ bin (up to $k < 0.3$ h/Mpc) for both galaxy detection and intensity mapping surveys (denoted, respectively, by the subscripts ``GS" and ``IM"), with the expressions:
 
@@ -454,22 +433,26 @@ There may be applications---such as measuring the BAO peak or searching for prim
  & = \frac{\sqrt{N_{modes}}}{1 + (f_{err}^2 V_{vox}) / (\bar{b}_i^2P_{\delta,\delta})} \nonumber
 \end{align}
 
-\begin{figure}[b]
+Even in this limited comparison of relative SNRs, the intensity mapping often outperforms galaxy surveys, as shown in Figure~\ref{fig:snr_vs_ferr}. For the steepest faint-end slope ($\alpha = -2.0$) we have tested, SNR$_{IM} >$ SNR$_{GS}$ for all $f_{err}$ and beam sizes (i.e., telescope apertures). For the flatter LFs, there are ranges of $f_{err}$ where SNR$_{IM} >$ SNR$_{GS}$ for the fiducial case, corresponding to when the galaxy surveys are shot-noise dominated. Figure~\ref{fig:contours} summarizes the results in Figure~\ref{fig:snr_vs_ferr}. It is important to remember that while surveys may detect a large number of galaxies, and thus attain appreciable SNR$_{GS}$ on the power spectrum, the sample of detected galaxies may not yield a measurement of mean intensity, for which a large fraction of the total [CII] light must be observed (cf. Figure~\ref{fig:ngal_frac}.) 
+
+In considering only the SNR on the linear clustering term ($k<0.3$ h/Mpc) in our comparison, we do not address the potential of the 3D clustering power spectra to be used in the context of models which connect the host dark matter halos with their constituent galaxies by fitting to the observed 1-halo power. Since the 1-halo amplitude is highly sensitive to the luminosity of the contributing galaxy populations, we merely note in passing the potential of intensity mapping to constrain the distribution and types of galaxies within dark matter halos. 
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{contour_depth_alpha_cii_starfire}
 \caption{Contours of SNR$_{IM}$/SNR$_{GS}$ for the linear term in the [CII] clustering power spectrum at $z = 1.5$, determined for a given depth (in $L_{IR}$) and IR LF faint-end slope $\alpha$.}
 \label{fig:contours}
 \end{figure}
-
-Even in this limited comparison of relative SNRs, the intensity mapping often outperforms galaxy surveys, as shown in Figure~\ref{fig:snr_vs_ferr}. For the steepest faint-end slope ($\alpha = -2.0$) we have tested, SNR$_{IM} >$ SNR$_{GS}$ for all $f_{err}$ and beam sizes (i.e., telescope apertures). For the flatter LFs, there are ranges of $f_{err}$ where SNR$_{IM} >$ SNR$_{GS}$ for the fiducial case, corresponding to when the galaxy surveys are shot-noise dominated. Figure~\ref{fig:contours} summarizes the results in Figure~\ref{fig:snr_vs_ferr}. It is important to remember that while surveys may detect a large number of galaxies, and thus attain appreciable SNR$_{GS}$ on the power spectrum, the sample of detected galaxies may not yield a measurement of mean intensity, for which a large fraction of the total [CII] light must be observed (cf. Figure~\ref{fig:ngal_frac}.) 
-
-In considering only the SNR on the linear clustering term ($k<0.3$ h/Mpc) in our comparison, we do not address the potential of the 3D clustering power spectra to be used in the context of models which connect the host dark matter halos with their constituent galaxies by fitting to the observed 1-halo power. Since the 1-halo amplitude is highly sensitive to the luminosity of the contributing galaxy populations, we merely note in passing the potential of intensity mapping to constrain the distribution and types of galaxies within dark matter halos. 
  
 \section{Summary and Outlook}
 
-We have demonstrated the utility of the intensity mapping technique in measuring 3D power spectrum of bright FIR line emission at moderate redshifts, focusing on the important star-formation indicator [CII]. Fluctuations of FIR fine structure line intensities have been modeled by combining with the theorized dark matter power spectrum the empirically-constrained estimates of the IR luminosity from the B11 IR luminosity function and \citet{spinoglio12} line-to-$L_{IR}$ relations. We have presented predictions for the measurement of the [CII] power spectrum between $0.63 < z < 1.48$, and found the power spectrum to be detectable in both clustering and shot noise terms in this redshift range with a modest experimental platform. On large scales, the fact that the clustering amplitude of [CII] fluctuations is proportional to the mean [CII] intensity indicates the potential for measuring cosmic evolution of aggregate [CII], or of any target line, emission with the line intensity mapping approach. For the fiducial experiment considered in this paper, we have found that it would be possible to measure the [CII] luminosity density with fractional uncertainties on the order of 10\%. In examining the effect of luminosity function shape, telescope aperture, and fractional error (or instrument noise level) on the relative performances of intensity mapping to galaxy surveys, we have further demonstrated that, in the case where experiments with low fractional errors are not feasible, intensity mapping experiments often outperform galaxy redshift surveys when measuring the mean [CII] intensity. For steep luminosity functions, intensity mapping appears to be the only means of measuring average intensity and thus constraining the bulk of the luminosity function, as well as the optimal method of measuring the clustering power spectrum. 
+We have demonstrated the utility of the intensity mapping technique in measuring 3D power spectrum of bright FIR line emission at moderate redshifts, focusing on the important star-formation indicator [CII]. Fluctuations of FIR fine structure line intensities have been modeled by combining with the theorized dark matter power spectrum the empirically-constrained estimates of the IR luminosity from the B11 IR luminosity function and \citet{spinoglio12} line-to-$L_{IR}$ relations. We have presented predictions for the measurement of the [CII] auto-power spectrum between $0.63 < z < 1.48$, and found the power spectrum to be detectable in both clustering and shot noise terms in this redshift range with a modest, balloon-borne experimental platform, and exceptionally so with a more ambitious space-borne experimental platform. On large scales, the fact that the clustering amplitude of [CII] fluctuations is proportional to the mean [CII] intensity indicates the potential for measuring cosmic evolution of aggregate [CII], or of any target line, emission with the line intensity mapping approach. For the fiducial experiments considered in this paper, we have found that it would be possible to measure the [CII] luminosity density with fractional uncertainties on the order of 10\% or less. In examining the effect of luminosity function shape, telescope aperture, and fractional error (or instrument noise level) on the relative performances of intensity mapping to galaxy surveys, we have further demonstrated that, in the case where experiments with low fractional errors are not feasible, intensity mapping experiments often outperform galaxy redshift surveys when measuring the mean [CII] intensity. For steep luminosity functions, intensity mapping appears to be the only means of measuring average intensity and thus constraining the bulk of the luminosity function, as well as the optimal method of measuring the clustering power spectrum. 
 
-Although beyond the scope of this paper, our findings here reinforce the notion that the $z > 6$ Universe presents an ideal landscape to learn about galaxy populations via intensity mapping. Strong evidence for steep ($\alpha \sim -2.0$) luminosity functions in the rest frame UV at $z\sim7$ \citep{bouwens14}, and larger voxels for a given aperture at higher redshifts, combine to position intensity mapping more favorably compared to galaxy surveys in probing the nature and clustering of the reionizing population. Looking to the future, the unparalleled sensitivity of background-limited spectrometer technology aboard space-borne experiments as described in this paper may become novel and important platforms for learning about the Epoch of Reionization, and warrants further study. 
+Although beyond the scope of this paper, our findings here reinforce the notion that the $z > 6$ Universe presents an ideal landscape to learn about galaxy populations via intensity mapping. Strong evidence for steep ($\alpha \sim -2.0$) luminosity functions in the rest frame UV at $z\sim7$ \citep{bouwens14}, and larger voxels for a given aperture at higher redshifts, combine to position intensity mapping more favorably compared to galaxy surveys in probing the nature and clustering of the reionizing population. 
+
+Looking to the future, the unprecedented sensitivity of background-limited spectrometer technology aboard space-borne experiments as described in this paper may become novel and important platforms to conduct large ($\sim 1,000$ deg$^2$) blind spatio-spectral surveys of FIR line emission, and warrants further study.
+\\\\
+The authors thank Adam Lidz and Olivier Dor\'{e} for useful discussions. BDU acknowledges support from the NASA GSRP Fellowship. 
 
 \appendix
 
@@ -505,6 +488,8 @@ Finally, equation~\ref{eq:schechterlum} allows us to calculate the [CII] luminos
 \end{equation}
 
 where $f_{\textrm{[CII]}}$ is the fraction of IR luminosity emitted in [CII], or $\frac{L_{\textrm{[CII]}}(L_{IR})}{L_{IR}}$, described by the Spinoglio relations. Because $L_{\textrm{[CII]}}$ is slightly sublinear in $L_{IR}$, it follows that the toy models with steep faint-end slopes will produce more [CII] emission than their flatter counterparts. 
+
+
 
 \bibliography{master_references}
 

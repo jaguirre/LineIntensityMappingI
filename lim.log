@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 MAY 2014 22:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 MAY 2014 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,6 +283,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count122
+\float@exts=\toks28
+\float@box=\box48
+\@float@everytoks=\toks29
+\@floatcapt=\box49
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
@@ -312,77 +320,97 @@ age}{0.9999\linewidth } \if \csname ftype@\@captype \endcsname 2 \vskip 2ex\noi
 ndent \centering \@table@type@size {\@eapj@cap@font #1}\par \if@chicago \@eapj@
 cap@font \fi #2\par \medskip \else \vspace *{\abovecaptionskip }\noindent \foot
 notesize #1 #2\par \vskip \belowcaptionskip \fi \end {minipage}\par .
-\c@ContinuedFloat=\count122
+\c@ContinuedFloat=\count123
+Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 )
-\c@KVtest=\count123
+\c@KVtest=\count124
 \sf@farskip=\skip63
 \sf@captopadj=\dimen131
 \sf@capskip=\skip64
 \sf@nearskip=\skip65
-\c@subfigure=\count124
-\c@subfigure@save=\count125
-\c@lofdepth=\count126
-\c@subtable=\count127
-\c@subtable@save=\count128
-\c@lotdepth=\count129
+\c@subfigure=\count125
+\c@subfigure@save=\count126
+\c@lofdepth=\count127
+\c@subtable=\count128
+\c@subtable@save=\count129
+\c@lotdepth=\count130
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen132
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 91.
-Class revtex4-1 Info: Patching longtable package on input line 91.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 
 
-./lim.tex:91: LaTeX Error: Command \longtable* already defined.
+/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty:54: Package
+ subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfig package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54   \endinput}{}
+                   %
+? 
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 93.
+
+
+Class revtex4-1 Warning: Repair the float package.
+
+Class revtex4-1 Info: Patching longtable package on input line 93.
+
+./lim.tex:93: LaTeX Error: Command \longtable* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \begin{document}
+l.93 \begin{document}
                      
 ? 
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 91.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 93.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 91.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 91.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 91.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 93.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 93.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 93.
 (./lim.aux)
 \openout1 = `lim.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
  (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
+\scratchcounter=\count131
 \scratchdimen=\dimen133
-\scratchbox=\box48
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count133
+\scratchbox=\box50
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen134
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -436,17 +464,17 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 \openout3 = `limNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 109.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 111.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
+LaTeX Font Info:    Try loading font information for U+msa on input line 111.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 111.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -486,13 +514,13 @@ File: interloper_intensity_jysr_withM82CO.pdf Graphic file (type pdf)
 <use interloper_intensity_jysr_withM82CO.pdf>
 Package pdftex.def Info: interloper_intensity_jysr_withM82CO.pdf used on input 
 line 200.
-(pdftex.def)             Requested size: 205.24384pt x 146.60509pt.
+(pdftex.def)             Requested size: 230.90128pt x 164.9328pt.
 
-./lim.tex:207: Undefined control sequence.
+./lim.tex:210: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.207 \subsection
-                 {[CII] Luminosity Functions and Expected Power Spectra}
+l.210 
+      
 ? 
 [3 <./interloper_intensity_jysr_withM82CO.pdf>]
 <fraction_cii_emissivity_vs_LIRmin_vs_z.pdf, id=38, 505.89pt x 361.35pt>
@@ -501,12 +529,7 @@ File: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf Graphic file (type pdf)
 <use fraction_cii_emissivity_vs_LIRmin_vs_z.pdf>
 Package pdftex.def Info: fraction_cii_emissivity_vs_LIRmin_vs_z.pdf used on inp
 ut line 215.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 215--216
- [][] 
- []
-
+(pdftex.def)             Requested size: 230.90128pt x 164.9328pt.
 
 <pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqd
 eg_uhp_ktnonzero.pdf, id=39, 505.89pt x 361.35pt>
@@ -517,11 +540,7 @@ _1sqdeg_uhp_ktnonzero.pdf Graphic file (type pdf)
 1sqdeg_uhp_ktnonzero.pdf>
 Package pdftex.def Info: pcii_STARFIRE_z63_z88_z116_z148_lirmin_halofit_betherm
 in_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero.pdf used on input line 222.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 222--223
- [][] 
- []
+(pdftex.def)             Requested size: 230.90128pt x 164.9328pt.
 
 
 LaTeX Warning: Reference `fig:snr_nmode_k' on page 4 undefined on input line 23
@@ -530,170 +549,107 @@ LaTeX Warning: Reference `fig:snr_nmode_k' on page 4 undefined on input line 23
 [4 <./fraction_cii_emissivity_vs_LIRmin_vs_z.pdf> <./pcii_STARFIRE_z63_z88_z116
 _z148_lirmin_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_ktnonzero.pdf>]
 <pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_uhp_
-ktnonzero_minimaltext.pdf, id=60, 505.89pt x 361.35pt>
+ktnonzero_minimaltext_450hr.pdf, id=60, 614.295pt x 433.62pt>
 File: pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg
-_uhp_ktnonzero_minimaltext.pdf Graphic file (type pdf)
+_uhp_ktnonzero_minimaltext_450hr.pdf Graphic file (type pdf)
 
 <use pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg_
-uhp_ktnonzero_minimaltext.pdf>
+uhp_ktnonzero_minimaltext_450hr.pdf>
 Package pdftex.def Info: pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spin
-oglio_ap2p5m_1sqdeg_uhp_ktnonzero_minimaltext.pdf used on input line 304.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
+oglio_ap2p5m_1sqdeg_uhp_ktnonzero_minimaltext_450hr.pdf used on input line 305.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 304--305
- [][] 
- []
+(pdftex.def)             Requested size: 251.43036pt x 177.48099pt.
 
-<ps_cii_z148_asurvey1000deg2_space.pdf, id=61, 505.89pt x 361.35pt>
-File: ps_cii_z148_asurvey1000deg2_space.pdf Graphic file (type pdf)
+<pcii_STARFIRE_z148_halofit_bethermin_spinoglio_ap2p5m_1000sqdeg_uhp_ktnonzero_
+minimaltext_450hr_space.pdf, id=61, 614.295pt x 433.62pt>
+File: pcii_STARFIRE_z148_halofit_bethermin_spinoglio_ap2p5m_1000sqdeg_uhp_ktnon
+zero_minimaltext_450hr_space.pdf Graphic file (type pdf)
 
-<use ps_cii_z148_asurvey1000deg2_space.pdf>
-Package pdftex.def Info: ps_cii_z148_asurvey1000deg2_space.pdf used on input li
-ne 311.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
+<use pcii_STARFIRE_z148_halofit_bethermin_spinoglio_ap2p5m_1000sqdeg_uhp_ktnonz
+ero_minimaltext_450hr_space.pdf>
+Package pdftex.def Info: pcii_STARFIRE_z148_halofit_bethermin_spinoglio_ap2p5m_
+1000sqdeg_uhp_ktnonzero_minimaltext_450hr_space.pdf used on input line 306.
+(pdftex.def)             Requested size: 251.43036pt x 177.48099pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 311--312
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<pcii_pnoise_k_z88.pdf, id=62, 505.89pt x 361.35pt>
-File: pcii_pnoise_k_z88.pdf Graphic file (type pdf)
-
-<use pcii_pnoise_k_z88.pdf>
-Package pdftex.def Info: pcii_pnoise_k_z88.pdf used on input line 327.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 327--328
- [][] 
+Overfull \hbox (9.74329pt too wide) in paragraph at lines 304--308
+ []$[]$ 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+./lim.tex:310: LaTeX Error: \begin{figure*} on input line 302 ended by \end{fig
+ure}.
 
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 5 undefined on input line 33
-2.
-
-./lim.tex:333: Undefined control sequence.
-\@versohead ...pping During $0.5 < \Makelowercase 
-                                                  {z} < 1.5$
-l.333 
-      
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \end{figure}
+                  
 ? 
-[5]
+<snr_tot_clust_lin_asurvey_z88_450hr.pdf, id=62, 361.35pt x 361.35pt>
+File: snr_tot_clust_lin_asurvey_z88_450hr.pdf Graphic file (type pdf)
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 333.
+<use snr_tot_clust_lin_asurvey_z88_450hr.pdf>
+Package pdftex.def Info: snr_tot_clust_lin_asurvey_z88_450hr.pdf used on input 
+line 319.
+(pdftex.def)             Requested size: 230.90128pt x 230.8993pt.
 
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 333.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-<snr_tot_clust_lin_asurvey_z88.pdf, id=70, 361.35pt x 361.35pt>
-File: snr_tot_clust_lin_asurvey_z88.pdf Graphic file (type pdf)
-
-<use snr_tot_clust_lin_asurvey_z88.pdf>
-Package pdftex.def Info: snr_tot_clust_lin_asurvey_z88.pdf used on input line 3
-36.
-(pdftex.def)             Requested size: 256.55872pt x 256.56029pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 336--337
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf, id=71, 505.89pt x 361.35pt>
+<nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf, id=63, 505.89pt x 361.35pt>
 File: nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf Graphic file (type pdf)
 
 <use nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf>
 Package pdftex.def Info: nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf used on input li
-ne 344.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 344--345
- [][] 
- []
+ne 326.
+(pdftex.def)             Requested size: 230.90128pt x 164.9328pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1sqdeg
-_uhp_ktnonzero_minimaltext.pdf> <./ps_cii_z148_asurvey1000deg2_space.pdf> <./pc
-ii_pnoise_k_z88.pdf> <./snr_tot_clust_lin_asurvey_z88.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-<rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb.pdf, id=107, 505.89pt x 361.35pt>
-File: rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb.pdf Graphic file (type pdf)
-
-<use rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb.pdf>
-Package pdftex.def Info: rhocii_vs_z_starfire_1sqdeg_tobs200hr_hb.pdf used on i
-nput line 369.
-(pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
-
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 369--370
- [][] 
- []
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 7 undefined on input line 37
-4.
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 7 undefined on input line 37
-6.
-
-
-LaTeX Warning: Reference `fig:snr_nmode_k' on page 7 undefined on input line 37
-6.
-
-./lim.tex:385: Undefined control sequence.
+./lim.tex:332: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.385 
+l.332 
       
 ? 
-[7 <./nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf> <./rhocii_vs_z_starfire_1sqdeg_tob
-s200hr_hb.pdf>]
-<phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=128, 505.89pt
+[5] [6 <./pcii_STARFIRE_z63_z88_z116_z148_halofit_bethermin_spinoglio_ap2p5m_1s
+qdeg_uhp_ktnonzero_minimaltext_450hr.pdf> <./pcii_STARFIRE_z148_halofit_betherm
+in_spinoglio_ap2p5m_1000sqdeg_uhp_ktnonzero_minimaltext_450hr_space.pdf> <./snr
+_tot_clust_lin_asurvey_z88_450hr.pdf> <./nmode_vs_k_z88_100sqdeg_1000sqdeg.pdf>
+] <s_cii_balloon_1sqdeg_450hr.pdf, id=106, 614.295pt x 433.62pt>
+File: s_cii_balloon_1sqdeg_450hr.pdf Graphic file (type pdf)
+
+<use s_cii_balloon_1sqdeg_450hr.pdf>
+Package pdftex.def Info: s_cii_balloon_1sqdeg_450hr.pdf used on input line 350.
+
+(pdftex.def)             Requested size: 230.90128pt x 162.99086pt.
+
+<phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d13.pdf, id=107, 505.89pt
  x 361.35pt>
 File: phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d13.pdf Graphic file
  (type pdf)
 
 <use phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d13.pdf>
 Package pdftex.def Info: phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d
-13.pdf used on input line 388.
+13.pdf used on input line 367.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 388--389
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 367--368
  [][] 
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 389--389
+Underfull \hbox (badness 5274) in paragraph at lines 368--368
 [][] \OT1/cmr/m/n/10 : |Toy model IR lu-mi-nos-ity func-tions
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 389--389
+Underfull \hbox (badness 2326) in paragraph at lines 368--368
 \OT1/cmr/m/n/10 with faint-end slope (from top to bot-tom) $\OML/cmm/m/it/10  
 \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 389--389
+Underfull \hbox (badness 1478) in paragraph at lines 368--368
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cm
 m/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n
 /10 5\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :
@@ -703,57 +659,74 @@ n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0$. The B11 model (blue
  []
 
 
-<lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf, id=129, 505.89pt x 361.35pt
+<lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf, id=108, 505.89pt x 361.35pt
 >
 File: lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf Graphic file (type pdf)
 
  <use lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf>
 Package pdftex.def Info: lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf used
- on input line 395.
+ on input line 374.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 395--396
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 374--375
  [][] 
  []
 
-./lim.tex:400: Double superscript.
-l.400 ...above $5 \times S_{\gamma} t_{obs}^{vox}^
+./lim.tex:379: Double superscript.
+l.379 ...above $5 \times S_{\gamma} t_{obs}^{vox}^
                                                   {-1/2}$. (For this analysi...
 
 ? 
-./lim.tex:410: Double superscript.
-l.410 ...tarrow 5 \times S_{\gamma} t_{obs}^{vox}^
+./lim.tex:380: Undefined control sequence.
+\@versohead ...pping During $0.5 < \Makelowercase 
+                                                  {z} < 1.5$
+l.380 
+      
+? 
+[7 <./s_cii_balloon_1sqdeg_450hr.pdf> <./phi_lir_schechter_bethermin11_Lstar1d1
+2_Lmin1d8_Lmax1d13.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 380.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 380.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+./lim.tex:389: Double superscript.
+l.389 ...tarrow 5 \times S_{\gamma} t_{obs}^{vox}^
                                                   {-1/2}
 ? 
 
 <Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0
-_b11.pdf, id=130, 505.89pt x 361.35pt>
+_b11.pdf, id=129, 505.89pt x 361.35pt>
 File: Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alph
 am2p0_b11.pdf Graphic file (type pdf)
 
 <use Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alpha
 m2p0_b11.pdf>
 Package pdftex.def Info: Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10
-vpix_alpham1p0_alpham2p0_b11.pdf used on input line 417.
+vpix_alpham1p0_alpham2p0_b11.pdf used on input line 396.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 417--418
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
 
 <snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p0_0p1vpix_vpix_10vpix_z1
-48.pdf, id=131, 505.89pt x 361.35pt>
+48.pdf, id=130, 505.89pt x 361.35pt>
 File: snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p0_0p1vpix_vpix_10vp
 ix_z148.pdf Graphic file (type pdf)
 
 <use snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p0_0p1vpix_vpix_10vpi
 x_z148.pdf>
 Package pdftex.def Info: snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p
-0_0p1vpix_vpix_10vpix_z148.pdf used on input line 426.
+0_0p1vpix_vpix_10vpix_z148.pdf used on input line 405.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 426--427
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 405--406
  [][] 
  []
 
@@ -761,53 +734,68 @@ Overfull \hbox (11.29219pt too wide) in paragraph at lines 426--427
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-./lim.tex:445: LaTeX Error: \begin{table*} on input line 433 ended by \end{tabl
+./lim.tex:424: LaTeX Error: \begin{table*} on input line 412 ended by \end{tabl
 e}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.445  \end{table}
+l.424  \end{table}
                   
 ? 
-[8 <./phi_lir_schechter_bethermin11_Lstar1d12_Lmin1d8_Lmax1d13.pdf> <./lirmin_f
-err_b11_alpham1p0_alpham2p0_lstar1d12.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 446.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 446.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-<contour_depth_alpha_cii_starfire.pdf, id=151, 505.89pt x 361.35pt>
+[8 <./lirmin_ferr_b11_alpham1p0_alpham2p0_lstar1d12.pdf> <./Ngal_fracCII_STARFI
+RE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alpham2p0_b11.pdf>]
+<contour_depth_alpha_cii_starfire.pdf, id=150, 505.89pt x 361.35pt>
 File: contour_depth_alpha_cii_starfire.pdf Graphic file (type pdf)
 
 <use contour_depth_alpha_cii_starfire.pdf>
 Package pdftex.def Info: contour_depth_alpha_cii_starfire.pdf used on input lin
-e 459.
+e 442.
 (pdftex.def)             Requested size: 256.55872pt x 183.2605pt.
 
-Overfull \hbox (11.29219pt too wide) in paragraph at lines 459--460
+Overfull \hbox (11.29219pt too wide) in paragraph at lines 442--443
  [][] 
  []
 
-./lim.tex:465: Undefined control sequence.
+./lim.tex:450: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.465 
+l.450 
       
 ? 
-[9 <./Ngal_fracCII_STARFIRE_1sqdeg_z1p5_ferr_0p1vpix_vpix_10vpix_alpham1p0_alph
-am2p0_b11.pdf> <./snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p0_0p1vp
-ix_vpix_10vpix_z148.pdf> <./contour_depth_alpha_cii_starfire.pdf>] [10]
-(./lim.bbl)
-./lim.tex:511: Undefined control sequence.
+[9 <./snr_im_gs_ferr_nmodeIM_1d-1_1d3_b11_alpham1p0_alpham2p0_0p1vpix_vpix_10vp
+ix_z148.pdf> <./contour_depth_alpha_cii_starfire.pdf>]
+Underfull \hbox (badness 4995) in paragraph at lines 453--456
+\OT1/cmr/m/n/10 ity of background-limited spec-trom-e-ter tech-nol-ogy
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 453--456
+\OT1/cmr/m/n/10 pa-per may be-come novel and im-por-tant plat-forms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--456
+
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 453--456
+\OT1/cmr/m/n/10 The au-thors thank Adam Lidz and Olivier Dor^^Se
+ []
+
+
+Overfull \hbox (3.42348pt too wide) detected at line 488
+\OML/cmm/m/it/10 ^^Z[] \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 n[]L[] [][] 
+f[] [] []
+ []
+
+(./lim.bbl [10])
+./lim.tex:496: Undefined control sequence.
 \@versohead ...pping During $0.5 < \Makelowercase 
                                                   {z} < 1.5$
-l.511 \end{document}
+l.496 \end{document}
                     
 ? 
 [11] (./lim.aux)
@@ -816,13 +804,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6531 strings out of 493315
- 94888 string characters out of 6137904
- 202586 words of memory out of 5000000
- 9867 multiletter control sequences out of 15000+600000
+ 6574 strings out of 493315
+ 95897 string characters out of 6137904
+ 189775 words of memory out of 5000000
+ 9905 multiletter control sequences out of 15000+600000
  13484 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,18n,42p,1991b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,18n,42p,1991b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
@@ -845,10 +833,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on lim.pdf (11 pages, 649425 bytes).
+Output written on lim.pdf (11 pages, 625887 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
